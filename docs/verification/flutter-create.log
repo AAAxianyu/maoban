@@ -1,0 +1,36 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+[1/10] Material Fonts                                              269ms
+[2/10] Gradle Wrapper                                               97ms
+[3/10] Flutter SDK
+  ├─ [1/5] sky_engine                                               83ms
+  ├─ [2/5] flutter_gpu                                              37ms
+  ├─ [3/5] flutter_patched_sdk                                     222ms
+  ├─ [4/5] flutter_patched_sdk_product                             279ms
+  └─ [5/5] darwin-arm64                                          1,957ms
+[4/10] iOS USB Artifact: libimobiledevice                           32ms
+[5/10] iOS USB Artifact: libusbmuxd                                 23ms
+[6/10] iOS USB Artifact: libplist                                   34ms
+[7/10] iOS USB Artifact: openssl                                   212ms
+[8/10] iOS USB Artifact: libimobiledeviceglue                       27ms
+[9/10] iOS USB Artifact: ios-deploy                                 29ms
+[10/10] darwin-arm64/font-subset                                   141ms
+Creating project apps/mobile...
+Resolving dependencies in `apps/mobile`...
+Downloading packages...
+Got dependencies in `apps/mobile`.
+Wrote 75 files.
+
+All done!
+You can find general documentation for Flutter at: https://docs.flutter.dev/
+Detailed API documentation is available at: https://api.flutter.dev/
+If you prefer video documentation, consider: https://www.youtube.com/c/flutterdev
+
+In order to run your application, type:
+
+  $ cd apps/mobile
+  $ flutter run
+
+Your application code is in apps/mobile/lib/main.dart.
+
+Newer than known valid Java version (26.0.1), gradle (9.3.1).
+ Treating as valid configuration.

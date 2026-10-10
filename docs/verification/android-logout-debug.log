@@ -1,0 +1,100 @@
+Waiting for a connection from Flutter on sdk gphone64 arm64...
+Syncing files to device sdk gphone64 arm64...                       9.7s
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on sdk gphone64 arm64 is available at: http://127.0.0.1:62769/8IOJmHMIdQw=/
+The Flutter DevTools debugger and profiler on sdk gphone64 arm64 is available at: http://127.0.0.1:62769/8IOJmHMIdQw=/devtools/?uri=ws://127.0.0.1:62769/8IOJmHMIdQw=/ws
+
+Performing hot reload...                                        
+
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following _TypeError was thrown building Builder:
+Null check operator used on a null value
+
+The relevant error-causing widget was:
+  Builder
+  Builder:file:///Users/dev2/.pub-cache/hosted/pub.dev/go_router-18.0.2/lib/src/builder.dart:282:7
+
+When the exception was thrown, this was the stack:
+#0      _SettingsScreenState.initState (package:miaoban/features/settings/settings_screen.dart:30:30)
+#1      StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5963:55)
+#2      ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#3      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#4      Element.updateChild (package:flutter/src/widgets/framework.dart:4066:20)
+#5      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#6      Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#7      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2763:15)
+#8      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2820:11)
+#9      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3124:18)
+#10     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571:21)
+#11     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:558:5)
+#12     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#13     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#14     SchedulerBinding.scheduleWarmUpFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:1055:9)
+#15     PlatformDispatcher.scheduleWarmUpFrame.<anonymous closure> (dart:ui/platform_dispatcher.dart:912:16)
+#19     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:192:12)
+(elided 3 frames from class _Timer and dart:async-patch)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+Reloaded 0 libraries in 322ms (compile: 56 ms, reload: 0 ms, reassemble: 102 ms).
+
+Performing hot reload...                                        
+
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following _TypeError was thrown building Builder:
+Null check operator used on a null value
+
+The relevant error-causing widget was:
+  Builder
+  Builder:file:///Users/dev2/.pub-cache/hosted/pub.dev/go_router-18.0.2/lib/src/builder.dart:282:7
+
+When the exception was thrown, this was the stack:
+#0      _SettingsScreenState.initState (package:miaoban/features/settings/settings_screen.dart:30:30)
+#1      StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5963:55)
+#2      ComponentElement.mount (package:flutter/src/widgets/framework.dart:5806:5)
+#3      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4600:20)
+#4      Element.updateChild (package:flutter/src/widgets/framework.dart:4066:20)
+#5      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5854:16)
+#6      Element.rebuild (package:flutter/src/widgets/framework.dart:5542:7)
+#7      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2763:15)
+#8      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2820:11)
+#9      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3124:18)
+#10     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571:21)
+#11     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:558:5)
+#12     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#13     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#14     SchedulerBinding.scheduleWarmUpFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:1055:9)
+#15     PlatformDispatcher.scheduleWarmUpFrame.<anonymous closure> (dart:ui/platform_dispatcher.dart:912:16)
+#19     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:192:12)
+(elided 3 frames from class _Timer and dart:async-patch)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+Reloaded 2 of 2394 libraries in 489ms (compile: 91 ms, reload: 274 ms, reassemble: 96 ms).
+
+Performing hot restart...                                       
+Restarted application in 1,032ms.
+Lost connection to device.
+hot restart failed to complete: getVM: (-32000) Service connection disposed
+#0      new _OutstandingRequest (package:vm_service/src/vm_service.dart:278:34)
+#1      VmService._call.<anonymous closure> (package:vm_service/src/vm_service.dart:1960:25)
+#2      VmService._call (package:vm_service/src/vm_service.dart:1972:8)
+#3      VmService.getVM (package:vm_service/src/vm_service.dart:1426:25)
+#4      HotRunner._restartFromSources (package:flutter_tools/src/run_hot.dart:691:64)
+<asynchronous suspension>
+#5      HotRunner._fullRestartHelper (package:flutter_tools/src/run_hot.dart:851:16)
+<asynchronous suspension>
+#6      HotRunner.restart (package:flutter_tools/src/run_hot.dart:791:38)
+<asynchronous suspension>
+#7      TerminalHandler._commonTerminalInputHandler (package:flutter_tools/src/resident_runner.dart:1880:40)
+<asynchronous suspension>
+#8      TerminalHandler.processTerminalInput (package:flutter_tools/src/resident_runner.dart:1937:7)
+<asynchronous suspension>
+

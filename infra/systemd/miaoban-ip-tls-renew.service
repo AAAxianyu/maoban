@@ -1,0 +1,11 @@
+[Unit]
+Description=Miaoban IP certificate renewal and nginx reload
+After=network-online.target nginx.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/srv/miaoban
+Environment=MIAOBAN_ROOT=/srv/miaoban
+Environment=MIAOBAN_IP=8.136.0.78
+ExecStart=/usr/bin/bash /srv/miaoban/infra/scripts/renew-ip-cert.sh

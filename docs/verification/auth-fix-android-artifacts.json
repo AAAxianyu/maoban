@@ -1,0 +1,32 @@
+{
+  "time_utc": "2026-10-09T04:26:07.170042+00:00",
+  "version_name": "0.1.1",
+  "version_code": 3,
+  "package_id": "com.miaoban.miaoban",
+  "api_base_url": "https://8.136.0.78",
+  "variants": {
+    "preview": {
+      "sha256": "034783b4d0c5189417b11e317b92c95b0546a5150691ece293c2e7a35ab08af2",
+      "bytes": 186647218,
+      "signing_certificate_sha256": "59857a3e3f2c1848ea132edad2ed86b1c26a52025e33ba654fb4d038bd394934",
+      "same_signer_as_previous_variant": true,
+      "local_artifact": "/Users/dev2/Documents/ChatGPT/study/.tools/miaoban-android-preview-v3.apk",
+      "download_url": "https://8.136.0.78/downloads/miaoban-android-preview.apk"
+    },
+    "release": {
+      "sha256": "fe72acf384d84fc33b24d2c8df551b759570d085ac8ec01472dea7fc8a2c1b74",
+      "bytes": 62097836,
+      "signing_certificate_sha256": "5143b6d398e354f904bf971910fbb591703bf2410308a36a99e654c9611e4a1f",
+      "same_signer_as_previous_variant": true,
+      "local_artifact": "/Users/dev2/Documents/ChatGPT/study/.tools/miaoban-android-release-v3.apk",
+      "download_url": "https://8.136.0.78/downloads/miaoban-android-release.apk"
+    }
+  },
+  "mobile_tests_passed": 37,
+  "analysis_issues": 0,
+  "physical_phone_login_verified": false,
+  "historic_artifacts_preserved": [
+    ".tools/miaoban-android-preview-v1.apk",
+    ".tools/miaoban-android-release-v2.apk"
+  ]
+}

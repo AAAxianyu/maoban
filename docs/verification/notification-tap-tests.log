@@ -1,0 +1,5 @@
+00:00 +0: loading /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/notification_tap_test.dart
+00:00 +0: cold remote tap checks the authorized inbox ID before marking read and routing
+00:00 +1: local tap for an earlier account is ignored even in the same space
+00:01 +2: a current local reminder opens today from another tab
+00:01 +3: All tests passed!

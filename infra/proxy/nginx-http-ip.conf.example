@@ -1,0 +1,14 @@
+# Use only when the app owns port 80; keep a shared server's existing site otherwise.
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name 8.136.0.78;
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/lib/miaoban-acme;
+        default_type text/plain;
+        try_files $uri =404;
+    }
+    location / {
+        return 308 https://8.136.0.78$request_uri;
+    }
+}

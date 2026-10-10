@@ -1,0 +1,32 @@
+Computing fixes in mobile...
+Applying fixes...
+
+lib/core/store.dart
+  curly_braces_in_flow_control_structures - 1 fix
+
+lib/core/widgets.dart
+  curly_braces_in_flow_control_structures - 4 fixes
+
+lib/features/milestones/milestones_screen.dart
+  curly_braces_in_flow_control_structures - 1 fix
+
+lib/features/notifications/notification_service.dart
+  curly_braces_in_flow_control_structures - 4 fixes
+
+lib/features/rewards/reward_editor.dart
+  curly_braces_in_flow_control_structures - 1 fix
+
+lib/features/rewards/rewards_screen.dart
+  curly_braces_in_flow_control_structures - 2 fixes
+  unnecessary_string_interpolations - 1 fix
+
+lib/features/settings/settings_screen.dart
+  curly_braces_in_flow_control_structures - 2 fixes
+
+lib/features/tasks/task_editor.dart
+  curly_braces_in_flow_control_structures - 1 fix
+
+lib/features/tasks/today_screen.dart
+  curly_braces_in_flow_control_structures - 1 fix
+
+18 fixes made in 9 files.

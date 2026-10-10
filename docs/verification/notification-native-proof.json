@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-08",
+  "environment": "Android API36 ARM64 emulator-5554",
+  "test": "integration_test/core_flow_test.dart",
+  "runs": [
+    {
+      "log": "android-e2e-denied.log",
+      "sha256": "3aa334b1415a3d644dc03c373b5d43c077ce53af89c158a7e7854c46db397350",
+      "expected_actual_os_permission": false,
+      "passed": true,
+      "checks": [
+        "real development HTTP/PostgreSQL core flow",
+        "native partner_events/task_reminders channels exist",
+        "pending task reminders present only when OS permission allows",
+        "reminder payload contains current account ID",
+        "lockscreen default body contains no task title",
+        "logout clears native pending reminders"
+      ]
+    },
+    {
+      "log": "android-e2e-allowed.log",
+      "sha256": "c2dbb34b0cf56d8a40e55aa69689bee19e9201181750d7f43e050323bd720c89",
+      "expected_actual_os_permission": true,
+      "passed": true,
+      "checks": [
+        "real development HTTP/PostgreSQL core flow",
+        "native partner_events/task_reminders channels exist",
+        "pending task reminders present only when OS permission allows",
+        "reminder payload contains current account ID",
+        "lockscreen default body contains no task title",
+        "logout clears native pending reminders"
+      ]
+    }
+  ],
+  "scope_limit": "This two-run evidence covers permissions/channels/scheduling/logout cleanup on the earlier version. It does not itself prove actual delivery, native tap, APNs/FCM, iPhone or physical devices. Startup/transport attempts were interrupted and excluded.",
+  "follow_up_actual_local_alarm_evidence": [
+    "native-reminder-tap-proof.json",
+    "native-reminder-final-proof.json"
+  ]
+}

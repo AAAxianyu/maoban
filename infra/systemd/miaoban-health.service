@@ -1,0 +1,9 @@
+[Unit]
+Description=Miaoban deployment health check
+[Service]
+Type=oneshot
+WorkingDirectory=/srv/miaoban
+EnvironmentFile=/srv/miaoban/.env.production
+Environment=CONFIG_FILE=.env.production
+Environment=COMPOSE_FILE=infra/compose.production.yaml
+ExecStart=/bin/bash infra/scripts/healthcheck.sh

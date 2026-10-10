@@ -1,0 +1,14 @@
+Downloading Darwin arm64 Dart SDK from Flutter engine af7e796e161ae0bb1ff0758c71a7105418bd9ded...
+** Resuming transfer from byte position 4927993
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  4  211M    4 8894k    0     0  12.0M      0  0:00:17 --:--:--  0:00:17 12.0M 12  211M   12 27.2M    0     0  15.8M      0  0:00:13  0:00:01  0:00:12 15.8M 22  211M   22 47.4M    0     0  17.4M      0  0:00:12  0:00:02  0:00:10 17.4M 31  211M   31 66.0M    0     0  17.7M      0  0:00:11  0:00:03  0:00:08 17.7M 39  211M   39 83.7M    0     0  17.7M      0  0:00:11  0:00:04  0:00:07 17.7M 48  211M   48  102M    0     0  17.8M      0  0:00:11  0:00:05  0:00:06 18.7M 57  211M   57  121M    0     0  17.9M      0  0:00:11  0:00:06  0:00:05 18.7M 66  211M   66  140M    0     0  18.1M      0  0:00:11  0:00:07  0:00:04 18.5M 74  211M   74  158M    0     0  18.1M      0  0:00:11  0:00:08  0:00:03 18.3M 83  211M   83  177M    0     0  18.2M      0  0:00:11  0:00:09  0:00:02 18.6M 92  211M   92  195M    0     0  18.2M      0  0:00:11  0:00:10  0:00:01 18.6M100  211M  100  211M    0     0  18.2M      0  0:00:11  0:00:11 --:--:-- 18.6M
+Building flutter tool...
+Resolving dependencies...
+Downloading packages...
+Got dependencies.
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Flutter 3.47.5 • channel [user-branch] • https://github.com/flutter/flutter.git
+Framework • revision 6a19cca564 (3 weeks ago) • 2026-09-17 14:13:22 -0400
+Engine • hash ab598368592da0064197e2bc15c7f5b0a2c6bb1f (revision af7e796e16) (21 days ago) • 2026-09-16 18:35:09.000Z
+Tools • Dart 3.13.4 • DevTools 2.60.0

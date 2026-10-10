@@ -1,0 +1,68 @@
+00:00 +0: loading /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart
+00:00 +0: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart: pending intent merges, preserves UUID, and account isolation survives logout
+00:00 +1: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart: pending intent merges, preserves UUID, and account isolation survives logout
+00:00 +2: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart: pending intent merges, preserves UUID, and account isolation survives logout
+00:00 +3: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart: pending intent merges, preserves UUID, and account isolation survives logout
+00:00 +4: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart: pending intent merges, preserves UUID, and account isolation survives logout
+00:00 +5: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart: pending intent merges, preserves UUID, and account isolation survives logout
+00:00 +6: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart: pending intent merges, preserves UUID, and account isolation survives logout
+00:00 +7: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart: pending intent merges, preserves UUID, and account isolation survives logout
+00:00 +8: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart: pending intent merges, preserves UUID, and account isolation survives logout
+00:01 +9: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/sync_test.dart: a conflicted offline intent can be discarded before a new UUID uses the current server version
+00:01 +9: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/offline_store_test.dart: an uncertain sent intent cannot mutate its idempotency payload
+*** sqflite warning ***
+
+You are changing sqflite default factory.
+Be aware of the potential side effects. Any library using sqflite
+will have this factory as the default for all operations.
+
+*** sqflite warning ***
+
+00:01 +10: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/sync_test.dart: a conflicted offline intent can be discarded before a new UUID uses the current server version
+00:01 +11: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/notification_tap_test.dart: cold remote tap checks the authorized inbox ID before marking read and routing
+00:01 +11: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/sync_test.dart: logout waits for an in-flight snapshot and discards its old-account state
+*** sqflite warning ***
+
+You are changing sqflite default factory.
+Be aware of the potential side effects. Any library using sqflite
+will have this factory as the default for all operations.
+
+*** sqflite warning ***
+
+00:01 +12: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/notification_tap_test.dart: cold remote tap checks the authorized inbox ID before marking read and routing
+00:01 +12: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/sync_test.dart: offline intent survives controller restart without optimistic spending and awards once
+*** sqflite warning ***
+
+You are changing sqflite default factory.
+Be aware of the potential side effects. Any library using sqflite
+will have this factory as the default for all operations.
+
+*** sqflite warning ***
+
+00:01 +13: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/notification_tap_test.dart: cold remote tap checks the authorized inbox ID before marking read and routing
+00:01 +13: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/sync_test.dart: cross-day queue submits review and never grants unapproved points
+*** sqflite warning ***
+
+You are changing sqflite default factory.
+Be aware of the potential side effects. Any library using sqflite
+will have this factory as the default for all operations.
+
+*** sqflite warning ***
+
+00:01 +14: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/notification_tap_test.dart: cold remote tap checks the authorized inbox ID before marking read and routing
+00:01 +15: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/startup_test.dart: cold startup holds the login form until local restoration completes
+00:01 +16: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/startup_test.dart: cold startup holds the login form until local restoration completes
+00:02 +17: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/startup_test.dart: cold startup holds the login form until local restoration completes
+00:02 +18: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/startup_test.dart: cold startup holds the login form until local restoration completes
+00:02 +19: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/startup_test.dart: cold startup holds the login form until local restoration completes
+00:02 +20: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/startup_test.dart: cold startup holds the login form until local restoration completes
+00:02 +21: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/startup_test.dart: cold startup holds the login form until local restoration completes
+00:02 +22: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/widget_test.dart: long task at 360px and 1.3 text has visible accessible check-in
+00:02 +23: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/widget_test.dart: long task at 360px and 1.3 text has visible accessible check-in
+00:02 +24: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/widget_test.dart: long task at 360px and 1.3 text has visible accessible check-in
+00:02 +25: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/widget_test.dart: long task at 360px and 1.3 text has visible accessible check-in
+00:02 +26: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/widget_test.dart: long task at 360px and 1.3 text has visible accessible check-in
+00:02 +27: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/logout_test.dart: logout from settings replaces protected routes without a null-state crash
+00:02 +28: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/logout_test.dart: logout from settings replaces protected routes without a null-state crash
+00:02 +29: /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/logout_test.dart: logout from settings replaces protected routes without a null-state crash
+00:03 +30: All tests passed!

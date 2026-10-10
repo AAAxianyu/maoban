@@ -1,0 +1,79 @@
+{
+  "time_utc": "2026-10-09T09:00:36.323587+00:00",
+  "evidence_method": "authorized USB ADB on physical device; screenshots inspected after capture",
+  "device": {
+    "manufacturer": "HUAWEI",
+    "model": "HBN-AL10",
+    "android_compatibility_release": "12",
+    "sdk": 31,
+    "physical_resolution": [
+      1260,
+      2844
+    ],
+    "density_dpi": 540,
+    "font_scale": 1.15
+  },
+  "installed_package": {
+    "package_id": "com.miaoban.miaoban",
+    "version_name": "0.1.0",
+    "version_code": 1,
+    "debuggable": true,
+    "bytes": 258658356,
+    "sha256": "910d030b3a4cd316577c7335f8717073c2f3e4b1eb68c13eda1e54b78ee446da",
+    "signing_certificate_sha256": "59857a3e3f2c1848ea132edad2ed86b1c26a52025e33ba654fb4d038bd394934"
+  },
+  "same_signer_as_preview_v3": true,
+  "same_signer_as_release_v3": false,
+  "existing_session_reaches_today": true,
+  "new_activation_or_login_submitted": false,
+  "business_commands_submitted": false,
+  "app_updated": false,
+  "app_data_cleared": false,
+  "device_settings_changed": false,
+  "restored_to_today": true,
+  "screenshots": [
+    {
+      "file": "01-today.png",
+      "width": 1260,
+      "height": 2844,
+      "sha256": "0ef6a7adc74e70d2f4ddcf3fa16b7f1261ffe02889f61c8bdec5e0acc19cadba"
+    },
+    {
+      "file": "02-room.png",
+      "width": 1260,
+      "height": 2844,
+      "sha256": "0499774729d8a50580056b393ecb3a857f0d1f5cbb71577d6515d07058768c49"
+    },
+    {
+      "file": "03-rewards.png",
+      "width": 1260,
+      "height": 2844,
+      "sha256": "04596006fa72d7c585ee76aec3b1d723170c664349757540b76c187cc5e5b067"
+    },
+    {
+      "file": "04-growth.png",
+      "width": 1260,
+      "height": 2844,
+      "sha256": "0b2206f8d79d47c7b8370f8d0d890b7b1d6a2c4f29e01732cd12086a3f73f96c"
+    },
+    {
+      "file": "05-task-form.png",
+      "width": 1260,
+      "height": 2844,
+      "sha256": "cf785bf8fb2297ac85bd6fbe2471aa77d012021b71ab422b063c262636c7283e"
+    },
+    {
+      "file": "06-task-keyboard.png",
+      "width": 1260,
+      "height": 2844,
+      "sha256": "90ffb48f3e8efa8ca74494f617d381af76e6d583d6f1cb91b353dd59d3ce7887"
+    }
+  ],
+  "limits": [
+    "No new activation/login submitted",
+    "Empty states and one existing session only",
+    "No dual-device synchronization, business transactions, real push, iOS or screen-reader acceptance"
+  ],
+  "google_play_services_package_present": true,
+  "google_play_services_functional_or_push_verified": false
+}

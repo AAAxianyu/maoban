@@ -1,0 +1,19 @@
+{
+  "dry_run_preserved_all": true,
+  "foreign_file_and_symlink_preserved": true,
+  "removed_owned_expired": [
+    "miaoban-20260930T174823Z.dump",
+    "miaoban-20260929T174823Z.dump",
+    "miaoban-20260923T174823Z.dump",
+    "miaoban-20260916T174823Z.dump",
+    "miaoban-20260909T174823Z.dump",
+    "miaoban-20260829T174823Z.dump"
+  ],
+  "remaining": [
+    "miaoban-20261008T174823Z.dump",
+    "miaoban-20261007T174823Z.dump",
+    "miaoban-20261002T174823Z.dump",
+    "miaoban-20260924T174823Z.dump",
+    "miaoban-20260917T174823Z.dump"
+  ]
+}

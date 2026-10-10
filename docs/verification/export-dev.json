@@ -1,0 +1,1088 @@
+{
+  "schema_version": 1,
+  "exported_at": "2026-10-08T16:53:38.064862+00:00",
+  "space": {
+    "name": "隔离开发验收 9cb75208",
+    "creator_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+    "seq": 51,
+    "id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+    "created_at": "2026-10-08T16:53:28.929083+00:00"
+  },
+  "snapshot_seq": 51,
+  "memberships": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "slot": 1
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "slot": 2
+    }
+  ],
+  "space_rule_versions": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "proposer_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "timezone": "America/Los_Angeles",
+      "attendance_points": 0,
+      "effective_date": "2026-10-08",
+      "status": "accepted",
+      "accepted_at": "2026-10-08T16:53:28.929688+00:00",
+      "id": "8a681ff5-d20b-4410-952c-884e14bbc06f",
+      "created_at": "2026-10-08T16:53:28.931563+00:00"
+    }
+  ],
+  "task_templates": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "executor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "proposer_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "id": "51dee2d4-ed6d-4d4f-a214-0ed5ae5df78c",
+      "created_at": "2026-10-08T16:53:28.971664+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "executor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "proposer_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "id": "32619b2e-5b40-4243-b524-33bce60db8c0",
+      "created_at": "2026-10-08T16:53:28.992947+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "executor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "proposer_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "id": "62f9dece-e170-4276-94ed-b905e44ab18c",
+      "created_at": "2026-10-08T16:53:29.009375+00:00"
+    }
+  ],
+  "task_instances": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "task_id": "51dee2d4-ed6d-4d4f-a214-0ed5ae5df78c",
+      "task_version_id": "fe167006-e1f0-4574-b303-52e4f0912848",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "date": "2026-10-08",
+      "timezone": "America/Los_Angeles",
+      "title": "演示练习 1",
+      "standard": "明确标记的开发验收",
+      "tag": "c",
+      "points": 10,
+      "required": false,
+      "completed": true,
+      "version": 31,
+      "note": "延迟样本 29",
+      "completed_at": "2026-10-08T16:53:29.045630+00:00",
+      "id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "created_at": "2026-10-08T16:53:29.034149+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "task_id": "32619b2e-5b40-4243-b524-33bce60db8c0",
+      "task_version_id": "382f22b5-7b00-44c6-9f02-778d31f18fc3",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "date": "2026-10-08",
+      "timezone": "America/Los_Angeles",
+      "title": "演示练习 2",
+      "standard": "明确标记的开发验收",
+      "tag": "c",
+      "points": 5,
+      "required": false,
+      "completed": true,
+      "version": 1,
+      "note": "",
+      "completed_at": "2026-10-08T16:53:29.075831+00:00",
+      "id": "7935f16e-2120-4b66-8e4f-32e82136d162",
+      "created_at": "2026-10-08T16:53:29.036021+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "task_id": "62f9dece-e170-4276-94ed-b905e44ab18c",
+      "task_version_id": "b3ac19a3-2909-4002-8edd-7369d4e3f027",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "date": "2026-10-08",
+      "timezone": "America/Los_Angeles",
+      "title": "演示练习 3",
+      "standard": "明确标记的开发验收",
+      "tag": "c",
+      "points": 15,
+      "required": false,
+      "completed": true,
+      "version": 1,
+      "note": "",
+      "completed_at": "2026-10-08T16:53:29.090393+00:00",
+      "id": "87996f1d-8d26-4528-bd45-a54096656771",
+      "created_at": "2026-10-08T16:53:29.037307+00:00"
+    }
+  ],
+  "daily_plans": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "date": "2026-10-08",
+      "timezone": "America/Los_Angeles",
+      "attendance_points": 0,
+      "rest": false,
+      "id": "dc62311f-a0ee-46a4-a499-56e4cfc65340",
+      "created_at": "2026-10-08T16:53:29.027676+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "date": "2026-10-08",
+      "timezone": "America/Los_Angeles",
+      "attendance_points": 0,
+      "rest": false,
+      "id": "4089addd-d7bc-4bb7-b475-b7594f7b4ade",
+      "created_at": "2026-10-08T16:53:29.029881+00:00"
+    }
+  ],
+  "member_rest_dates": [],
+  "wallets": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "balance": 0
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "balance": 30
+    }
+  ],
+  "ledger_entries": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "entitlement_id": "39f96555-24ec-425d-a066-a6383c3a647f",
+      "source": "task:ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "revision": 1,
+      "delta": 10,
+      "balance_after": 10,
+      "reason": "任务完成奖励／更正",
+      "id": "f5d0c4c3-dcc1-480d-a935-2e19ce6b7c1f",
+      "created_at": "2026-10-08T16:53:29.052673+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "entitlement_id": "9016dcde-ad8a-433b-9633-9ce91e08f6ea",
+      "source": "task:7935f16e-2120-4b66-8e4f-32e82136d162",
+      "revision": 1,
+      "delta": 5,
+      "balance_after": 15,
+      "reason": "任务完成奖励／更正",
+      "id": "c1447213-a96f-4632-8aba-85604fafbe05",
+      "created_at": "2026-10-08T16:53:29.077528+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "entitlement_id": "9100819c-b49a-4672-83fa-1ab01b3f5c2c",
+      "source": "task:87996f1d-8d26-4528-bd45-a54096656771",
+      "revision": 1,
+      "delta": 15,
+      "balance_after": 30,
+      "reason": "任务完成奖励／更正",
+      "id": "553e69bf-ff08-4d98-91d2-135b32f7f2d9",
+      "created_at": "2026-10-08T16:53:29.092154+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "entitlement_id": "4c0a1a9b-8e93-416f-9bcd-77c0c5869c6e",
+      "source": "milestone:48bf0fd6-0e12-4b8f-9277-d2d09c3a9611",
+      "revision": 1,
+      "delta": 70,
+      "balance_after": 100,
+      "reason": "阶段奖励／更正：开发验收三次任务",
+      "id": "d4cfd53a-3976-4fdf-a30b-c3bd06e67a38",
+      "created_at": "2026-10-08T16:53:29.123986+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "entitlement_id": "2ad60e18-d77c-4708-a40a-7e8eee0c9daf",
+      "source": "order:d725d0f6-f1d4-4cd0-a47a-f91c32267db3",
+      "revision": 1,
+      "delta": -70,
+      "balance_after": 30,
+      "reason": "兑换：隔离测试饮料",
+      "id": "24b41dc3-242e-4ebb-9f71-7beed3349a9b",
+      "created_at": "2026-10-08T16:53:29.151412+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "entitlement_id": "2ad60e18-d77c-4708-a40a-7e8eee0c9daf",
+      "source": "order:d725d0f6-f1d4-4cd0-a47a-f91c32267db3",
+      "revision": 2,
+      "delta": 70,
+      "balance_after": 100,
+      "reason": "取消退款：隔离测试饮料",
+      "id": "9eba117f-4ebf-4296-9863-a871c63322f0",
+      "created_at": "2026-10-08T16:53:29.171524+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "entitlement_id": "980f7b7b-86fc-4467-99a9-a0f66a4a4aff",
+      "source": "order:9295dfc1-2733-4403-b3e5-cb86bedb6c65",
+      "revision": 1,
+      "delta": -70,
+      "balance_after": 30,
+      "reason": "兑换：隔离测试饮料",
+      "id": "0c109f5b-a8b6-452c-a7b4-734112e2dfd3",
+      "created_at": "2026-10-08T16:53:29.191056+00:00"
+    }
+  ],
+  "reward_entitlements": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "source": "attendance:2026-10-08",
+      "net": 0,
+      "revision": 0,
+      "id": "4f9d53ad-b9b1-47de-9203-2505e00ee5c5",
+      "created_at": "2026-10-08T16:53:29.055659+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "source": "milestone:48bf0fd6-0e12-4b8f-9277-d2d09c3a9611",
+      "net": 70,
+      "revision": 1,
+      "id": "4c0a1a9b-8e93-416f-9bcd-77c0c5869c6e",
+      "created_at": "2026-10-08T16:53:29.122751+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "source": "order:9295dfc1-2733-4403-b3e5-cb86bedb6c65",
+      "net": -70,
+      "revision": 1,
+      "id": "980f7b7b-86fc-4467-99a9-a0f66a4a4aff",
+      "created_at": "2026-10-08T16:53:29.190350+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "source": "order:d725d0f6-f1d4-4cd0-a47a-f91c32267db3",
+      "net": 0,
+      "revision": 2,
+      "id": "2ad60e18-d77c-4708-a40a-7e8eee0c9daf",
+      "created_at": "2026-10-08T16:53:29.150633+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "source": "task:7935f16e-2120-4b66-8e4f-32e82136d162",
+      "net": 5,
+      "revision": 1,
+      "id": "9016dcde-ad8a-433b-9633-9ce91e08f6ea",
+      "created_at": "2026-10-08T16:53:29.076589+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "source": "task:87996f1d-8d26-4528-bd45-a54096656771",
+      "net": 15,
+      "revision": 1,
+      "id": "9100819c-b49a-4672-83fa-1ab01b3f5c2c",
+      "created_at": "2026-10-08T16:53:29.091117+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "source": "task:ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "net": 10,
+      "revision": 1,
+      "id": "39f96555-24ec-425d-a066-a6383c3a647f",
+      "created_at": "2026-10-08T16:53:29.050039+00:00"
+    }
+  ],
+  "rewards": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "provider_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "recipient_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "title": "隔离测试饮料",
+      "description": "无生产兑现义务",
+      "price": 70,
+      "stock": 1,
+      "published": true,
+      "icon": "gift",
+      "version": 1,
+      "id": "a4513e54-aa96-4afe-9769-a5730db23593",
+      "created_at": "2026-10-08T16:53:29.137949+00:00"
+    }
+  ],
+  "redemptions": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "reward_id": "a4513e54-aa96-4afe-9769-a5730db23593",
+      "milestone_id": null,
+      "provider_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "recipient_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "title": "隔离测试饮料",
+      "description": "无生产兑现义务",
+      "price": 70,
+      "finite_stock": true,
+      "status": "cancelled",
+      "version": 2,
+      "cancel_requested_by": null,
+      "cancel_reason": "",
+      "corrected": false,
+      "id": "d725d0f6-f1d4-4cd0-a47a-f91c32267db3",
+      "created_at": "2026-10-08T16:53:29.148890+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "reward_id": "a4513e54-aa96-4afe-9769-a5730db23593",
+      "milestone_id": null,
+      "provider_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "recipient_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "title": "隔离测试饮料",
+      "description": "无生产兑现义务",
+      "price": 70,
+      "finite_stock": true,
+      "status": "completed",
+      "version": 3,
+      "cancel_requested_by": null,
+      "cancel_reason": null,
+      "corrected": false,
+      "id": "9295dfc1-2733-4403-b3e5-cb86bedb6c65",
+      "created_at": "2026-10-08T16:53:29.189447+00:00"
+    }
+  ],
+  "wishes": [],
+  "milestones": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "proposer_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "executor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "approver_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "title": "开发验收三次任务",
+      "standard": "3 次有效 C 练习",
+      "metric": "tasks",
+      "tag": "c",
+      "target": 3,
+      "starts_on": "2026-10-08",
+      "ends_on": "2026-10-08",
+      "reward_points": 70,
+      "gift_title": null,
+      "status": "accepted",
+      "evidence": "",
+      "manual_confirmed": false,
+      "version": 2,
+      "id": "48bf0fd6-0e12-4b8f-9277-d2d09c3a9611",
+      "created_at": "2026-10-08T16:53:29.110043+00:00"
+    }
+  ],
+  "corrections": [],
+  "user_achievements": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "code": "first",
+      "created_at": "2026-10-08T16:53:29.064992+00:00"
+    }
+  ],
+  "room_contributions": [
+    {
+      "instance_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "created_at": "2026-10-08T16:53:29.057311+00:00"
+    },
+    {
+      "instance_id": "7935f16e-2120-4b66-8e4f-32e82136d162",
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "created_at": "2026-10-08T16:53:29.079167+00:00"
+    },
+    {
+      "instance_id": "87996f1d-8d26-4528-bd45-a54096656771",
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "created_at": "2026-10-08T16:53:29.093739+00:00"
+    }
+  ],
+  "room_unlocks": [],
+  "events": [
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 1,
+      "actor_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "type": "invitation.created",
+      "entity_id": "66a5910b-17de-4d13-b7a5-a99735816fac",
+      "entity_version": 1,
+      "data": {},
+      "id": "4be5a9d9-d593-495e-b030-1b0b94ea46fa",
+      "created_at": "2026-10-08T16:53:28.940935+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 2,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "member.joined",
+      "entity_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "entity_version": 1,
+      "data": {},
+      "id": "ec8086fb-0407-4528-8181-889f36ba1335",
+      "created_at": "2026-10-08T16:53:28.950565+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 3,
+      "actor_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "type": "task.proposed",
+      "entity_id": "51dee2d4-ed6d-4d4f-a214-0ed5ae5df78c",
+      "entity_version": 1,
+      "data": {},
+      "id": "40878710-84ea-413a-aae5-b6d41d30dddc",
+      "created_at": "2026-10-08T16:53:28.975186+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 4,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "task.accepted",
+      "entity_id": "51dee2d4-ed6d-4d4f-a214-0ed5ae5df78c",
+      "entity_version": 1,
+      "data": {},
+      "id": "0b67ebbf-1c1f-4120-b1f3-7ec00927682e",
+      "created_at": "2026-10-08T16:53:28.984421+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 5,
+      "actor_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "type": "task.proposed",
+      "entity_id": "32619b2e-5b40-4243-b524-33bce60db8c0",
+      "entity_version": 1,
+      "data": {},
+      "id": "72a9b405-3fd3-4c41-9c2e-96324fe187de",
+      "created_at": "2026-10-08T16:53:28.993999+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 6,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "task.accepted",
+      "entity_id": "32619b2e-5b40-4243-b524-33bce60db8c0",
+      "entity_version": 1,
+      "data": {},
+      "id": "9c78da25-05cd-42ec-9565-b672d2351e0e",
+      "created_at": "2026-10-08T16:53:29.001013+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 7,
+      "actor_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "type": "task.proposed",
+      "entity_id": "62f9dece-e170-4276-94ed-b905e44ab18c",
+      "entity_version": 1,
+      "data": {},
+      "id": "cfc3c435-6508-4837-881b-bb22a79195a2",
+      "created_at": "2026-10-08T16:53:29.010608+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 8,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "task.accepted",
+      "entity_id": "62f9dece-e170-4276-94ed-b905e44ab18c",
+      "entity_version": 1,
+      "data": {},
+      "id": "91f5f842-2def-4970-8fff-36727a07c14f",
+      "created_at": "2026-10-08T16:53:29.017834+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 9,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "achievement.unlocked",
+      "entity_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "entity_version": 1,
+      "data": {
+        "code": "first"
+      },
+      "id": "f56c3b49-416d-4740-97f2-2753fb0c06ea",
+      "created_at": "2026-10-08T16:53:29.065491+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 10,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.completed",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 1,
+      "data": {
+        "date": "2026-10-08"
+      },
+      "id": "1b933e54-218c-40d1-9d8c-68d1f735848b",
+      "created_at": "2026-10-08T16:53:29.067294+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 11,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.completed",
+      "entity_id": "7935f16e-2120-4b66-8e4f-32e82136d162",
+      "entity_version": 1,
+      "data": {
+        "date": "2026-10-08"
+      },
+      "id": "b129777c-deb0-4c1e-b167-dce9efb03ae2",
+      "created_at": "2026-10-08T16:53:29.082144+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 12,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.completed",
+      "entity_id": "87996f1d-8d26-4528-bd45-a54096656771",
+      "entity_version": 1,
+      "data": {
+        "date": "2026-10-08"
+      },
+      "id": "dd29d894-1178-4dd6-8fc1-3914e0df47ec",
+      "created_at": "2026-10-08T16:53:29.096163+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 13,
+      "actor_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "type": "milestone.proposed",
+      "entity_id": "48bf0fd6-0e12-4b8f-9277-d2d09c3a9611",
+      "entity_version": 1,
+      "data": {},
+      "id": "6f79ef83-8910-4a35-991c-aa2d4db343b5",
+      "created_at": "2026-10-08T16:53:29.110879+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 14,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "milestone.accepted",
+      "entity_id": "48bf0fd6-0e12-4b8f-9277-d2d09c3a9611",
+      "entity_version": 2,
+      "data": {},
+      "id": "105715e9-b2ed-4a09-83f9-ccbfafc416dc",
+      "created_at": "2026-10-08T16:53:29.120190+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 15,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "milestone.rewarded",
+      "entity_id": "48bf0fd6-0e12-4b8f-9277-d2d09c3a9611",
+      "entity_version": 2,
+      "data": {},
+      "id": "d444bf16-52fb-41d8-9480-35dc694b8da5",
+      "created_at": "2026-10-08T16:53:29.123720+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 16,
+      "actor_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "type": "reward.saved",
+      "entity_id": "a4513e54-aa96-4afe-9769-a5730db23593",
+      "entity_version": 1,
+      "data": {},
+      "id": "60520aa8-041c-4db5-9d40-cc1db9b41147",
+      "created_at": "2026-10-08T16:53:29.138955+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 17,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "order.redeemed",
+      "entity_id": "d725d0f6-f1d4-4cd0-a47a-f91c32267db3",
+      "entity_version": 1,
+      "data": {},
+      "id": "d25554b5-4d45-4ee8-9738-98755c0b122c",
+      "created_at": "2026-10-08T16:53:29.151186+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 18,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "order.cancel",
+      "entity_id": "d725d0f6-f1d4-4cd0-a47a-f91c32267db3",
+      "entity_version": 2,
+      "data": {},
+      "id": "4114aa78-4776-48e2-aea4-0789da63e161",
+      "created_at": "2026-10-08T16:53:29.171221+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 19,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "order.redeemed",
+      "entity_id": "9295dfc1-2733-4403-b3e5-cb86bedb6c65",
+      "entity_version": 1,
+      "data": {},
+      "id": "f4269ba1-7c1f-457e-a392-75261631b4bb",
+      "created_at": "2026-10-08T16:53:29.190845+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 20,
+      "actor_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "type": "order.fulfill",
+      "entity_id": "9295dfc1-2733-4403-b3e5-cb86bedb6c65",
+      "entity_version": 2,
+      "data": {},
+      "id": "a720de11-dfaa-4c8a-acea-658d54549a88",
+      "created_at": "2026-10-08T16:53:29.201419+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 21,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "order.confirm",
+      "entity_id": "9295dfc1-2733-4403-b3e5-cb86bedb6c65",
+      "entity_version": 3,
+      "data": {},
+      "id": "5db462f0-121e-462f-a55d-4e4e725f6127",
+      "created_at": "2026-10-08T16:53:29.210521+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 22,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 2,
+      "data": {},
+      "id": "5b80fe63-159e-4463-a1ec-07e8284627ad",
+      "created_at": "2026-10-08T16:53:30.343457+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 23,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 3,
+      "data": {},
+      "id": "6091a026-778f-4856-9048-f785ab9d1a02",
+      "created_at": "2026-10-08T16:53:30.600130+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 24,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 4,
+      "data": {},
+      "id": "168fcb1e-4b9b-4318-a6e0-ee7aecf698aa",
+      "created_at": "2026-10-08T16:53:30.850760+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 25,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 5,
+      "data": {},
+      "id": "b4f8e97d-7135-4248-89e0-346a065f77f3",
+      "created_at": "2026-10-08T16:53:31.117209+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 26,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 6,
+      "data": {},
+      "id": "15b21042-d785-41d3-a6fa-327e25a2cdd6",
+      "created_at": "2026-10-08T16:53:31.386404+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 27,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 7,
+      "data": {},
+      "id": "f1736215-9999-45d9-b973-73b926f6e806",
+      "created_at": "2026-10-08T16:53:31.631353+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 28,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 8,
+      "data": {},
+      "id": "a2a8315e-d466-475b-9160-a275cb82c2ab",
+      "created_at": "2026-10-08T16:53:31.892297+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 29,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 9,
+      "data": {},
+      "id": "0c63faba-cbda-4dad-b26e-32f63f49ddac",
+      "created_at": "2026-10-08T16:53:32.015830+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 30,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 10,
+      "data": {},
+      "id": "34ceb2ac-b649-477c-bb6d-009d7a5519ed",
+      "created_at": "2026-10-08T16:53:32.290031+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 31,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 11,
+      "data": {},
+      "id": "c83e6a76-ac23-4533-b880-093ea2909625",
+      "created_at": "2026-10-08T16:53:32.541168+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 32,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 12,
+      "data": {},
+      "id": "65e667e2-4ca8-4868-a1f8-de8b6a631ed7",
+      "created_at": "2026-10-08T16:53:32.793532+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 33,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 13,
+      "data": {},
+      "id": "10edb9ed-60d8-4909-9b06-7054eda4f92e",
+      "created_at": "2026-10-08T16:53:33.063962+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 34,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 14,
+      "data": {},
+      "id": "5056b59f-3090-4ded-a0e4-dd9a327d135d",
+      "created_at": "2026-10-08T16:53:33.344755+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 35,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 15,
+      "data": {},
+      "id": "42ca61cc-e90b-48e9-b8aa-5b31a9a5e92a",
+      "created_at": "2026-10-08T16:53:33.592248+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 36,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 16,
+      "data": {},
+      "id": "d02fac6b-e9f0-4c1c-b3ab-e5c0f7cc125c",
+      "created_at": "2026-10-08T16:53:33.856087+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 37,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 17,
+      "data": {},
+      "id": "65fc04de-d1c7-4750-8e94-3bce03818892",
+      "created_at": "2026-10-08T16:53:34.135217+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 38,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 18,
+      "data": {},
+      "id": "2646ec6a-1d2c-4e16-9a10-f0c107e68e7f",
+      "created_at": "2026-10-08T16:53:34.396172+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 39,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 19,
+      "data": {},
+      "id": "8cf02936-ab14-4862-bb74-80f8d70b0a77",
+      "created_at": "2026-10-08T16:53:34.648332+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 40,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 20,
+      "data": {},
+      "id": "3bbbbf6c-2b92-455b-9b0d-06bc78af6bb5",
+      "created_at": "2026-10-08T16:53:34.907327+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 41,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 21,
+      "data": {},
+      "id": "04c0f1db-5f61-4bf1-a3c6-419409df3ae4",
+      "created_at": "2026-10-08T16:53:35.170114+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 42,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 22,
+      "data": {},
+      "id": "3501f520-3b5d-4074-b185-d4034a1af0da",
+      "created_at": "2026-10-08T16:53:35.454806+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 43,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 23,
+      "data": {},
+      "id": "d7088747-9af3-4c3f-9488-e761af9089d4",
+      "created_at": "2026-10-08T16:53:35.704200+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 44,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 24,
+      "data": {},
+      "id": "1c5d89c5-4d6c-4f42-a9df-0079dfb3c81f",
+      "created_at": "2026-10-08T16:53:35.962830+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 45,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 25,
+      "data": {},
+      "id": "76af836a-1a8f-4f66-a905-29f7886248d9",
+      "created_at": "2026-10-08T16:53:36.244854+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 46,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 26,
+      "data": {},
+      "id": "ed894ea2-4b3b-4bf5-89bf-9a661db6c45b",
+      "created_at": "2026-10-08T16:53:36.508185+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 47,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 27,
+      "data": {},
+      "id": "0a9756cf-897e-4da8-a615-5b33cd9da1fa",
+      "created_at": "2026-10-08T16:53:36.754046+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 48,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 28,
+      "data": {},
+      "id": "12fd2587-afa0-4102-82b2-e014dbf4e196",
+      "created_at": "2026-10-08T16:53:37.013279+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 49,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 29,
+      "data": {},
+      "id": "1082f6d2-48ca-44ff-8380-f308a6528175",
+      "created_at": "2026-10-08T16:53:37.298827+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 50,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 30,
+      "data": {},
+      "id": "a567ef2e-ab83-45e7-a053-a0cd06bda6a1",
+      "created_at": "2026-10-08T16:53:37.549262+00:00"
+    },
+    {
+      "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+      "seq": 51,
+      "actor_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "type": "checkin.note",
+      "entity_id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "entity_version": 31,
+      "data": {},
+      "id": "d4c24f7c-13a0-4d39-b315-d6c80f3094e5",
+      "created_at": "2026-10-08T16:53:37.803414+00:00"
+    }
+  ],
+  "task_versions": [
+    {
+      "task_id": "51dee2d4-ed6d-4d4f-a214-0ed5ae5df78c",
+      "version": 1,
+      "proposer_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "approver_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "title": "演示练习 1",
+      "standard": "明确标记的开发验收",
+      "tag": "c",
+      "points": 10,
+      "required": true,
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "starts_on": "2026-10-08",
+      "ends_on": null,
+      "reminder": null,
+      "status": "accepted",
+      "accepted_at": "2026-10-08T16:53:28.984272+00:00",
+      "rejection_reason": null,
+      "id": "fe167006-e1f0-4574-b303-52e4f0912848",
+      "created_at": "2026-10-08T16:53:28.974416+00:00"
+    },
+    {
+      "task_id": "32619b2e-5b40-4243-b524-33bce60db8c0",
+      "version": 1,
+      "proposer_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "approver_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "title": "演示练习 2",
+      "standard": "明确标记的开发验收",
+      "tag": "c",
+      "points": 5,
+      "required": true,
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "starts_on": "2026-10-08",
+      "ends_on": null,
+      "reminder": null,
+      "status": "accepted",
+      "accepted_at": "2026-10-08T16:53:29.000873+00:00",
+      "rejection_reason": null,
+      "id": "382f22b5-7b00-44c6-9f02-778d31f18fc3",
+      "created_at": "2026-10-08T16:53:28.993601+00:00"
+    },
+    {
+      "task_id": "62f9dece-e170-4276-94ed-b905e44ab18c",
+      "version": 1,
+      "proposer_id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "approver_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "title": "演示练习 3",
+      "standard": "明确标记的开发验收",
+      "tag": "c",
+      "points": 15,
+      "required": true,
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "starts_on": "2026-10-08",
+      "ends_on": null,
+      "reminder": null,
+      "status": "accepted",
+      "accepted_at": "2026-10-08T16:53:29.017683+00:00",
+      "rejection_reason": null,
+      "id": "b3ac19a3-2909-4002-8edd-7369d4e3f027",
+      "created_at": "2026-10-08T16:53:29.010152+00:00"
+    }
+  ],
+  "task_schedule_changes": [],
+  "reactions": [],
+  "profiles": [
+    {
+      "id": "229386b3-39e8-4c9f-9a6d-cf492d7ec039",
+      "nickname": "演示 · 橘猫",
+      "avatar": "ginger"
+    },
+    {
+      "id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+      "nickname": "演示 · 灰猫",
+      "avatar": "gray"
+    }
+  ]
+}

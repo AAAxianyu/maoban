@@ -1,0 +1,7 @@
+[Unit]
+Description=Miaoban periodic health check
+[Timer]
+OnBootSec=5m
+OnUnitActiveSec=5m
+[Install]
+WantedBy=timers.target

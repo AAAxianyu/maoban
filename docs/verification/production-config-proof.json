@@ -1,0 +1,10 @@
+{
+  "scope": "configuration validation only, no production containers started",
+  "production_compose_valid": true,
+  "runtime_guard_rejections": [
+    "http",
+    "empty_host",
+    "placeholder_password",
+    "short_password"
+  ]
+}

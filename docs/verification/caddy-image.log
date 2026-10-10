@@ -1,0 +1,21 @@
+2-alpine: Pulling from library/caddy
+4f4fb700ef54: Pulling fs layer
+1057d972abea: Pulling fs layer
+ace1621be7ff: Pulling fs layer
+2410ed056379: Pulling fs layer
+4b412b23c1b7: Pulling fs layer
+4f4fb700ef54: Already exists
+4f4fb700ef54: Pull complete
+cb2d3152c6ea: Download complete
+ba471a53b515: Download complete
+2410ed056379: Download complete
+1057d972abea: Download complete
+ace1621be7ff: Download complete
+ace1621be7ff: Pull complete
+2410ed056379: Pull complete
+1057d972abea: Pull complete
+4b412b23c1b7: Download complete
+4b412b23c1b7: Pull complete
+Digest: sha256:d8542f48d34a9cf4e4c11a478865229840e87e4c96ea3f439101f31a5d35f75f
+Status: Downloaded newer image for caddy:2-alpine
+docker.io/library/caddy:2-alpine

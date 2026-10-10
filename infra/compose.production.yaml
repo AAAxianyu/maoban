@@ -1,0 +1,61 @@
+name: miaoban-production
+services:
+  db:
+    image: postgres:18.3-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: miaoban
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Configure production password}
+      POSTGRES_DB: miaoban
+    volumes: ["database:/var/lib/postgresql"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U miaoban -d miaoban"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  api:
+    image: miaoban-api:${RELEASE_TAG:?Configure immutable release tag}
+    build: ../services/api
+    restart: unless-stopped
+    environment: &runtime
+      ENVIRONMENT: production
+      DATABASE_URL: postgresql+psycopg://miaoban:${POSTGRES_PASSWORD}@db:5432/miaoban
+      PUBLIC_URL: https://${DOMAIN:?Configure a domain}
+      PUSH_PROVIDER: ${PUSH_PROVIDER:-disabled}
+      APNS_KEY_PATH: ${APNS_KEY_PATH:-}
+      APNS_KEY_ID: ${APNS_KEY_ID:-}
+      APNS_TEAM_ID: ${APNS_TEAM_ID:-}
+      APNS_TOPIC: ${APNS_TOPIC:-}
+      APNS_SANDBOX: ${APNS_SANDBOX:-false}
+      FCM_CREDENTIALS_PATH: ${FCM_CREDENTIALS_PATH:-}
+    volumes: ["${SECRETS_DIR:?Configure private secrets directory}:/run/secrets:ro"]
+    depends_on:
+      db: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/ready')"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+  worker:
+    image: miaoban-api:${RELEASE_TAG:?Configure immutable release tag}
+    build: ../services/api
+    restart: unless-stopped
+    environment: *runtime
+    volumes: ["${SECRETS_DIR}:/run/secrets:ro"]
+    command: ["python", "-m", "app.jobs.worker"]
+    depends_on:
+      api: {condition: service_healthy}
+  proxy:
+    image: caddy:2-alpine@sha256:d8542f48d34a9cf4e4c11a478865229840e87e4c96ea3f439101f31a5d35f75f
+    restart: unless-stopped
+    environment:
+      DOMAIN: ${DOMAIN}
+      ACME_EMAIL: ${ACME_EMAIL:?Configure certificate contact}
+    ports: ["80:80", "443:443"]
+    volumes: ["./proxy/Caddyfile:/etc/caddy/Caddyfile:ro", "tls:/data", "proxy_config:/config"]
+    depends_on:
+      api: {condition: service_healthy}
+volumes:
+  database:
+  tls:
+  proxy_config:

@@ -1,0 +1,76 @@
+{
+  "time_utc": "2026-10-09T03:07:34.103148+00:00",
+  "release_tag": "20261008-ip01",
+  "server_ip": "8.136.0.78",
+  "public_url": "https://8.136.0.78",
+  "deployment_root": "/srv/miaoban",
+  "compose_file": "infra/compose.host-proxy.yaml",
+  "operations_supplement": {
+    "archive": "miaoban-ops-20261008-ip01-final.tar.gz",
+    "sha256": "a1b5931ab4ca0de11626681c82568b67171fdfafa35c44b0f4825c56e892c233",
+    "files": {
+      "infra/proxy/nginx-http-ip.conf.example": "cdf440127f6a40a255a9b3547ef8cdf305939578f7ff3de7611b752ce4e351cb",
+      "infra/proxy/nginx-ip.conf.example": "8a3303816c4f9a7f40c102b9633d24f1cb59a5ce32f10b2e8532c42f05a3114f",
+      "infra/scripts/backup.sh": "5bd65059c83fe2940d91cc021f7d9d6dca60a2b34177ede98af39b369c5232ea",
+      "infra/scripts/renew-ip-cert.sh": "c9c8c21536990fc2dfe3a90f80b723705e42dc0730a054845e438196f9400980",
+      "infra/systemd/miaoban-backup.service": "5b2a9a47ef5571118012c5d080ed3a5b695fdda9cfbfc4fa810b240fcf0ca556",
+      "infra/systemd/miaoban-backup.timer": "aef863b2504150c48106e2975bee017d58e83c32fb07eb787ff2f173dcd4ef7d",
+      "infra/systemd/miaoban-health.service": "403ba0967adcbf48f1dde3a06694b136e2e27d87078a027112fc7f96ca2ddc79",
+      "infra/systemd/miaoban-health.timer": "b274653f77ef979606b22a37c1ab26b77fb9d2026560bd3b84cd8b9b4f5ebafa",
+      "infra/systemd/miaoban-ip-tls-renew.service": "107e8ed4a34ed619ae3412e89712f0b1b13da75602326cdca23e20e9803b190c",
+      "infra/systemd/miaoban-ip-tls-renew.timer": "9b9e4c2cfdb3e20f9cb97eba48b7766c6ff9d0a762ac5e33d5ba47637484c13c"
+    }
+  },
+  "installed_unit_sha256": {
+    "miaoban-backup.timer": "aef863b2504150c48106e2975bee017d58e83c32fb07eb787ff2f173dcd4ef7d",
+    "miaoban-health.timer": "b274653f77ef979606b22a37c1ab26b77fb9d2026560bd3b84cd8b9b4f5ebafa",
+    "miaoban-ip-tls-renew.timer": "9b9e4c2cfdb3e20f9cb97eba48b7766c6ff9d0a762ac5e33d5ba47637484c13c",
+    "miaoban-backup.service": "312f78a8818f3788151f9ca9eead3ddda99d8e16990eebe3a40f589b7b244040",
+    "miaoban-health.service": "830c826aa5ccb1ce75da0f85257eaaddbf1e6ef3b6c7b84133077478c83a4d63",
+    "miaoban-ip-tls-renew.service": "107e8ed4a34ed619ae3412e89712f0b1b13da75602326cdca23e20e9803b190c"
+  },
+  "installed_unit_adjustment": "backup/health service COMPOSE_FILE changed from default production to host-proxy compose",
+  "production_config_mode": "0o600",
+  "push_provider": "disabled; credentials not supplied; actual delivery not accepted",
+  "schema_summary": {
+    "users": 0,
+    "spaces": 0,
+    "activation_tokens": 2,
+    "schema_tables": 35,
+    "alembic_version": "3218a111e7cb"
+  },
+  "containers": "miaoban-production-worker-1 Up 22 minutes\nmiaoban-production-api-1 Up 22 minutes (healthy)\nmiaoban-production-db-1 Up 22 minutes (healthy)",
+  "image_ids": {
+    "miaoban-api:20261008-ip01": "sha256:35734f27c0cbf6c47dffcff931af60ea1e8d59bdff2c68dcfca6213ebc38abcf linux/amd64",
+    "postgres:18.3-alpine": "sha256:f6d4985d97e69bb9de4d5e24f9f24cbfaa90d30877ce935a8ee872f62efbb621 linux/amd64"
+  },
+  "listeners": "LISTEN 0      4096       127.0.0.1:35877 0.0.0.0:*\nLISTEN 0      4096   127.0.0.53%lo:53    0.0.0.0:*\nLISTEN 0      4096      127.0.0.54:53    0.0.0.0:*\nLISTEN 0      4096         0.0.0.0:22    0.0.0.0:*\nLISTEN 0      4096       127.0.0.1:18000 0.0.0.0:*\nLISTEN 0      511          0.0.0.0:80    0.0.0.0:*\nLISTEN 0      511          0.0.0.0:443   0.0.0.0:*\nLISTEN 0      4096            [::]:22       [::]:*\nLISTEN 0      511             [::]:80       [::]:*\nLISTEN 0      511             [::]:443      [::]:*",
+  "timers": "NEXT                            LEFT LAST                           PASSED UNIT                       ACTIVATES\nFri 2026-10-09 11:12:33 CST 4min 59s Fri 2026-10-09 11:06:49 CST   44s ago miaoban-health.timer       miaoban-health.service\nFri 2026-10-09 22:57:05 CST      11h Fri 2026-10-09 10:56:41 CST 10min ago miaoban-ip-tls-renew.timer miaoban-ip-tls-renew.service\nSat 2026-10-10 03:21:28 CST      16h -                                   - miaoban-backup.timer       miaoban-backup.service\n\n3 timers listed.",
+  "maintenance_results": {
+    "miaoban-backup.service": "success",
+    "miaoban-health.service": "success",
+    "miaoban-ip-tls-renew.service": "success"
+  },
+  "certificate": "notBefore=Oct  9 01:49:29 2026 GMT\nnotAfter=Oct 15 17:49:28 2026 GMT\nissuer=C = US, O = Let's Encrypt, CN = YE1\nsubject=\nX509v3 Subject Alternative Name: critical\n    IP Address:8.136.0.78",
+  "backups": [
+    {
+      "name": "miaoban-20261009T024728Z.dump",
+      "bytes": 84390,
+      "sha256": "148f97b3bfac4e5d70f37931aec4765aae500823776dac9d28c8c07ea429c324"
+    },
+    {
+      "name": "miaoban-20261009T025640Z.dump",
+      "bytes": 84390,
+      "sha256": "733dcb0b294c0bfa0027db4cd87d5597e5debaccc3f4fbb85f9c3f767fdd2b81"
+    },
+    {
+      "name": "miaoban-20261009T030257Z.dump",
+      "bytes": 84577,
+      "sha256": "c576cf8665abae0dded0141976d42295b64361930aebabc308b7ac22c225d6b5"
+    }
+  ],
+  "restore_container_status": "exited network=none",
+  "free_memory": "total        used        free      shared  buff/cache   available\nMem:            1613         736          90          27        1003         876\nSwap:              0           0           0",
+  "failed_unit_count": "",
+  "goal_completion": false
+}

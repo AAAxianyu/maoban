@@ -1,0 +1,10 @@
+{
+  "time_utc": "2026-10-09T03:05:39.952631+00:00",
+  "head_status": 200,
+  "content_length": 258658356,
+  "content_type": "application/vnd.android.package-archive",
+  "content_disposition": "attachment; filename=\"miaoban-android-preview.apk\"",
+  "range_status": 206,
+  "range_bytes": 1024,
+  "zip_magic_valid": true
+}

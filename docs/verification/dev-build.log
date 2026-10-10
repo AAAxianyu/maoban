@@ -1,0 +1,83 @@
+ Image miaoban-dev-api Building 
+ Image miaoban-dev-worker Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.01kB done
+#1 DONE 0.0s
+
+#2 [api internal] load build definition from Dockerfile
+#2 transferring dockerfile: 452B done
+#2 DONE 0.0s
+
+#3 [worker internal] load metadata for docker.io/library/python:3.14.6-slim
+#3 DONE 2.5s
+
+#4 [worker internal] load metadata for ghcr.io/astral-sh/uv:0.12.23
+#4 DONE 2.6s
+
+#5 [api internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [worker] FROM ghcr.io/astral-sh/uv:0.12.23@sha256:61d393e44e249f2e4b526b6c7ddcecce245946826e608e11c93ad4f5bba55b21
+#6 resolve ghcr.io/astral-sh/uv:0.12.23@sha256:61d393e44e249f2e4b526b6c7ddcecce245946826e608e11c93ad4f5bba55b21 0.0s done
+#6 DONE 0.0s
+
+#7 [worker stage-0 1/9] FROM docker.io/library/python:3.14.6-slim@sha256:7bec7ddcddeff7975d6ba9b4be7dd6f6b2f55e7491539145e2978f7f97ce9144
+#7 resolve docker.io/library/python:3.14.6-slim@sha256:7bec7ddcddeff7975d6ba9b4be7dd6f6b2f55e7491539145e2978f7f97ce9144 0.0s done
+#7 DONE 0.0s
+
+#8 [api internal] load build context
+#8 transferring context: 104.98kB done
+#8 DONE 0.0s
+
+#9 [worker stage-0 2/9] WORKDIR /app
+#9 CACHED
+
+#10 [worker stage-0 3/9] COPY --from=ghcr.io/astral-sh/uv:0.12.23 /uv /usr/local/bin/uv
+#10 CACHED
+
+#11 [worker stage-0 4/9] COPY pyproject.toml uv.lock ./
+#11 CACHED
+
+#12 [api stage-0 5/9] RUN uv sync --frozen --no-dev
+#12 CACHED
+
+#13 [worker stage-0 6/9] COPY app app
+#13 DONE 0.0s
+
+#14 [worker stage-0 7/9] COPY migrations migrations
+#14 DONE 0.0s
+
+#15 [worker stage-0 8/9] COPY alembic.ini .
+#15 DONE 0.0s
+
+#16 [worker stage-0 9/9] RUN useradd --uid 10001 --create-home miaoban
+#16 DONE 0.2s
+
+#17 [api] exporting to image
+#17 exporting layers 0.1s done
+#17 exporting manifest sha256:21dd2c1015cad06e88a73cf211729bf4ac87e7e28f5629f7dffb9fefc17cff6b done
+#17 exporting config sha256:eb275b784f1740fdbe7d1933feadba28a78c37deaa0a8e81058aef7531e304fa 0.0s done
+#17 exporting attestation manifest sha256:2c222df1a8253ed3320914df39fdd435138938711e2c8470077dc414224ea7bd 0.0s done
+#17 exporting manifest list sha256:2c1d22727a95f63e3074f908d997b92b576855bcd4c1c8e3577dc6f66299af58 0.0s done
+#17 naming to docker.io/library/miaoban-dev-api:latest done
+#17 unpacking to docker.io/library/miaoban-dev-api:latest 0.0s done
+#17 DONE 0.2s
+
+#18 [worker] exporting to image
+#18 exporting layers 0.1s done
+#18 exporting manifest sha256:1f19121fd9330581d7c43635b157df0f45d44bd4ef42f8b0b8254beb691c18fc 0.0s done
+#18 exporting config sha256:315d3b877b5f764e57b5a062658606ceb3ac50dad6f752e9084d54b5774709b9 0.0s done
+#18 exporting attestation manifest sha256:04294730531dcca8d7b062e4e49e6ce52efeb1ea8741e0ed7405bef52790d1fa 0.0s done
+#18 exporting manifest list sha256:07806b9d79e707421462d5ee7f36eb90ed0395d05ae718a2bdb9cab970b10a36 done
+#18 naming to docker.io/library/miaoban-dev-worker:latest done
+#18 unpacking to docker.io/library/miaoban-dev-worker:latest 0.0s done
+#18 DONE 0.2s
+
+#19 [worker] resolving provenance for metadata file
+#19 DONE 0.0s
+
+#20 [api] resolving provenance for metadata file
+#20 DONE 0.0s
+ Image miaoban-dev-api Built 
+ Image miaoban-dev-worker Built 

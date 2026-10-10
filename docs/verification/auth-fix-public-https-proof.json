@@ -1,0 +1,58 @@
+{
+  "time_utc": "2026-10-09T04:26:06.938464+00:00",
+  "base_url": "https://8.136.0.78",
+  "tls_verification": "default trust and IP hostname verification, no bypass",
+  "checks": [
+    {
+      "path": "/ready",
+      "status": 200,
+      "response": {
+        "status": "ready"
+      }
+    },
+    {
+      "path": "/api/v1/auth/login",
+      "status": 422,
+      "response": {
+        "code": "INVALID_INPUT",
+        "message": "账号须为 3–80 位英文字母、数字，或 _ . @ -；中文请填在昵称中",
+        "request_id": "6913ed0c-48e2-40d3-b380-9252ecd6145c",
+        "fields": [
+          "body.username"
+        ],
+        "field_errors": {
+          "username": "账号须为 3–80 位英文字母、数字，或 _ . @ -；中文请填在昵称中"
+        }
+      }
+    },
+    {
+      "path": "/api/v1/auth/activate",
+      "status": 422,
+      "response": {
+        "code": "INVALID_INPUT",
+        "message": "账号须为 3–80 位英文字母、数字，或 _ . @ -；中文请填在昵称中；密码须为 10–128 个字符，首尾空格不计入长度",
+        "request_id": "e25f53bb-6f4b-49f8-8e94-d2c4d99a9218",
+        "fields": [
+          "body.username",
+          "body.password"
+        ],
+        "field_errors": {
+          "username": "账号须为 3–80 位英文字母、数字，或 _ . @ -；中文请填在昵称中",
+          "password": "密码须为 10–128 个字符，首尾空格不计入长度"
+        }
+      }
+    },
+    {
+      "path": "/api/v1/auth/activate",
+      "status": 400,
+      "response": {
+        "code": "ACTIVATION_INVALID",
+        "message": "激活码无效，请核对完整激活码；已激活过账号请直接登录",
+        "request_id": "e3983a20-8f06-4879-9a73-4276e6dbc42a"
+      }
+    }
+  ],
+  "submitted_input_logged": false,
+  "activation_codes_consumed": 0,
+  "formal_accounts_created_by_checks": 0
+}

@@ -1,0 +1,5 @@
+# Public Firebase Android app identifiers; service-account keys stay on the server.
+FCM_PROJECT_ID=
+FCM_APP_ID=
+FCM_API_KEY=
+FCM_SENDER_ID=

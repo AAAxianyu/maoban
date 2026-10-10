@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-09T03:54:30.283373+00:00",
+  "package_id": "com.miaoban.miaoban",
+  "generated_for_new_app": true,
+  "private_directory": "/Users/dev2/Documents/ChatGPT/study/.tools/signing",
+  "private_directory_mode": "0700",
+  "keystore_mode": "0600",
+  "key_properties_mode": "0600",
+  "algorithm": "RSA3072",
+  "keystore_sha256": "5df7d871cceb80036a09f9a67873e00787eefe3285ed5878d5e1794d8815b54f",
+  "password_logged": false,
+  "uploaded_to_server": false
+}

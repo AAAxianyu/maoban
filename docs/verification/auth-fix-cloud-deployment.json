@@ -1,0 +1,24 @@
+{
+  "time_utc": "2026-10-09T04:24:48.375517+00:00",
+  "release_tag": "20261008-auth01",
+  "previous_release_tag": "20261008-ip01",
+  "image_id": "sha256:c9e1e04ec660f65e7c8dec54099bec08d87056dcbd07cec5860079324c2bdeb3",
+  "verified_uploads": {
+    "miaoban-api-auth01.tar.gz": "c1f29ee6dba4c60414ecb7d1b7ea54dbce51e00f5aa365726ea2d6b5a6cbed35",
+    "miaoban-source-auth01.tar.gz": "56b8fd17275d16ea169cec3f27f5561878edf0d0f39e17496c9683199bd89688"
+  },
+  "before_counts": {
+    "users": 0,
+    "spaces": 0,
+    "activations": 2
+  },
+  "after_counts": {
+    "users": 0,
+    "spaces": 0,
+    "activations": 2
+  },
+  "nginx_site_sha256": "028369e37ede6b3022b1ce4731cb0c435d1cf0b1384b90ef0c5e5553bb4e510a",
+  "database_schema_change": false,
+  "deployment_stdout": "backups/miaoban-20261009T042417Z.dump\nContainers ready. Run HTTPS and formal-account smoke acceptance; local health is not a deployment acceptance.",
+  "private_configuration_not_logged": true
+}

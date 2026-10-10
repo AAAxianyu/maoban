@@ -1,0 +1,8 @@
+docker compose --env-file .env -f infra/compose.yaml run --rm api python -m app.seed_demo
+ Container miaoban-dev-db-1 Running 
+ Container miaoban-dev-db-1 Waiting 
+ Container miaoban-dev-db-1 Healthy 
+ Container miaoban-dev-api-run-b12335a5bd6a Creating 
+ Container miaoban-dev-api-run-b12335a5bd6a Created 
+Development-only accounts demo_a / demo_b; password Demo-only-password-123
+Wallets start at zero. Create/bind a space and earn points through accepted tasks.

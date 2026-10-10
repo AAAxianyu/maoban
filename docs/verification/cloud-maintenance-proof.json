@@ -1,0 +1,28 @@
+{
+  "time_utc": "2026-10-09T02:56:41.906860+00:00",
+  "installed_units": [
+    "miaoban-backup.service",
+    "miaoban-backup.timer",
+    "miaoban-health.service",
+    "miaoban-health.timer",
+    "miaoban-ip-tls-renew.service",
+    "miaoban-ip-tls-renew.timer"
+  ],
+  "compose_file": "infra/compose.host-proxy.yaml",
+  "service_results": {
+    "miaoban-backup.service": "success",
+    "miaoban-health.service": "success",
+    "miaoban-ip-tls-renew.service": "success"
+  },
+  "timers": "NEXT                        LEFT LAST                          PASSED UNIT                       ACTIVATES\nSat 2026-10-10 03:21:03 CST  16h -                                  - miaoban-backup.timer       miaoban-backup.service\n-                              - Fri 2026-10-09 10:56:41 CST 85ms ago miaoban-health.timer       miaoban-health.service\n-                              - Fri 2026-10-09 10:56:41 CST 76ms ago miaoban-ip-tls-renew.timer miaoban-ip-tls-renew.service\n\n3 timers listed.",
+  "enabled": {
+    "miaoban-backup.timer": "enabled",
+    "miaoban-health.timer": "enabled",
+    "miaoban-ip-tls-renew.timer": "enabled"
+  },
+  "active": {
+    "miaoban-backup.timer": "active",
+    "miaoban-health.timer": "active",
+    "miaoban-ip-tls-renew.timer": "active"
+  }
+}

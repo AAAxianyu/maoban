@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-08",
+  "environment": "Android API36 ARM64 emulator-5554",
+  "status": "passed: system local reminder delivered and native tap rebuilt Today",
+  "apk_sha256": "4e9adc1e885931801c72730940804d8235b6c4fc9db6727ac6c62f4fd7b93b45",
+  "account_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+  "space_id": "70de4da5-29fa-4fc7-b25a-a9909362556c",
+  "space_name": "设备集成验收 1791485492859",
+  "task_id": "3ea2803d-166f-4bcb-87a1-42c164f278e9",
+  "task_title": "原生提醒点击验收 · 零积分",
+  "reminder_at_utc": "2026-10-08T19:04:00+00:00",
+  "points": 0,
+  "before_wallet": {
+    "balance": 5,
+    "available": 5,
+    "debt": 0
+  },
+  "before_xp": 1,
+  "scope": "Main-program local Android reminder only. Physical Android/iPhone and actual APNs/FCM delivery remain unverified.",
+  "native_alarm": {
+    "id": 1,
+    "body": "留一点时间，完成和 TA 的小约定。",
+    "scheduledDateTime": "2026-10-08T19:04:00",
+    "timeZoneName": "Etc/UTC",
+    "payload": "{\"kind\":\"task_reminder\",\"account_id\":\"96c2d754-d224-4d75-808a-031b759b3ab3\",\"space_id\":\"70de4da5-29fa-4fc7-b25a-a9909362556c\",\"task_id\":\"3ea2803d-166f-4bcb-87a1-42c164f278e9\"}"
+  },
+  "process_pid_after_background_kill": null,
+  "before_background_tab": "我们的小屋",
+  "live_alarm_manager_entry": "    RTC_WAKEUP #3: Alarm{4d3a016 type 0 origWhen 1791486240000 whenElapsed 7642570 com.miaoban.miaoban}\n      tag=*walarm*:com.miaoban.miaoban/com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver\n      type=RTC_WAKEUP origWhen=2026-10-08 12:04:00.000 window=+2m4s725ms repeatInterval=0 count=0 flags=0x20\n      policyWhenElapsed: requester=+1m17s987ms app_standby=-1m28s312ms device_idle=-- battery_saver=-1s67ms\n      whenElapsed=+1m17s987ms maxWhenElapsed=+3m22s712ms\n      operation=PendingIntent{fe60d97: PendingIntentRecord{6e1fb84 com.miaoban.miaoban broadcastIntent}}\n      idle-options=Bundle[{android.pendingIntent.backgroundActivityAllowed=2, android:broadcast.temporaryAppAllowlistReasonCode=-1, android:broadcast.temporaryAppAllowlistDuration=10000, android:broadcast.temporaryAppAllowlistReason=, android:broadcast.temporaryAppAllowlistType=1, android:broadcast.flags=8}]",
+  "active_notification_record": "    NotificationRecord(0x0090f198: pkg=com.miaoban.miaoban user=UserHandle{0} id=1 tag=null importance=3 key=0|com.miaoban.miaoban|1|null|10218: Notification(channel=task_reminders shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=AUTO_CANCEL color=0x00000000 vis=PRIVATE))\n      uid=10218 userId=0\n      opPkg=com.miaoban.miaoban\n      icon=Icon(typ=RESOURCE pkg=com.miaoban.miaoban id=0x7f06001c)\n      flags=AUTO_CANCEL\n      originalFlags=AUTO_CANCEL\n      pri=0\n      key=0|com.miaoban.miaoban|1|null|10218\n      seen=false\n      groupKey=0|com.miaoban.miaoban|1|null|10218\n      notification=\n            fullscreenIntent=null\n            contentIntent=PendingIntent{ae35df1: PendingIntentRecord{5eaa2a2 com.miaoban.miaoban startActivity (allowlist: 5723ef0:+30s0ms/0/NOTIFICATION_SERVICE/NotificationManagerService)}}\n            deleteIntent=null\n            number=0\n            groupAlertBehavior=0\n            when=1791486262500/1791486262500\n            tickerText=null",
+  "delivered_observed_at_utc": "2026-10-08T19:04:45.988921+00:00",
+  "native_posted_at_utc": "2026-10-08T19:04:22.500000+00:00",
+  "delay_seconds_in_this_emulator": 22.5,
+  "receiver_process_pid_before_click": "9326",
+  "native_notification_title": "喵伴 · 今日约定",
+  "native_notification_body": "留一点时间，完成和 TA 的小约定。",
+  "click_bounds": "[179,699][996,761]",
+  "screenshots": [
+    "screenshots/android-native-reminder-notification.png",
+    "screenshots/android-native-reminder-cold-tap.png"
+  ],
+  "click_verified_at_utc": "2026-10-08T19:07:41.273665+00:00",
+  "after_wallet": {
+    "balance": 5,
+    "available": 5,
+    "debt": 0
+  },
+  "after_xp": 1,
+  "after_task_instance": {
+    "id": "d9850c1b-69d9-4aac-a98e-8461283a027d",
+    "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+    "completed": false,
+    "points": 0
+  },
+  "ui_checks": {
+    "header": "喵伴 · 今日",
+    "today_tab_selected": true,
+    "own_known_task_visible": true
+  },
+  "notes": "Transient login UI appeared while the cold controller initialized, then automatically restored the authenticated Today screen without input. Receiver may restart the native process before tap; Flutter Activity was rebuilt after its prior process had been killed."
+}

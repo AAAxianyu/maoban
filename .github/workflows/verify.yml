@@ -1,0 +1,65 @@
+name: verify
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      build_checks:
+        description: 'Run Android APK and iOS simulator builds'
+        required: false
+        default: false
+        type: boolean
+permissions:
+  contents: read
+jobs:
+  backend:
+    runs-on: ubuntu-24.04
+    services:
+      postgres:
+        image: postgres:18.3-alpine
+        env:
+          POSTGRES_USER: miaoban_test
+          POSTGRES_PASSWORD: isolated-test-only
+          POSTGRES_DB: miaoban_test
+        ports: ['55433:5432']
+        options: --health-cmd "pg_isready -U miaoban_test -d miaoban_test" --health-interval 5s --health-retries 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.14.6'}
+      - run: pip install uv==0.12.23
+      - run: uv sync --project services/api --frozen
+      - working-directory: services/api
+        env:
+          ENVIRONMENT: test
+          DATABASE_URL: postgresql+psycopg://miaoban_test:isolated-test-only@127.0.0.1:55433/miaoban_test
+        run: |
+          .venv/bin/alembic upgrade head
+          .venv/bin/ruff check app tests
+          .venv/bin/pytest
+  mobile:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - run: git clone --depth 1 --branch 3.47.5 https://github.com/flutter/flutter.git .tools/flutter
+      - working-directory: apps/mobile
+        run: |
+          ../../.tools/flutter/bin/flutter pub get --enforce-lockfile
+          ../../.tools/flutter/bin/flutter analyze
+          ../../.tools/flutter/bin/flutter test
+      - name: Build Android APK on manual request
+        if: github.event_name == 'workflow_dispatch' && inputs.build_checks
+        working-directory: apps/mobile
+        run: ../../.tools/flutter/bin/flutter build apk --debug --dart-define=API_BASE_URL=http://10.0.2.2:8000
+  ios-compile:
+    if: github.event_name == 'workflow_dispatch' && inputs.build_checks
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: git clone --depth 1 --branch 3.47.5 https://github.com/flutter/flutter.git .tools/flutter
+      - working-directory: apps/mobile
+        run: |
+          ../../.tools/flutter/bin/flutter pub get --enforce-lockfile
+          ../../.tools/flutter/bin/flutter build ios --simulator --debug --dart-define=API_BASE_URL=http://127.0.0.1:8000

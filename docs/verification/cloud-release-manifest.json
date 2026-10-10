@@ -1,0 +1,152 @@
+{
+  "release_tag": "20261008-ip01",
+  "platform": "linux/amd64",
+  "files": {
+    "miaoban-release-20261008-ip01.tar.gz": {
+      "sha256": "a8d5a8ca7ac162b25cc805bd6a5bdd506ef5ab12c6851c5dff106cf075e4c7f5",
+      "bytes": 117044
+    },
+    "miaoban-api-amd64.tar.gz": {
+      "sha256": "66adb37efa2185d2cc3b5649ca31da35e11e21e1e3f316c719383fc695b08f04",
+      "bytes": 91886650
+    },
+    "miaoban-postgres-amd64.tar.gz": {
+      "sha256": "9a4a8dc7e369047666741b027675865266b349c66e4bdfa32e7b4201200b2a03",
+      "bytes": 113168838
+    }
+  },
+  "api_build_metadata": {
+    "buildx.build.provenance": {
+      "builder": {
+        "id": ""
+      },
+      "buildType": "https://mobyproject.org/buildkit@v1",
+      "materials": [
+        {
+          "uri": "pkg:docker/python@3.14.6-slim?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "7bec7ddcddeff7975d6ba9b4be7dd6f6b2f55e7491539145e2978f7f97ce9144"
+          }
+        },
+        {
+          "uri": "pkg:docker/ghcr.io/astral-sh/uv@0.12.23?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "61d393e44e249f2e4b526b6c7ddcecce245946826e608e11c93ad4f5bba55b21"
+          }
+        }
+      ],
+      "invocation": {
+        "configSource": {
+          "entryPoint": "Dockerfile"
+        },
+        "parameters": {
+          "frontend": "dockerfile.v0",
+          "locals": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "dockerfile"
+            }
+          ],
+          "root": {
+            "configSource": {
+              "path": "Dockerfile"
+            },
+            "request": {
+              "args": {
+                "vcs:localdir:context": "services/api",
+                "vcs:localdir:dockerfile": "services/api"
+              }
+            }
+          },
+          "compatibilityVersion": 20
+        },
+        "environment": {
+          "dockerfileVersion": "1.24.0",
+          "platform": "linux/arm64"
+        }
+      }
+    },
+    "buildx.build.ref": "colima/colima/xhnotou76empnux998hc6jzd9",
+    "containerimage.config.digest": "sha256:35734f27c0cbf6c47dffcff931af60ea1e8d59bdff2c68dcfca6213ebc38abcf",
+    "containerimage.descriptor": {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "digest": "sha256:c8a94cb835324a8f7c5a987da9989b2c9de4921e329d1672c7d9095a56be4ebd",
+      "size": 2664,
+      "annotations": {
+        "org.opencontainers.image.created": "2026-10-09T02:38:11Z"
+      },
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      }
+    },
+    "containerimage.digest": "sha256:c8a94cb835324a8f7c5a987da9989b2c9de4921e329d1672c7d9095a56be4ebd",
+    "image.name": "docker.io/library/miaoban-api:20261008-ip01"
+  },
+  "postgres_build_metadata": {
+    "buildx.build.provenance": {
+      "builder": {
+        "id": ""
+      },
+      "buildType": "https://mobyproject.org/buildkit@v1",
+      "materials": [
+        {
+          "uri": "pkg:docker/postgres@18.3-alpine?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "54451ecb8ab38c24c3ec123f2fd501303a3a1856a5c66e98cecf2460d5e1e9d7"
+          }
+        }
+      ],
+      "invocation": {
+        "configSource": {
+          "entryPoint": "Dockerfile"
+        },
+        "parameters": {
+          "frontend": "dockerfile.v0",
+          "locals": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "dockerfile"
+            }
+          ],
+          "root": {
+            "configSource": {
+              "path": "Dockerfile"
+            },
+            "request": {
+              "args": {
+                "vcs:localdir:context": ".tools/postgres-export",
+                "vcs:localdir:dockerfile": ".tools/postgres-export"
+              }
+            }
+          },
+          "compatibilityVersion": 20
+        },
+        "environment": {
+          "dockerfileVersion": "1.24.0",
+          "platform": "linux/arm64"
+        }
+      }
+    },
+    "buildx.build.ref": "colima/colima/ezesj4tezs8ix5oid6q7c3l5y",
+    "containerimage.config.digest": "sha256:f6d4985d97e69bb9de4d5e24f9f24cbfaa90d30877ce935a8ee872f62efbb621",
+    "containerimage.descriptor": {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "digest": "sha256:982b0b79139a475d8b763e50a5391c062c7b658a3aec3d29de68003b139244aa",
+      "size": 2067,
+      "annotations": {
+        "org.opencontainers.image.created": "2026-10-09T02:38:23Z"
+      },
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      }
+    },
+    "containerimage.digest": "sha256:982b0b79139a475d8b763e50a5391c062c7b658a3aec3d29de68003b139244aa",
+    "image.name": "docker.io/library/postgres:18.3-alpine"
+  }
+}

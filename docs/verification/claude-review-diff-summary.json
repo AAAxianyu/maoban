@@ -1,0 +1,182 @@
+[
+  {
+    "file": "lib/app/controller.dart",
+    "added": 105,
+    "removed": 32
+  },
+  {
+    "file": "lib/app/theme.dart",
+    "added": 173,
+    "removed": 66
+  },
+  {
+    "file": "lib/core/api.dart",
+    "added": 24,
+    "removed": 8
+  },
+  {
+    "file": "lib/core/domain.dart",
+    "added": 77,
+    "removed": 0
+  },
+  {
+    "file": "lib/core/format.dart",
+    "added": 99,
+    "removed": 0
+  },
+  {
+    "file": "lib/core/models.dart",
+    "added": 117,
+    "removed": 0
+  },
+  {
+    "file": "lib/core/store.dart",
+    "added": 6,
+    "removed": 2
+  },
+  {
+    "file": "lib/core/widgets.dart",
+    "added": 411,
+    "removed": 57
+  },
+  {
+    "file": "lib/features/auth/auth_screen.dart",
+    "added": 3,
+    "removed": 2
+  },
+  {
+    "file": "lib/features/feed/feed_screen.dart",
+    "added": 85,
+    "removed": 58
+  },
+  {
+    "file": "lib/features/growth/growth_screen.dart",
+    "added": 122,
+    "removed": 68
+  },
+  {
+    "file": "lib/features/growth/room_scene.dart",
+    "added": 79,
+    "removed": 29
+  },
+  {
+    "file": "lib/features/milestones/milestones_screen.dart",
+    "added": 196,
+    "removed": 124
+  },
+  {
+    "file": "lib/features/notifications/inbox_screen.dart",
+    "added": 42,
+    "removed": 24
+  },
+  {
+    "file": "lib/features/notifications/notification_service.dart",
+    "added": 15,
+    "removed": 13
+  },
+  {
+    "file": "lib/features/notifications/reminder_plan.dart",
+    "added": 15,
+    "removed": 9
+  },
+  {
+    "file": "lib/features/rewards/reward_editor.dart",
+    "added": 9,
+    "removed": 8
+  },
+  {
+    "file": "lib/features/rewards/rewards_screen.dart",
+    "added": 272,
+    "removed": 170
+  },
+  {
+    "file": "lib/features/settings/rest_dates_screen.dart",
+    "added": 7,
+    "removed": 4
+  },
+  {
+    "file": "lib/features/settings/settings_screen.dart",
+    "added": 161,
+    "removed": 109
+  },
+  {
+    "file": "lib/features/space/binding_screen.dart",
+    "added": 27,
+    "removed": 8
+  },
+  {
+    "file": "lib/features/space/room_screen.dart",
+    "added": 171,
+    "removed": 130
+  },
+  {
+    "file": "lib/features/tasks/manage_tasks.dart",
+    "added": 135,
+    "removed": 113
+  },
+  {
+    "file": "lib/features/tasks/task_editor.dart",
+    "added": 78,
+    "removed": 57
+  },
+  {
+    "file": "lib/features/tasks/today_screen.dart",
+    "added": 346,
+    "removed": 326
+  },
+  {
+    "file": "lib/features/wallet/ledger_screen.dart",
+    "added": 39,
+    "removed": 17
+  },
+  {
+    "file": "lib/main.dart",
+    "added": 135,
+    "removed": 163
+  },
+  {
+    "file": "test/auth_screen_test.dart",
+    "added": 2,
+    "removed": 2
+  },
+  {
+    "file": "test/logout_test.dart",
+    "added": 7,
+    "removed": 7
+  },
+  {
+    "file": "test/notification_service_test.dart",
+    "added": 3,
+    "removed": 3
+  },
+  {
+    "file": "test/notification_tap_test.dart",
+    "added": 7,
+    "removed": 7
+  },
+  {
+    "file": "test/offline_store_test.dart",
+    "added": 5,
+    "removed": 1
+  },
+  {
+    "file": "test/reminder_plan_test.dart",
+    "added": 4,
+    "removed": 4
+  },
+  {
+    "file": "test/startup_test.dart",
+    "added": 1,
+    "removed": 1
+  },
+  {
+    "file": "test/sync_test.dart",
+    "added": 2,
+    "removed": 2
+  },
+  {
+    "file": "test/widget_test.dart",
+    "added": 1,
+    "removed": 1
+  }
+]

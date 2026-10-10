@@ -1,0 +1,12 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /srv/miaoban/tls/renewal/8.136.0.78.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Saving debug log to /srv/miaoban/tls-logs/letsencrypt.log
+Account registered.
+Simulating renewal of an existing certificate for 8.136.0.78
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Congratulations, all simulated renewals succeeded: 
+  /srv/miaoban/tls/live/8.136.0.78/fullchain.pem (success)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

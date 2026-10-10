@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-08",
+  "environment": "Android API36 ARM64 emulator-5554",
+  "status": "passed: actual local alarm delivered after inactive process; native tap showed restoring semantics then authenticated Today with unchanged wallet/XP",
+  "apk_sha256": "6f2721b60a521e97f25a8d5ffbec8728e8211b1e07deb93fc3a4c170cf712d6a",
+  "account_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+  "space_id": "70de4da5-29fa-4fc7-b25a-a9909362556c",
+  "task_id": "f44d94d1-7cf9-4e6f-ab7c-7ada1ec233aa",
+  "task_title": "恢复页提醒验收 · 零积分",
+  "reminder_at_utc": "2026-10-08T19:26:00+00:00",
+  "points": 0,
+  "before_wallet": {
+    "balance": 5,
+    "available": 5,
+    "debt": 0
+  },
+  "before_xp": 1,
+  "boot_latency_experiment": "Temporary dev-only middleware delays actual GET /auth/me by six seconds; same application/database/results. Removed after experiment.",
+  "scope": "Local main-program emulator reminder and cold startup only. Physical phones, iOS and APNs/FCM delivery remain unverified.",
+  "native_alarm": {
+    "id": 1,
+    "body": "留一点时间，完成和 TA 的小约定。",
+    "scheduledDateTime": "2026-10-08T19:26:00",
+    "timeZoneName": "Etc/UTC",
+    "payload": "{\"kind\":\"task_reminder\",\"account_id\":\"96c2d754-d224-4d75-808a-031b759b3ab3\",\"space_id\":\"70de4da5-29fa-4fc7-b25a-a9909362556c\",\"task_id\":\"f44d94d1-7cf9-4e6f-ab7c-7ada1ec233aa\"}"
+  },
+  "live_alarm_manager_entry": "    RTC_WAKEUP #4: Alarm{e3b71fa type 0 origWhen 1791487560000 whenElapsed 8962571 com.miaoban.miaoban}\n      tag=*walarm*:com.miaoban.miaoban/com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver\n      type=RTC_WAKEUP origWhen=2026-10-08 12:26:00.000 window=+1m15s619ms repeatInterval=0 count=0 flags=0x20\n      policyWhenElapsed: requester=+1m3s554ms app_standby=-37s272ms device_idle=-- battery_saver=-37s272ms\n      whenElapsed=+1m3s554ms maxWhenElapsed=+2m19s173ms\n      operation=PendingIntent{d65e3ab: PendingIntentRecord{1023a08 com.miaoban.miaoban broadcastIntent}}\n      idle-options=Bundle[{android.pendingIntent.backgroundActivityAllowed=2, android:broadcast.temporaryAppAllowlistReasonCode=-1, android:broadcast.temporaryAppAllowlistDuration=10000, android:broadcast.temporaryAppAllowlistReason=, android:broadcast.temporaryAppAllowlistType=1, android:broadcast.flags=8}]",
+  "process_pid_after_background_kill": null,
+  "before_background_tab": "我们的小屋",
+  "active_notification_record": "    NotificationRecord(0x0d65d6d6: pkg=com.miaoban.miaoban user=UserHandle{0} id=1 tag=null importance=3 key=0|com.miaoban.miaoban|1|null|10218: Notification(channel=task_reminders shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=AUTO_CANCEL color=0x00000000 vis=PRIVATE))\n      uid=10218 userId=0\n      opPkg=com.miaoban.miaoban\n      icon=Icon(typ=RESOURCE pkg=com.miaoban.miaoban id=0x7f06001c)\n      flags=AUTO_CANCEL\n      originalFlags=AUTO_CANCEL\n      pri=0\n      key=0|com.miaoban.miaoban|1|null|10218\n      seen=false\n      groupKey=0|com.miaoban.miaoban|1|null|10218\n      notification=\n            fullscreenIntent=null\n            contentIntent=PendingIntent{b55dd57: PendingIntentRecord{f7d907e com.miaoban.miaoban startActivity (allowlist: 5723ef0:+30s0ms/0/NOTIFICATION_SERVICE/NotificationManagerService)}}\n            deleteIntent=null\n            number=0\n            groupAlertBehavior=0\n            when=1791487636019/1791487636019\n            tickerText=null",
+  "delivered_observed_at_utc": "2026-10-08T19:27:22.523768+00:00",
+  "native_posted_at_utc": "2026-10-08T19:27:16.019000+00:00",
+  "delay_seconds_in_this_emulator": 76.01900005340576,
+  "native_notification_title": "喵伴 · 今日约定",
+  "native_notification_body": "留一点时间，完成和 TA 的小约定。",
+  "click_bounds": "[179,699][996,761]",
+  "native_tap_started_at_utc": "2026-10-08T19:27:51.707122+00:00",
+  "startup_checks": {
+    "restoring_message_visible": true,
+    "login_fields_absent": true,
+    "captured_at_utc": "2026-10-08T19:27:56.523131+00:00"
+  },
+  "startup_capture_retake": {
+    "action": "Same installed main APK force-stop/start under existing six-second real dev API latency; captured after semantics confirmed",
+    "at_utc": "2026-10-08T19:28:38.844971+00:00",
+    "screenshot": "screenshots/android-startup-restoring.png"
+  },
+  "after_wallet": {
+    "balance": 5,
+    "available": 5,
+    "debt": 0
+  },
+  "after_xp": 1,
+  "after_task_instance": {
+    "id": "94dc4049-3668-4924-accc-89195ae767fd",
+    "user_id": "96c2d754-d224-4d75-808a-031b759b3ab3",
+    "completed": false,
+    "points": 0
+  },
+  "ui_checks": {
+    "header_after_native_tap": "喵伴 · 今日",
+    "today_tab_selected_after_native_tap": true,
+    "target_visible_after_boot_capture_retake_and_scroll": true
+  },
+  "click_verified_at_utc": "2026-10-08T19:29:21.028554+00:00",
+  "screenshots": [
+    "screenshots/android-native-reminder-final-delivered.png",
+    "screenshots/android-startup-restoring.png",
+    "screenshots/android-startup-restored.png",
+    "screenshots/android-reminder-target-visible.png"
+  ],
+  "notes": "First PNG was taken before Flutter painted, so it was discarded and not used as evidence. Native startup/tap semantics are recorded separately. Startup/restored PNGs are the subsequent same-APK cold-launch recapture under six-second real API latency; target PNG follows a scroll. Notification receiver may start a native process before Activity is opened.",
+  "experiment_cleanup": {
+    "temporary_container_removed": true,
+    "original_dev_api_restored": true,
+    "health": {
+      "health": {
+        "status": "ok",
+        "version": "0.1.0"
+      },
+      "ready": {
+        "status": "ready"
+      }
+    },
+    "verified_at_utc": "2026-10-08T19:30:05.384470+00:00"
+  }
+}

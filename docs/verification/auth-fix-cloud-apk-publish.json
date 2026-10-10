@@ -1,0 +1,25 @@
+{
+  "time_utc": "2026-10-09T04:28:41.011638+00:00",
+  "version_name": "0.1.1",
+  "version_code": 3,
+  "variants": [
+    {
+      "variant": "preview",
+      "sha256": "034783b4d0c5189417b11e317b92c95b0546a5150691ece293c2e7a35ab08af2",
+      "bytes": 186647218,
+      "url": "https://8.136.0.78/downloads/miaoban-android-preview.apk",
+      "previous_archive": "/srv/miaoban/incoming/miaoban-android-preview-v1.apk",
+      "atomic_replacement": true
+    },
+    {
+      "variant": "release",
+      "sha256": "fe72acf384d84fc33b24d2c8df551b759570d085ac8ec01472dea7fc8a2c1b74",
+      "bytes": 62097836,
+      "url": "https://8.136.0.78/downloads/miaoban-android-release.apk",
+      "previous_archive": "/srv/miaoban/incoming/miaoban-android-release-v2.apk",
+      "atomic_replacement": true
+    }
+  ],
+  "nginx_config_unchanged": true,
+  "signing_keys_uploaded": false
+}

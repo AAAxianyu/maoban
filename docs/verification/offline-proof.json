@@ -1,0 +1,53 @@
+{
+  "before": {
+    "at": "2026-10-08T17:47:26.204085+00:00",
+    "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+    "wallet": {
+      "balance": -50,
+      "available": 0,
+      "debt": 50
+    },
+    "instance": {
+      "id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "completed": false,
+      "version": 32,
+      "points": 10
+    },
+    "ledger_count": 9,
+    "permanent_xp": 3
+  },
+  "after": {
+    "at": "2026-10-08T17:49:16.956683+00:00",
+    "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+    "wallet": {
+      "balance": 30,
+      "available": 30,
+      "debt": 0
+    },
+    "instance": {
+      "id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "completed": true,
+      "version": 33,
+      "points": 10
+    },
+    "ledger_count": 11,
+    "permanent_xp": 3
+  },
+  "repeat": {
+    "at": "2026-10-08T17:49:35.921543+00:00",
+    "space_id": "0a765efa-d5ea-4ec2-a852-85ec69e7a078",
+    "wallet": {
+      "balance": 30,
+      "available": 30,
+      "debt": 0
+    },
+    "instance": {
+      "id": "ee9cc209-2bb2-40fa-a310-c7be82e02c92",
+      "completed": true,
+      "version": 33,
+      "points": 10
+    },
+    "ledger_count": 11,
+    "permanent_xp": 3
+  }
+}

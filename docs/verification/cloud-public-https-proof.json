@@ -1,0 +1,25 @@
+{
+  "time_utc": "2026-10-09T02:57:19.982651+00:00",
+  "tls_verification": "system trust store and IP hostname verification; no bypass",
+  "/health": {
+    "status": 200,
+    "body": {
+      "status": "ok",
+      "version": "0.1.0"
+    }
+  },
+  "/ready": {
+    "status": 200,
+    "body": {
+      "status": "ready"
+    }
+  },
+  "/api/v1/auth/me": {
+    "status": 401,
+    "body": {
+      "code": "UNAUTHENTICATED",
+      "message": "\u8bf7\u5148\u767b\u5f55",
+      "request_id": "bb46bdde-1359-43e2-a641-fb9369a4e686"
+    }
+  }
+}

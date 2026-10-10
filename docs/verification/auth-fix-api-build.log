@@ -1,0 +1,69 @@
+#0 building with "colima" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 30B
+#1 transferring dockerfile: 452B 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/python:3.14.6-slim
+#2 ...
+
+#3 [internal] load metadata for ghcr.io/astral-sh/uv:0.12.23
+#3 DONE 2.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.14.6-slim
+#2 DONE 2.5s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 FROM ghcr.io/astral-sh/uv:0.12.23@sha256:61d393e44e249f2e4b526b6c7ddcecce245946826e608e11c93ad4f5bba55b21
+#5 resolve ghcr.io/astral-sh/uv:0.12.23@sha256:61d393e44e249f2e4b526b6c7ddcecce245946826e608e11c93ad4f5bba55b21 0.0s done
+#5 DONE 0.0s
+
+#6 [stage-0 1/9] FROM docker.io/library/python:3.14.6-slim@sha256:7bec7ddcddeff7975d6ba9b4be7dd6f6b2f55e7491539145e2978f7f97ce9144
+#6 resolve docker.io/library/python:3.14.6-slim@sha256:7bec7ddcddeff7975d6ba9b4be7dd6f6b2f55e7491539145e2978f7f97ce9144 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 375.11kB 0.0s done
+#7 DONE 0.0s
+
+#8 [stage-0 2/9] WORKDIR /app
+#8 CACHED
+
+#9 [stage-0 3/9] COPY --from=ghcr.io/astral-sh/uv:0.12.23 /uv /usr/local/bin/uv
+#9 CACHED
+
+#10 [stage-0 4/9] COPY pyproject.toml uv.lock ./
+#10 CACHED
+
+#11 [stage-0 5/9] RUN uv sync --frozen --no-dev
+#11 CACHED
+
+#12 [stage-0 6/9] COPY app app
+#12 DONE 0.1s
+
+#13 [stage-0 7/9] COPY migrations migrations
+#13 DONE 0.0s
+
+#14 [stage-0 8/9] COPY alembic.ini .
+#14 DONE 0.0s
+
+#15 [stage-0 9/9] RUN useradd --uid 10001 --create-home miaoban
+#15 DONE 1.0s
+
+#16 exporting to image
+#16 exporting layers
+#16 exporting layers 0.2s done
+#16 exporting manifest sha256:5402e1485083d1104cba1ce025220bcb1948002f85571a68e09ca7b988bafa38
+#16 exporting manifest sha256:5402e1485083d1104cba1ce025220bcb1948002f85571a68e09ca7b988bafa38 0.0s done
+#16 exporting config sha256:c9e1e04ec660f65e7c8dec54099bec08d87056dcbd07cec5860079324c2bdeb3 0.0s done
+#16 exporting attestation manifest sha256:990fff067749044439094c1fe26d827adda62bf4848d2751c90d2185c309d3ef 0.0s done
+#16 exporting manifest list sha256:ff50567afca2d712437d0603fb55194282b2a69882050e1e90c3230cacb6cddf done
+#16 naming to docker.io/library/miaoban-api:20261008-auth01 done
+#16 DONE 0.3s
+
+#17 resolving provenance for metadata file
+#17 DONE 0.0s

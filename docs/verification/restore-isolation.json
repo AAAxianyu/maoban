@@ -1,0 +1,7 @@
+{
+  "scope": "owned isolated development restore container; bridge disconnected after exact comparison",
+  "container": "miaoban-restore-20261008180358",
+  "networks": {},
+  "unix_socket_ready": true,
+  "future_script_network_mode": "none"
+}

@@ -1,0 +1,5 @@
+00:00 +0: loading /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/api_session_test.dart
+00:00 +0: a delayed refresh cannot revive tokens or retry after logout
+00:00 +1: an old refresh cannot overwrite a newly logged-in account
+00:00 +2: a legitimate token rotation retries the original mutation with the same UUID and payload
+00:00 +3: All tests passed!

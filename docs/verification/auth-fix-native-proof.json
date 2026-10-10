@@ -1,0 +1,28 @@
+{
+  "time_utc": "2026-10-09T04:32:55.433316+00:00",
+  "device": "Android API36 ARM64 emulator-5554",
+  "apk_sha256": "fe72acf384d84fc33b24d2c8df551b759570d085ac8ec01472dea7fc8a2c1b74",
+  "version": "0.1.1(3)",
+  "same_signature_update_install": true,
+  "native_empty_form_field_errors_verified": true,
+  "native_real_public_https_invalid_activation_message_verified": true,
+  "username_retained_after_server_error": true,
+  "fixture_only": true,
+  "real_activation_codes_consumed": 0,
+  "physical_user_login_verified": false,
+  "capture_scope": [
+    "phone 411x914 logical normal/error",
+    "phone 360x640 logical text scale 1.3 top/bottom",
+    "phone landscape 914x411 logical error controls",
+    "OS night mode: pinned cream app palette retained"
+  ],
+  "screenshots": [
+    "screenshots/auth-fix-phone-login.png",
+    "screenshots/auth-fix-phone-errors.png",
+    "screenshots/auth-fix-small-errors-top.png",
+    "screenshots/auth-fix-small-errors-bottom.png",
+    "screenshots/auth-fix-native-https-error.png",
+    "screenshots/auth-fix-landscape-https-error.png"
+  ],
+  "verification_rounds": "one batched visual inspection and one confirmation; no visual changes required"
+}

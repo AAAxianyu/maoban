@@ -1,0 +1,9 @@
+00:00 +0: loading /Users/dev2/Documents/ChatGPT/study/apps/mobile/integration_test/deployment_connectivity_test.dart
+Running Gradle task 'assembleDebug'...                          
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+Running Gradle task 'assembleDebug'...                             34.3s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...           3.5s
+00:00 +0: Android trusts deployed HTTPS and unauthenticated API stays private
+00:01 +1: (tearDownAll)
+00:01 +1: All tests passed!

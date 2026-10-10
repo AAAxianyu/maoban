@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-09",
+  "scope": "Fix two confirmed Claude refactor regressions without packaging",
+  "source_files": [
+    "apps/mobile/lib/core/widgets.dart",
+    "apps/mobile/lib/features/tasks/today_screen.dart"
+  ],
+  "regression_tests": [
+    "apps/mobile/test/remote_list_test.dart",
+    "apps/mobile/test/today_history_test.dart"
+  ],
+  "validation": {
+    "command": "make test-mobile",
+    "exit_code": 0,
+    "analyzer_issues": 0,
+    "tests_passed": 44,
+    "new_regression_tests": 7,
+    "log": "docs/verification/claude-review-fix-mobile-checks.log"
+  },
+  "package_built": false,
+  "deployed": false,
+  "phone_accessed": false,
+  "version_changed": false,
+  "diff": "docs/verification/claude-review-fix.diff"
+}

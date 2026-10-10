@@ -1,0 +1,5 @@
+00:00 +0: loading /Users/dev2/Documents/ChatGPT/study/apps/mobile/integration_test/core_flow_test.dart
+Running Gradle task 'assembleDebug'...                             18.7s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...          605ms
+No tests ran.

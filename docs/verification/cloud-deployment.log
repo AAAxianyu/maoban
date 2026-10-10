@@ -1,0 +1,36 @@
+All three release archives SHA256 verified
+Loaded image: miaoban-api:20261008-ip01
+Loaded image: postgres:18.3-alpine
+Imported miaoban-api:20261008-ip01 sha256:35734f27c0cbf6c47dffcff931af60ea1e8d59bdff2c68dcfca6213ebc38abcf amd64
+Imported postgres:18.3-alpine sha256:f6d4985d97e69bb9de4d5e24f9f24cbfaa90d30877ce935a8ee872f62efbb621 amd64
+Containers ready. Run HTTPS and formal-account smoke acceptance; local health is not a deployment acceptance.
+ Network miaoban-production_default  Creating
+ Network miaoban-production_default  Created
+ Volume miaoban-production_database  Creating
+ Volume miaoban-production_database  Created
+ Container miaoban-production-db-1  Creating
+ Container miaoban-production-db-1  Created
+ Container miaoban-production-db-1  Starting
+ Container miaoban-production-db-1  Started
+ Container miaoban-production-db-1  Waiting
+ Container miaoban-production-db-1  Healthy
+ Container miaoban-production-db-1  Running
+ Container miaoban-production-db-1  Running
+ Container miaoban-production-api-1  Creating
+ Container miaoban-production-api-1  Created
+ Container miaoban-production-worker-1  Creating
+ Container miaoban-production-worker-1  Created
+ Container miaoban-production-db-1  Waiting
+ Container miaoban-production-db-1  Healthy
+ Container miaoban-production-api-1  Starting
+ Container miaoban-production-api-1  Started
+ Container miaoban-production-api-1  Waiting
+ Container miaoban-production-api-1  Healthy
+ Container miaoban-production-worker-1  Starting
+ Container miaoban-production-worker-1  Started
+ Container miaoban-production-db-1  Waiting
+ Container miaoban-production-api-1  Waiting
+ Container miaoban-production-worker-1  Waiting
+ Container miaoban-production-api-1  Healthy
+ Container miaoban-production-worker-1  Healthy
+ Container miaoban-production-db-1  Healthy

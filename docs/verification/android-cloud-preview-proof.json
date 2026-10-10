@@ -1,0 +1,20 @@
+{
+  "built_utc": "2026-10-09T03:00:48.454887+00:00",
+  "api_base_url": "https://8.136.0.78",
+  "apk_kind": "main debug trial APK, development signature; not formal release or phone acceptance",
+  "apk_sha256": "910d030b3a4cd316577c7335f8717073c2f3e4b1eb68c13eda1e54b78ee446da",
+  "bytes": 258658356,
+  "local_artifact": "/Users/dev2/Documents/ChatGPT/study/.tools/miaoban-android-preview.apk",
+  "download_url": "https://8.136.0.78/downloads/miaoban-android-preview.apk",
+  "native_https_test": "android-cloud-connectivity.log",
+  "native_https_test_passed": true,
+  "signature_v2_verified": true,
+  "emulator_installed": true,
+  "download_verified": true,
+  "public_download_proof": "cloud-preview-download-proof.json",
+  "signature_log": "android-cloud-apk-signature.log",
+  "install_log": "android-cloud-install.log",
+  "main_started_on_emulator": true,
+  "native_login_and_activation_entry_visible": true,
+  "native_semantics_file": "android-cloud-main.xml"
+}

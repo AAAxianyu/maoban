@@ -1,0 +1,53 @@
+# For a server whose existing host nginx owns public HTTP/HTTPS.
+# Never publish the database or replace the existing website's port 80 route.
+name: miaoban-production
+services:
+  db:
+    image: postgres:18.3-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: miaoban
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Configure production password}
+      POSTGRES_DB: miaoban
+    volumes: ["database:/var/lib/postgresql"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U miaoban -d miaoban"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  api:
+    image: miaoban-api:${RELEASE_TAG:?Configure immutable release tag}
+    build: ../services/api
+    restart: unless-stopped
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--no-access-log", "--proxy-headers", "--forwarded-allow-ips=*"]
+    environment: &runtime
+      ENVIRONMENT: production
+      DATABASE_URL: postgresql+psycopg://miaoban:${POSTGRES_PASSWORD}@db:5432/miaoban
+      PUBLIC_URL: ${PUBLIC_URL:?Configure HTTPS public URL}
+      PUSH_PROVIDER: ${PUSH_PROVIDER:-disabled}
+      APNS_KEY_PATH: ${APNS_KEY_PATH:-}
+      APNS_KEY_ID: ${APNS_KEY_ID:-}
+      APNS_TEAM_ID: ${APNS_TEAM_ID:-}
+      APNS_TOPIC: ${APNS_TOPIC:-}
+      APNS_SANDBOX: ${APNS_SANDBOX:-false}
+      FCM_CREDENTIALS_PATH: ${FCM_CREDENTIALS_PATH:-}
+    ports: ["127.0.0.1:18000:8000"]
+    volumes: ["${SECRETS_DIR:?Configure private secrets directory}:/run/secrets:ro"]
+    depends_on:
+      db: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/ready')"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+  worker:
+    image: miaoban-api:${RELEASE_TAG:?Configure immutable release tag}
+    build: ../services/api
+    restart: unless-stopped
+    environment: *runtime
+    volumes: ["${SECRETS_DIR}:/run/secrets:ro"]
+    command: ["python", "-m", "app.jobs.worker"]
+    depends_on:
+      api: {condition: service_healthy}
+volumes:
+  database:

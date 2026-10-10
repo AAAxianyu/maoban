@@ -1,0 +1,5 @@
+{
+  "scope": "isolated command fixture, not deployment health",
+  "healthy_exit": 0,
+  "failed_push_exit": 1
+}

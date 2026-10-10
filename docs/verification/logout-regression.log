@@ -1,0 +1,3 @@
+00:00 +0: loading /Users/dev2/Documents/ChatGPT/study/apps/mobile/test/logout_test.dart
+00:00 +0: logout from settings replaces protected routes without a null-state crash
+00:01 +1: All tests passed!

@@ -1,0 +1,17 @@
+{
+  "time_utc": "2026-10-09T03:53:39.570013+00:00",
+  "root": "/srv/miaoban-acceptance",
+  "project": "miaoban-cloud-acceptance",
+  "scope": "temporary isolated cloud development rehearsal; separate production database and credentials",
+  "listen": "127.0.0.1:18001",
+  "database_name": "miaoban_acceptance",
+  "volume": "miaoban-cloud-acceptance_database",
+  "image": "miaoban-api:20261008-ip01",
+  "seeded_accounts": [
+    "demo_a",
+    "demo_b"
+  ],
+  "wallet_seeded": false,
+  "worker_running": false,
+  "migration_and_readiness": "passed"
+}

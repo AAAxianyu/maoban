@@ -1,0 +1,175 @@
+==> Auto-updating Homebrew...
+Adjust how often this is run with `$HOMEBREW_AUTO_UPDATE_SECS` or disable with
+`$HOMEBREW_NO_AUTO_UPDATE=1`. Hide these hints with `$HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+==> Homebrew collects anonymous analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics have been recorded yet (nor will be during this `brew` run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#-donations
+
+==> Auto-updated Homebrew!
+==> Updated Homebrew from 7.0.4 (32b5f52a42) to 7.0.9 (90de27432a).
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> New Formulae
+all-smi: GPU monitoring tool for NVIDIA/Jetson/Apple Silicon/Tenstorrent
+apkid: Android application identifier for compilers, packers, and obfuscators
+arcane-cli: Command-line client for the Arcane Docker management platform
+baysor: Bayesian segmentation of imaging-based spatial transcriptomics data
+ccmux: Run all your AI coding agents in tmux
+chisel-ubuntu: Carve and cut Debian packages into slices
+confluence-markdown-exporter: Export Atlassian Confluence pages as Markdown files
+ctcache: Cache for clang-tidy static analysis results
+cymbal: Language-agnostic code navigation CLI powered by tree-sitter
+ddns-updater: Lightweight universal DDNS Updater program
+deja: Predictive ghost-text autosuggestions for zsh
+doltlite: SQLite fork with Git-style version control via prolly trees
+goleft: Tools for coverage and QC of BAM/CRAM files, including indexcov
+hidapitester: Command-line tool to exercise USB HID devices via HIDAPI
+kubectl-radar: Missing open-source Kubernetes UI with a built-in MCP server for AI agents
+libklvanc: VANC Processing Framework
+licensee: Detect under what license a project is distributed
+mailtrap-local: Local email sandbox with SMTP server, web UI, and JSON API
+maki: Efficient AI coding agent extendable by neovim-like Lua plugins
+mariadb@12.3: Drop-in replacement for MySQL
+modflow6: USGS modular hydrologic model
+morphe: Desktop app and CLI for patching Android apps with Morphe
+openshell: Safe, private runtime for autonomous AI agents
+packslip: Signed release manifest for vendor binaries
+pg_activity: Top-like interactive monitoring tool for PostgreSQL server activity
+plink1: Whole-genome association analysis toolset
+pypy3.12: Implementation of Python 3 in Python
+regenie: Whole genome regression modelling of large genome-wide association studies
+rustqc: Fast genomics quality control tools for sequencing data
+sac: Seismic Analysis Code, Community Edition
+sdrmm: Modular, client-server software-defined radio
+sniffles: Structural variant caller for long-read sequencing data
+sofka: Kubernetes TUI, reimagined in Rust
+somalier: Relatedness, QC and ancestry checks from BAM/CRAM/VCF
+tcltls: OpenSSL extension to Tcl
+tfswitch: Command-line tool to switch between Terraform versions
+typdiff: Diff tool that generates Typst documents highlighting differences between inputs
+unixcw: Morse code tutor and command-line tools
+vcfexpress: Filter and format VCF/BCF files with Lua expressions
+vortix: Terminal UI for WireGuard and OpenVPN with live telemetry and leak guarding
+wavemon: Ncurses-based monitoring application for wireless network devices on Linux
+zig@0.16: Programming language designed for robustness, optimality, and clarity
+
+You have 53 outdated formulae installed.
+
+
+The 7.0.9 changelog can be found at:
+  https://github.com/Homebrew/brew/releases/tag/7.0.9
+==> Downloading bottle manifests
+✔︎ Bottle Manifest openjdk@21 (21.0.12.1)
+==> Would install 1 formula:
+openjdk@21 21.0.12.1
+==> Would upgrade 9 dependencies for openjdk@21:
+libpng
+fontconfig
+pcre2
+glib
+xorgproto
+cairo
+harfbuzz
+xz
+little-cms2
+==> Fetching downloads for: openjdk@21
+✔︎ Bottle Manifest libpng (1.6.59)
+✔︎ Bottle Manifest pcre2 (10.49)
+✔︎ Bottle Manifest xorgproto (2026.1)
+✔︎ Bottle Manifest fontconfig (2.18.3)
+✔︎ Bottle Manifest xz (5.8.4)
+✔︎ Bottle Manifest glib (2.90.1)
+✔︎ Bottle Manifest cairo (1.18.6)
+✔︎ Bottle Manifest little-cms2 (2.19.1)
+✔︎ Bottle Manifest harfbuzz (14.6.0)
+✔︎ Bottle fontconfig (2.18.3)
+✔︎ Bottle libpng (1.6.59)
+✔︎ Bottle little-cms2 (2.19.1)
+✔︎ Bottle xorgproto (2026.1)
+✔︎ Bottle xz (5.8.4)
+✔︎ Bottle pcre2 (10.49)
+✔︎ Bottle cairo (1.18.6)
+✔︎ Bottle harfbuzz (14.6.0)
+✔︎ Bottle glib (2.90.1)
+✔︎ Bottle openjdk@21 (21.0.12.1)
+==> Installing dependencies for openjdk@21: fontconfig, glib and harfbuzz
+==> Upgrading openjdk@21 dependency: fontconfig (2.18.2 -> 2.18.3)
+==> Pouring fontconfig--2.18.3.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/fontconfig/2.18.3: 102 files, 1.9MB
+==> Upgrading openjdk@21 dependency: glib (2.88.2 -> 2.90.1)
+==> Upgrading glib dependency: pcre2 (10.47_1 -> 10.49)
+==> Pouring pcre2--10.49.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pcre2/10.49: 245 files, 7.3MB
+==> Installing glib
+==> Pouring glib--2.90.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/glib/2.90.1: 502 files, 40.1MB
+==> Upgrading openjdk@21 dependency: harfbuzz (14.2.1 -> 14.6.0)
+==> Installing dependencies for harfbuzz: libpng, xorgproto and cairo
+==> Upgrading harfbuzz dependency: libpng (1.6.58 -> 1.6.59)
+==> Pouring libpng--1.6.59.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libpng/1.6.59: 28 files, 1.4MB
+==> Upgrading harfbuzz dependency: xorgproto (2025.1 -> 2026.1)
+==> Pouring xorgproto--2026.1.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/xorgproto/2026.1: 268 files, 4.1MB
+==> Upgrading harfbuzz dependency: cairo (1.18.4 -> 1.18.6)
+==> Pouring cairo--1.18.6.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/cairo/1.18.6: 58 files, 4.6MB
+==> Installing harfbuzz
+==> Pouring harfbuzz--14.6.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/harfbuzz/14.6.0: 96 files, 14.3MB
+==> Installing openjdk@21
+==> Pouring openjdk@21--21.0.12.1.arm64_tahoe.bottle.tar.gz
+Warning: openjdk@21 was installed but not linked because openjdk is already installed.
+To link this version, run:
+  brew link openjdk@21
+🍺  /opt/homebrew/Cellar/openjdk@21/21.0.12.1: 599 files, 346.7MB
+==> Caveats
+==> openjdk@21
+For the system Java wrappers to find this JDK, symlink it with
+  sudo ln -sfn /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-21.jdk
+
+openjdk@21 is keg-only, which means it was not symlinked into /opt/homebrew,
+because this is an alternate version of another formula.
+
+If you need to have openjdk@21 first in your PATH, run:
+  printf '%s\n' export\ PATH\=/opt/homebrew/opt/openjdk@21/bin:\$PATH >> ~/.zshrc
+
+For compilers to find openjdk@21 you may need to set:
+  export CPPFLAGS=-I/opt/homebrew/opt/openjdk@21/include
+
+The following openjdk@21 executables are shadowed by linked openjdk commands in /opt/homebrew/opt/openjdk/bin:
+jar
+jarsigner
+java
+javac
+javadoc
+javap
+jcmd
+jconsole
+jdb
+jdeprscan
+jdeps
+jfr
+jhsdb
+jimage
+jinfo
+jlink
+jmap
+jmod
+jpackage
+jps
+jshell
+jstack
+jstat
+jstatd
+jwebserver
+keytool
+rmiregistry
+serialver
+Running these by name will not invoke the version provided by this formula.
+Run `brew link openjdk@21` to switch the active version to this keg.
+Disable this behaviour by setting `HOMEBREW_NO_PATH_SHADOW_CHECK=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).

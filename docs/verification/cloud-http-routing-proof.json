@@ -1,0 +1,7 @@
+{
+  "http_redirect": {
+    "status": 308,
+    "location": "https://8.136.0.78/ready"
+  },
+  "acme_route_status": 200
+}

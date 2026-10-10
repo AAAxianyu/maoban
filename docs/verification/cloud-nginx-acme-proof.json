@@ -1,0 +1,12 @@
+{
+  "existing_site_file": "/etc/nginx/sites-available/orgmesh",
+  "original_sha256": "a7c308f06255a51347126392164ae6ea5b499b406fdc1724925bcced9bfb6e50",
+  "patched_sha256": "e3541081e16322419356756fd5ab049c5e8f169a68c7f190a234637eaa54dd8d",
+  "private_backup": "/srv/miaoban/backups/nginx-orgmesh-before-miaoban.conf",
+  "only_added": "ACME challenge location; existing root and API routes retained",
+  "nginx_configuration_valid": true,
+  "orgmesh_api_active": "active",
+  "public_challenge_200": true,
+  "existing_orgmesh_page_sha256": "10d9b875b8025bee795e88b58745090bdf25bd0c1e682a2f14e8f0c374b77161",
+  "original_page_unchanged": true
+}

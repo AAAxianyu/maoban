@@ -1,0 +1,146 @@
+{
+  "time_utc": "2026-10-09T03:56:04.235124+00:00",
+  "scope": "Alibaba separate populated acceptance database; development seed; not formal production business-data AC14 or phone acceptance",
+  "source_project": "miaoban-cloud-acceptance",
+  "source_database": "miaoban_acceptance",
+  "api_restart_readiness_and_26_table_persistence": "passed",
+  "backup": "/srv/miaoban-acceptance/backups/miaoban-20261009T035556Z.dump",
+  "backup_sha256": "5742e6692dcbb3634a485d7569f75ad0cb660d071861810cca65b55bafe810d6",
+  "backup_bytes": 102677,
+  "restore_container": "miaoban-restore-20261009035556",
+  "restore_network": "none",
+  "restore_stopped_and_retained": true,
+  "wallet_mismatch": 0,
+  "checks": {
+    "spaces": {
+      "rows": 1,
+      "sha256": "b1a76e1e44b246d572cf6122164174e631f1506c12bb6053d43cdd3dae52908d",
+      "exact_match": true
+    },
+    "memberships": {
+      "rows": 2,
+      "sha256": "d72e96bb34ea37adb6a4d401d4ad89bb36cffa2e9446d168c1f4a4d91625ebc8",
+      "exact_match": true
+    },
+    "space_rule_versions": {
+      "rows": 1,
+      "sha256": "74038f3974e714298281667c3753f042a81814b2c041b5303769bd0cd0d3d54b",
+      "exact_match": true
+    },
+    "task_templates": {
+      "rows": 3,
+      "sha256": "234e7be6cf3cb9ad1c3487d844c6a0207ceac41e5cd7500bc3a32bbaa57eb461",
+      "exact_match": true
+    },
+    "task_versions": {
+      "rows": 3,
+      "sha256": "c1b9ff920acbb709684ae41c5750809b3db0fb44c6a0c99821c5c08e2a06a0bf",
+      "exact_match": true
+    },
+    "task_schedule_changes": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "member_rest_dates": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "daily_plans": {
+      "rows": 2,
+      "sha256": "f50fa210070dd587954d3fe25717b215b47702e27ff988fc25a257229bc640ae",
+      "exact_match": true
+    },
+    "task_instances": {
+      "rows": 3,
+      "sha256": "4738ffc6add95eb0c3c81c1d522256928cf9ce41bff8caddd22357eeec7a6fa7",
+      "exact_match": true
+    },
+    "corrections": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "wallets": {
+      "rows": 2,
+      "sha256": "6b4ac53e669c31fab155b5e83ae471ede14d9d8489e9d26ba4b1984f3c85be89",
+      "exact_match": true
+    },
+    "reward_entitlements": {
+      "rows": 7,
+      "sha256": "78a54b58d73122a0214af001b83630f68d555521c660f7da2e4ea103a141f69a",
+      "exact_match": true
+    },
+    "ledger_entries": {
+      "rows": 7,
+      "sha256": "8249bee5831ecc6023dca6f795349f7e3fff6f45180d5f43c82f48050a66a2d3",
+      "exact_match": true
+    },
+    "rewards": {
+      "rows": 1,
+      "sha256": "b247bb81022f4e02d0db6114db495d60618d3278d072b916ee0706c75f098fa6",
+      "exact_match": true
+    },
+    "wishes": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "redemptions": {
+      "rows": 2,
+      "sha256": "44921507a070a211fb10b02ca2e6d1b5e1afc02ca85242182c029e8dc82bb451",
+      "exact_match": true
+    },
+    "milestones": {
+      "rows": 1,
+      "sha256": "95f202bdc00255795aea007fdf467e89167510ed48aff4f2627249d41d9b377c",
+      "exact_match": true
+    },
+    "milestone_versions": {
+      "rows": 1,
+      "sha256": "beac2da94ec245b6038f340e4e60299f6c6d7e0055205ac149290374b8390fc9",
+      "exact_match": true
+    },
+    "room_contributions": {
+      "rows": 3,
+      "sha256": "c5347c178c954dce2602bd0bcd917dac1c5af1e8b7198cbf92c531e8c968be35",
+      "exact_match": true
+    },
+    "room_unlocks": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "user_achievements": {
+      "rows": 1,
+      "sha256": "da37df6bc183c905423347edcd7e89f02f3140a9b32ac9803a42035ebf043fd0",
+      "exact_match": true
+    },
+    "events": {
+      "rows": 51,
+      "sha256": "ccd7c6cdc76329670c5a26b94fe0803699f8d097537cb5ca00d60e50810606fb",
+      "exact_match": true
+    },
+    "reactions": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "notifications": {
+      "rows": 50,
+      "sha256": "5dd7267b1a81030dede4c3730d06148d81212e0d01146ace9739629f85193b42",
+      "exact_match": true
+    },
+    "outbox": {
+      "rows": 50,
+      "sha256": "cf5c4351973780f2e87ecccb89509d94dc4dd6600232a8283215088080092207",
+      "exact_match": true
+    },
+    "push_receipts": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    }
+  }
+}

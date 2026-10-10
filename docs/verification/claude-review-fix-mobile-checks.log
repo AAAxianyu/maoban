@@ -1,0 +1,126 @@
+cd apps/mobile && /Users/dev2/Documents/project/maoban/.tools/flutter/bin/flutter analyze && /Users/dev2/Documents/project/maoban/.tools/flutter/bin/flutter test
+Resolving dependencies...
+Downloading packages...
+  archive 4.3.0 (4.4.0 available)
+  cli_util 0.4.2 (0.6.0 available)
+  code_assets 1.2.1 (2.1.0 available)
+  cross_file 0.3.5+5 (0.4.0 available)
+  cupertino_icons 1.0.9 (2.0.0 available)
+  dbus 0.7.15 (0.8.0 available)
+  hooks 2.0.2 (2.2.0 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  native_toolchain_c 0.19.2 (0.19.5 available)
+  objective_c 9.5.0 (9.6.2 available)
+  petitparser 7.0.2 (7.1.0 available)
+  record_use 0.6.0 (1.1.1 available)
+  sqlite3 3.5.2 (3.7.0 available)
+  test_api 0.7.12 (0.7.14 available)
+  vector_math 2.4.0 (2.4.3 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+17 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing mobile...                                             
+No issues found! (ran in 10.1s)
+Resolving dependencies...
+Downloading packages...
+  archive 4.3.0 (4.4.0 available)
+  cli_util 0.4.2 (0.6.0 available)
+  code_assets 1.2.1 (2.1.0 available)
+  cross_file 0.3.5+5 (0.4.0 available)
+  cupertino_icons 1.0.9 (2.0.0 available)
+  dbus 0.7.15 (0.8.0 available)
+  hooks 2.0.2 (2.2.0 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  native_toolchain_c 0.19.2 (0.19.5 available)
+  objective_c 9.5.0 (9.6.2 available)
+  petitparser 7.0.2 (7.1.0 available)
+  record_use 0.6.0 (1.1.1 available)
+  sqlite3 3.5.2 (3.7.0 available)
+  test_api 0.7.12 (0.7.14 available)
+  vector_math 2.4.0 (2.4.3 available)
+  xml 7.0.1 (7.1.0 available)
+Got dependencies!
+17 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /Users/dev2/Documents/project/maoban/apps/mobile/test/offline_store_test.dart
+00:00 +0: /Users/dev2/Documents/project/maoban/apps/mobile/test/offline_store_test.dart: pending intent merges, preserves UUID, and account isolation survives logout
+00:01 +1: /Users/dev2/Documents/project/maoban/apps/mobile/test/sync_test.dart: a conflicted offline intent can be discarded before a new UUID uses the current server version
+00:01 +1: /Users/dev2/Documents/project/maoban/apps/mobile/test/offline_store_test.dart: an uncertain sent intent cannot mutate its idempotency payload
+*** sqflite warning ***
+
+You are changing sqflite default factory.
+Be aware of the potential side effects. Any library using sqflite
+will have this factory as the default for all operations.
+
+*** sqflite warning ***
+
+00:01 +2: /Users/dev2/Documents/project/maoban/apps/mobile/test/sync_test.dart: a conflicted offline intent can be discarded before a new UUID uses the current server version
+00:01 +3: /Users/dev2/Documents/project/maoban/apps/mobile/test/sync_test.dart: logout waits for an in-flight snapshot and discards its old-account state
+*** sqflite warning ***
+
+You are changing sqflite default factory.
+Be aware of the potential side effects. Any library using sqflite
+will have this factory as the default for all operations.
+
+*** sqflite warning ***
+
+00:01 +4: /Users/dev2/Documents/project/maoban/apps/mobile/test/sync_test.dart: offline intent survives controller restart without optimistic spending and awards once
+*** sqflite warning ***
+
+You are changing sqflite default factory.
+Be aware of the potential side effects. Any library using sqflite
+will have this factory as the default for all operations.
+
+*** sqflite warning ***
+
+00:01 +5: /Users/dev2/Documents/project/maoban/apps/mobile/test/sync_test.dart: cross-day queue submits review and never grants unapproved points
+*** sqflite warning ***
+
+You are changing sqflite default factory.
+Be aware of the potential side effects. Any library using sqflite
+will have this factory as the default for all operations.
+
+*** sqflite warning ***
+
+00:04 +6: /Users/dev2/Documents/project/maoban/apps/mobile/test/api_session_test.dart: a delayed vault restoration cannot overwrite a new account
+00:04 +7: /Users/dev2/Documents/project/maoban/apps/mobile/test/api_session_test.dart: a delayed vault restoration cannot overwrite logout
+00:04 +8: /Users/dev2/Documents/project/maoban/apps/mobile/test/api_session_test.dart: a delayed refresh cannot revive tokens or retry after logout
+00:04 +9: /Users/dev2/Documents/project/maoban/apps/mobile/test/api_session_test.dart: an old refresh cannot overwrite a newly logged-in account
+00:04 +10: /Users/dev2/Documents/project/maoban/apps/mobile/test/api_session_test.dart: a legitimate token rotation retries the original mutation with the same UUID and payload
+00:04 +11: /Users/dev2/Documents/project/maoban/apps/mobile/test/notification_tap_test.dart: cold remote tap checks the authorized inbox ID before marking read and routing
+00:05 +12: /Users/dev2/Documents/project/maoban/apps/mobile/test/notification_tap_test.dart: cold remote tap checks the authorized inbox ID before marking read and routing
+00:05 +13: /Users/dev2/Documents/project/maoban/apps/mobile/test/notification_tap_test.dart: cold remote tap checks the authorized inbox ID before marking read and routing
+00:05 +14: /Users/dev2/Documents/project/maoban/apps/mobile/test/notification_tap_test.dart: cold remote tap checks the authorized inbox ID before marking read and routing
+00:06 +15: /Users/dev2/Documents/project/maoban/apps/mobile/test/today_history_test.dart: returning to today ignores a delayed history response
+00:06 +16: /Users/dev2/Documents/project/maoban/apps/mobile/test/today_history_test.dart: returning to today ignores a delayed history response
+00:06 +17: /Users/dev2/Documents/project/maoban/apps/mobile/test/today_history_test.dart: returning to today ignores a delayed history response
+00:06 +18: /Users/dev2/Documents/project/maoban/apps/mobile/test/today_history_test.dart: returning to today ignores a delayed history response
+00:06 +19: /Users/dev2/Documents/project/maoban/apps/mobile/test/today_history_test.dart: returning to today ignores a delayed history response
+00:07 +20: /Users/dev2/Documents/project/maoban/apps/mobile/test/today_history_test.dart: returning to today ignores a delayed history response
+00:07 +21: /Users/dev2/Documents/project/maoban/apps/mobile/test/widget_test.dart: long task at 360px and 1.3 text has visible accessible check-in
+00:07 +22: /Users/dev2/Documents/project/maoban/apps/mobile/test/auth_screen_test.dart: invalid activation username is explained before networking: 中文账号
+00:07 +23: /Users/dev2/Documents/project/maoban/apps/mobile/test/auth_screen_test.dart: invalid activation username is explained before networking: 中文账号
+00:07 +24: /Users/dev2/Documents/project/maoban/apps/mobile/test/auth_screen_test.dart: invalid activation username is explained before networking: 中文账号
+00:08 +25: /Users/dev2/Documents/project/maoban/apps/mobile/test/today_history_test.dart: an older response cannot replace the latest chosen date
+00:08 +26: /Users/dev2/Documents/project/maoban/apps/mobile/test/notification_service_test.dart: same sequence still updates after civil midnight or another account
+00:08 +27: /Users/dev2/Documents/project/maoban/apps/mobile/test/auth_screen_test.dart: invalid activation username is explained before networking: account name
+00:08 +28: /Users/dev2/Documents/project/maoban/apps/mobile/test/auth_screen_test.dart: invalid activation username is explained before networking: account name
+00:08 +29: /Users/dev2/Documents/project/maoban/apps/mobile/test/auth_screen_test.dart: invalid activation username is explained before networking: account name
+00:08 +30: /Users/dev2/Documents/project/maoban/apps/mobile/test/auth_screen_test.dart: invalid activation username is explained before networking: account name
+00:08 +31: /Users/dev2/Documents/project/maoban/apps/mobile/test/auth_screen_test.dart: invalid activation username is explained before networking: account name
+00:08 +32: /Users/dev2/Documents/project/maoban/apps/mobile/test/auth_screen_test.dart: invalid activation username is explained before networking: account name
+00:08 +33: /Users/dev2/Documents/project/maoban/apps/mobile/test/remote_list_test.dart: duplicate pages do not hide older notifications
+00:08 +34: /Users/dev2/Documents/project/maoban/apps/mobile/test/remote_list_test.dart: duplicate pages do not hide older notifications
+00:08 +35: /Users/dev2/Documents/project/maoban/apps/mobile/test/remote_list_test.dart: duplicate pages do not hide older notifications
+00:09 +36: /Users/dev2/Documents/project/maoban/apps/mobile/test/remote_list_test.dart: duplicate pages do not hide older notifications
+00:09 +37: /Users/dev2/Documents/project/maoban/apps/mobile/test/remote_list_test.dart: duplicate pages do not hide older notifications
+00:09 +38: /Users/dev2/Documents/project/maoban/apps/mobile/test/remote_list_test.dart: duplicate pages do not hide older notifications
+00:09 +39: /Users/dev2/Documents/project/maoban/apps/mobile/test/logout_test.dart: logout from settings replaces protected routes without a null-state crash
+00:09 +40: /Users/dev2/Documents/project/maoban/apps/mobile/test/logout_test.dart: logout from settings replaces protected routes without a null-state crash
+00:09 +41: /Users/dev2/Documents/project/maoban/apps/mobile/test/logout_test.dart: logout from settings replaces protected routes without a null-state crash
+00:09 +42: /Users/dev2/Documents/project/maoban/apps/mobile/test/logout_test.dart: logout from settings replaces protected routes without a null-state crash
+00:09 +43: /Users/dev2/Documents/project/maoban/apps/mobile/test/logout_test.dart: logout from settings replaces protected routes without a null-state crash
+00:10 +44: All tests passed!

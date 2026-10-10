@@ -1,0 +1,20 @@
+{
+  "time_utc": "2026-10-09T04:21:26.359672+00:00",
+  "release_tag": "20261008-auth01",
+  "image_id": "sha256:c9e1e04ec660f65e7c8dec54099bec08d87056dcbd07cec5860079324c2bdeb3",
+  "platform": "linux/amd64",
+  "artifacts": {
+    "miaoban-api-auth01.tar.gz": {
+      "sha256": "c1f29ee6dba4c60414ecb7d1b7ea54dbce51e00f5aa365726ea2d6b5a6cbed35",
+      "bytes": 91804152
+    },
+    "miaoban-source-auth01.tar.gz": {
+      "sha256": "56b8fd17275d16ea169cec3f27f5561878edf0d0f39e17496c9683199bd89688",
+      "bytes": 104954
+    }
+  },
+  "backend_tests_passed": 49,
+  "scope": "auth validation guidance; no database schema change",
+  "local_image_index_digest": "sha256:ff50567afca2d712437d0603fb55194282b2a69882050e1e90c3230cacb6cddf",
+  "image_id_source": "SHA256 of Docker save manifest Config; imported single-platform image"
+}

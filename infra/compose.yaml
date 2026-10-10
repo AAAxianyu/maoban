@@ -1,0 +1,38 @@
+name: miaoban-dev
+services:
+  db:
+    image: postgres:18.3-alpine
+    environment:
+      POSTGRES_USER: miaoban
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run make setup}
+      POSTGRES_DB: miaoban
+    ports: ["127.0.0.1:55432:5432"]
+    volumes: ["database:/var/lib/postgresql"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U miaoban -d miaoban"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  api:
+    build: ../services/api
+    environment: &api-env
+      ENVIRONMENT: development
+      DATABASE_URL: postgresql+psycopg://miaoban:${POSTGRES_PASSWORD}@db:5432/miaoban
+      PUBLIC_URL: http://localhost:8000
+      PUSH_PROVIDER: disabled
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      db: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/ready')"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  worker:
+    build: ../services/api
+    environment: *api-env
+    command: ["python", "-m", "app.jobs.worker"]
+    depends_on:
+      api: {condition: service_healthy}
+volumes:
+  database:

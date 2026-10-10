@@ -1,0 +1,38 @@
+[
+  {
+    "foreground": "coral_ink",
+    "background": "cream",
+    "ratio": 5.88,
+    "minimum": 4.5
+  },
+  {
+    "foreground": "coral_ink",
+    "background": "surface",
+    "ratio": 6.61,
+    "minimum": 4.5
+  },
+  {
+    "foreground": "button_ink",
+    "background": "coral",
+    "ratio": 5.03,
+    "minimum": 4.5
+  },
+  {
+    "foreground": "ink",
+    "background": "selected_nav",
+    "ratio": 8.67,
+    "minimum": 3
+  },
+  {
+    "foreground": "ink",
+    "background": "selected_task",
+    "ratio": 10.33,
+    "minimum": 4.5
+  },
+  {
+    "foreground": "sage",
+    "background": "surface",
+    "ratio": 5.01,
+    "minimum": 4.5
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "date_utc": "2026-10-08T19:35:22.253187+00:00",
+  "environment": "Android API36 ARM64 emulator-5554 with real dev HTTP/PostgreSQL",
+  "apk_sha256": "529d5fb56404124c7e8f13d1751f03db7bc816972436edba5ee62d00d8dedfbd",
+  "apk_kind": "main debug program, not integration-test APK or release signed",
+  "installed": true,
+  "signature_v2_verified": true,
+  "api_base_url": "http://10.0.2.2:8000",
+  "startup_login_integration": {
+    "log": "android-e2e-startup-login.log",
+    "log_sha256": "83f6f8c01a83801edf18f5785a00a6a4a66af1b77c9c60cb00397e0ffcce537a",
+    "test_source_sha256": "3dd68894c2443d0e378d2fd13fe332085c45ec6425fefb0b449ef2514f23848f",
+    "passed": true,
+    "os_notifications_allowed": true,
+    "cold_controller_init_used": true,
+    "checks": [
+      "actual API/PostgreSQL two-account binding and accepted task",
+      "widget checkin, redeem, fulfill, confirm",
+      "native permissions/channels/reminder/logout cleanup",
+      "settings logout and login restore same space, wallet5, completed order"
+    ]
+  },
+  "flutter_host_tests": 30,
+  "native_local_alarm_proof_scope": "native-reminder-final-proof.json records the previous build 6f2721... before final login lifecycle correction. It is not relabeled with this APK hash. Alarm and visual composition unchanged; latest login correction covered by this real integration run.",
+  "main_startup_ui": {
+    "header": "喵伴 · 今日",
+    "visible_wallet": "可用 5 小鱼干",
+    "visible_permanent_xp": 1,
+    "restored_at_utc": "2026-10-08T19:36:24.536384+00:00",
+    "native_semantics": "native-final-main.xml"
+  }
+}

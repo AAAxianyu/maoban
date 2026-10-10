@@ -1,0 +1,35 @@
+{
+  "time_utc": "2026-10-09T02:55:52.421191+00:00",
+  "authorization": "User explicitly requested deletion of obsolete OrgMesh content",
+  "removed_paths": [
+    "/etc/systemd/system/orgmesh-api.service",
+    "/etc/orgmesh.env",
+    "/etc/nginx/sites-available/orgmesh",
+    "/opt/orgmesh",
+    "/var/lib/orgmesh",
+    "/root/orgmesh-legacy-archive-20260805-1815-CST",
+    "/srv/miaoban/backups/nginx-orgmesh-before-miaoban.conf"
+  ],
+  "service_load_state": "not-found",
+  "service_active_state": "inactive",
+  "port_8787_listening": false,
+  "nginx_global_sha256_before": "48c6a4ec1e1fd28ccf968490f07e34a1d7f755793b2108a3ed8670b1ee2a0aa2",
+  "nginx_global_sha256_after": "48c6a4ec1e1fd28ccf968490f07e34a1d7f755793b2108a3ed8670b1ee2a0aa2",
+  "nginx_active": "active",
+  "nginx_sites_enabled": [
+    "miaoban-https",
+    "miaoban-http"
+  ],
+  "https_readiness": {
+    "status": 200,
+    "body": {
+      "status": "ready"
+    }
+  },
+  "docker_volumes_retained": [
+    "64bdb9316b20895691e33bbaf87134d43f39b48393b0da87a99d12a9e3a5de52",
+    "miaoban-production_database",
+    "rootjourney_mongo-data"
+  ],
+  "remaining_orgmesh_named_top_level_paths": []
+}

@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T19:38:06Z",
+  "title": "Design System: 喵伴移动端",
+  "extensions": {
+    "documentation": {
+      "frontmatterSource": "docs/MOBILE_DESIGN.md",
+      "implementationSource": "apps/mobile/lib",
+      "platform": "Flutter native mobile; shared Material 3; adaptive switches",
+      "writeBoundary": [
+        "docs/MOBILE_DESIGN.md",
+        "docs/MOBILE_DESIGN.design.json"
+      ],
+      "preservedContracts": [
+        "DESIGN.md",
+        "DEVELOPMENT.md",
+        "GOAL.md"
+      ],
+      "previewOnly": "仅将当前 Flutter 控件的主要色面、形状和文字层级翻译为独立 HTML/CSS 文档预览。原生布局约束、Material 状态覆盖层、输入和导航行为仍以 Dart 与设备输出为准；这些片段未作为产品实现或验收证据。"
+    },
+    "colorMeta": {
+      "coral": {
+        "role": "primary",
+        "displayName": "珊瑚操作色",
+        "tonalRamp": [
+          "oklch(15% 0.13773 32.08)",
+          "oklch(25% 0.13773 32.08)",
+          "oklch(35% 0.13773 32.08)",
+          "oklch(45% 0.13773 32.08)",
+          "oklch(55% 0.13773 32.08)",
+          "oklch(68% 0.13773 32.08)",
+          "oklch(82% 0.13773 32.08)",
+          "oklch(95% 0.13773 32.08)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "coral-ink": {
+        "role": "primary",
+        "displayName": "深珊瑚文字",
+        "tonalRamp": [
+          "oklch(15% 0.12167 31.11)",
+          "oklch(25% 0.12167 31.11)",
+          "oklch(35% 0.12167 31.11)",
+          "oklch(45% 0.12167 31.11)",
+          "oklch(55% 0.12167 31.11)",
+          "oklch(68% 0.12167 31.11)",
+          "oklch(82% 0.12167 31.11)",
+          "oklch(95% 0.12167 31.11)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "sage": {
+        "role": "secondary",
+        "displayName": "鼠尾草绿",
+        "tonalRamp": [
+          "oklch(15% 0.07128 137.55)",
+          "oklch(25% 0.07128 137.55)",
+          "oklch(35% 0.07128 137.55)",
+          "oklch(45% 0.07128 137.55)",
+          "oklch(55% 0.07128 137.55)",
+          "oklch(68% 0.07128 137.55)",
+          "oklch(82% 0.07128 137.55)",
+          "oklch(95% 0.07128 137.55)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "sage-container": {
+        "role": "secondary",
+        "displayName": "浅鼠尾草容器",
+        "tonalRamp": [
+          "oklch(15% 0.03350 123.85)",
+          "oklch(25% 0.03350 123.85)",
+          "oklch(35% 0.03350 123.85)",
+          "oklch(45% 0.03350 123.85)",
+          "oklch(55% 0.03350 123.85)",
+          "oklch(68% 0.03350 123.85)",
+          "oklch(82% 0.03350 123.85)",
+          "oklch(95% 0.03350 123.85)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "奶油底",
+        "tonalRamp": [
+          "oklch(15% 0.02784 81.47)",
+          "oklch(25% 0.02784 81.47)",
+          "oklch(35% 0.02784 81.47)",
+          "oklch(45% 0.02784 81.47)",
+          "oklch(55% 0.02784 81.47)",
+          "oklch(68% 0.02784 81.47)",
+          "oklch(82% 0.02784 81.47)",
+          "oklch(95% 0.02784 81.47)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "浅纸面",
+        "tonalRamp": [
+          "oklch(15% 0.01706 84.59)",
+          "oklch(25% 0.01706 84.59)",
+          "oklch(35% 0.01706 84.59)",
+          "oklch(45% 0.01706 84.59)",
+          "oklch(55% 0.01706 84.59)",
+          "oklch(68% 0.01706 84.59)",
+          "oklch(82% 0.01706 84.59)",
+          "oklch(95% 0.01706 84.59)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "深棕墨",
+        "tonalRamp": [
+          "oklch(15% 0.02424 39.23)",
+          "oklch(25% 0.02424 39.23)",
+          "oklch(35% 0.02424 39.23)",
+          "oklch(45% 0.02424 39.23)",
+          "oklch(55% 0.02424 39.23)",
+          "oklch(68% 0.02424 39.23)",
+          "oklch(82% 0.02424 39.23)",
+          "oklch(95% 0.02424 39.23)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "secondary-ink": {
+        "role": "neutral",
+        "displayName": "柔棕说明",
+        "tonalRamp": [
+          "oklch(15% 0.03050 51.77)",
+          "oklch(25% 0.03050 51.77)",
+          "oklch(35% 0.03050 51.77)",
+          "oklch(45% 0.03050 51.77)",
+          "oklch(55% 0.03050 51.77)",
+          "oklch(68% 0.03050 51.77)",
+          "oklch(82% 0.03050 51.77)",
+          "oklch(95% 0.03050 51.77)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "button-ink": {
+        "role": "neutral",
+        "displayName": "按钮深墨",
+        "tonalRamp": [
+          "oklch(15% 0.02408 45.76)",
+          "oklch(25% 0.02408 45.76)",
+          "oklch(35% 0.02408 45.76)",
+          "oklch(45% 0.02408 45.76)",
+          "oklch(55% 0.02408 45.76)",
+          "oklch(68% 0.02408 45.76)",
+          "oklch(82% 0.02408 45.76)",
+          "oklch(95% 0.02408 45.76)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "浅木线",
+        "tonalRamp": [
+          "oklch(15% 0.03984 74.74)",
+          "oklch(25% 0.03984 74.74)",
+          "oklch(35% 0.03984 74.74)",
+          "oklch(45% 0.03984 74.74)",
+          "oklch(55% 0.03984 74.74)",
+          "oklch(68% 0.03984 74.74)",
+          "oklch(82% 0.03984 74.74)",
+          "oklch(95% 0.03984 74.74)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "peach-indicator": {
+        "role": "neutral",
+        "displayName": "浅桃选中底",
+        "tonalRamp": [
+          "oklch(15% 0.06074 46.92)",
+          "oklch(25% 0.06074 46.92)",
+          "oklch(35% 0.06074 46.92)",
+          "oklch(45% 0.06074 46.92)",
+          "oklch(55% 0.06074 46.92)",
+          "oklch(68% 0.06074 46.92)",
+          "oklch(82% 0.06074 46.92)",
+          "oklch(95% 0.06074 46.92)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "connection-banner": {
+        "role": "neutral",
+        "displayName": "暖桃连接提示",
+        "tonalRamp": [
+          "oklch(15% 0.04145 64.90)",
+          "oklch(25% 0.04145 64.90)",
+          "oklch(35% 0.04145 64.90)",
+          "oklch(45% 0.04145 64.90)",
+          "oklch(55% 0.04145 64.90)",
+          "oklch(68% 0.04145 64.90)",
+          "oklch(82% 0.04145 64.90)",
+          "oklch(95% 0.04145 64.90)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "error": {
+        "role": "error",
+        "displayName": "深红错误",
+        "tonalRamp": [
+          "oklch(15% 0.14623 28.99)",
+          "oklch(25% 0.14623 28.99)",
+          "oklch(35% 0.14623 28.99)",
+          "oklch(45% 0.14623 28.99)",
+          "oklch(55% 0.14623 28.99)",
+          "oklch(68% 0.14623 28.99)",
+          "oklch(82% 0.14623 28.99)",
+          "oklch(95% 0.14623 28.99)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "白色前景",
+        "tonalRamp": [
+          "oklch(15% 0.00000 0.00)",
+          "oklch(25% 0.00000 0.00)",
+          "oklch(35% 0.00000 0.00)",
+          "oklch(45% 0.00000 0.00)",
+          "oklch(55% 0.00000 0.00)",
+          "oklch(68% 0.00000 0.00)",
+          "oklch(82% 0.00000 0.00)",
+          "oklch(95% 0.00000 0.00)"
+        ],
+        "rampSource": "synthetic-documentation-preview-only; not used by the Flutter app"
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "品牌标题",
+        "purpose": "登录品牌标题；字体未显式指定，使用平台默认与中文回退。"
+      },
+      "title-large": {
+        "displayName": "内容标题",
+        "purpose": "今日约定、小屋名称、成就册。"
+      },
+      "title-medium": {
+        "displayName": "条目标题",
+        "purpose": "任务、奖品、记录分组。"
+      },
+      "body-large": {
+        "displayName": "主要正文",
+        "purpose": "中文完成标准与说明，随系统文字缩放。"
+      },
+      "body-medium": {
+        "displayName": "次要正文",
+        "purpose": "柔棕次要说明。"
+      },
+      "label-large": {
+        "displayName": "操作标签",
+        "purpose": "按钮文案；状态色由原生 Material 处理。"
+      }
+    },
+    "shadows": [],
+    "elevation": {
+      "customSurfaces": "Paper and RoomScene have no custom shadows; tone, border and raster depth.",
+      "framework": "Material dialogs, state layers and floating controls retain framework defaults; no project elevation token extracted."
+    },
+    "motion": [
+      {
+        "name": "idle-blink-interval",
+        "value": "5s",
+        "purpose": "pose 0 且未减少动态时周期切换眨眼帧。",
+        "source": "apps/mobile/lib/features/growth/room_scene.dart"
+      },
+      {
+        "name": "idle-blink-duration",
+        "value": "160ms",
+        "purpose": "眨眼帧 1 回到待机帧。",
+        "source": "apps/mobile/lib/features/growth/room_scene.dart"
+      },
+      {
+        "name": "sync-feedback-reset",
+        "value": "500ms",
+        "purpose": "同步收尾将打卡反馈帧 2／等级反馈帧 3 回到帧 0。",
+        "source": "apps/mobile/lib/app/controller.dart"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "today-compact-height",
+        "value": "height < 740 logical px",
+        "axis": "total-screen-height",
+        "effect": "RoomScene 100 logical px; otherwise 190 logical px.",
+        "source": "apps/mobile/lib/features/tasks/today_screen.dart"
+      }
+    ],
+    "touchTargets": {
+      "explicitThemeMinimum": "48 × 48 logical px",
+      "appliesTo": [
+        "FilledButton",
+        "OutlinedButton",
+        "TextButton"
+      ],
+      "iconActions": "Material defaults with tooltips / explicit Semantics on named actions.",
+      "evidenceLimit": "No comprehensive measurement of all touch areas, TalkBack, keyboard focus, or target hardware."
+    },
+    "assets": [
+      {
+        "path": "docs/assets/pixel-cat-study-room.png",
+        "purpose": "用户已定视觉方向；概念数字不进入实际数据。",
+        "dimensions": "853 × 1844",
+        "runtime": false
+      },
+      {
+        "path": "apps/mobile/assets/room-background.png",
+        "purpose": "独立房间背景",
+        "dimensions": "1536 × 1024",
+        "rendering": "BoxFit.cover; FilterQuality.none",
+        "runtime": true
+      },
+      {
+        "path": "apps/mobile/assets/cats-atlas.png",
+        "purpose": "两猫四帧 atlas",
+        "dimensions": "1774 × 887",
+        "layout": "4 columns × 2 rows; both rows always drawn",
+        "rendering": "FilterQuality.none; each cat width = 31% scene width",
+        "runtime": true
+      },
+      {
+        "path": "apps/mobile/assets/decorations-badges.png",
+        "purpose": "四纪念装饰与五成就徽章",
+        "dimensions": "1254 × 1254",
+        "layout": "3 columns × 3 rows",
+        "rendering": "FilterQuality.none; PixelSprite default size 48 logical px",
+        "runtime": true
+      },
+      {
+        "path": "apps/mobile/assets/app-icon.png",
+        "purpose": "应用包装素材；本轮视觉复核未评估 launcher",
+        "dimensions": "1254 × 1254",
+        "runtime": false
+      }
+    ],
+    "pixelGlyphs": {
+      "source": "apps/mobile/lib/core/pixel_glyph.dart",
+      "grid": "8 × 8",
+      "antialias": false,
+      "defaultSize": "24 logical px",
+      "navigation": [
+        "today",
+        "room",
+        "gift",
+        "growth"
+      ],
+      "taskCategories": {
+        "c": "c",
+        "exercise": "exercise",
+        "other": "book"
+      },
+      "auxiliaryMaterialIcons": "Notifications, settings and other tool controls remain native Material icons."
+    },
+    "states": [
+      {
+        "name": "cold-restoring",
+        "view": "_StartupScreen",
+        "presentation": "initializing 时显示 cream SafeArea 居中的 48 logical px 像素爪印、live-region 中文恢复状态与 Material 进度；初始化结束后进入当前账号对应的登录／绑定／首页。",
+        "source": "apps/mobile/lib/main.dart"
+      },
+      {
+        "name": "opening",
+        "view": "HomeScreen",
+        "presentation": "无 snapshot：正在打开我们的小屋…与重新连接。"
+      },
+      {
+        "name": "remote-list",
+        "view": "RemoteList",
+        "presentation": "加载指示、读取失败与重试、真实空态、下拉刷新。"
+      },
+      {
+        "name": "queued-checkin",
+        "view": "TodayScreen",
+        "presentation": "待同步 · 积分尚未入账；存在队列时禁用勾选。"
+      },
+      {
+        "name": "queue-failed",
+        "view": "TodayScreen",
+        "presentation": "同步失败原因；Wrap 中提供重试同步与使用服务器记录。",
+        "recovery": {
+          "confirmationTitle": "使用服务器记录？",
+          "confirmationMessage": "放弃本机这条同步失败的操作，不修改服务器记录。之后可按最新记录重新打卡。",
+          "method": "AppController.discardFailedOperation",
+          "eligibility": "Only a failed operation in the current account's pending queue.",
+          "steps": [
+            "Confirm abandoning only this local failed intent.",
+            "Remove this local operation; retain server records.",
+            "Check account and space are unchanged, then refresh the remaining local queue and sync the server snapshot.",
+            "A later check-in creates a new UUID with the current snapshot version instead of repeatedly submitting the conflicting old payload."
+          ],
+          "sources": [
+            "apps/mobile/lib/features/tasks/today_screen.dart",
+            "apps/mobile/lib/app/controller.dart",
+            "apps/mobile/lib/core/store.dart"
+          ],
+          "evidence": "Source-observed failed-state recovery only; normal-state layout of the nine reviewed captures is unchanged. No new visual score or final-test pass is asserted."
+        }
+      },
+      {
+        "name": "checkin-submitting",
+        "view": "TodayScreen",
+        "presentation": "24 logical px 进度指示与禁用勾选。"
+      },
+      {
+        "name": "reward-disabled",
+        "view": "RewardsScreen",
+        "presentation": "暂未上架／已兑完／还差 N 小鱼干，根据真实状态禁用。"
+      },
+      {
+        "name": "offline",
+        "view": "HomeScreen",
+        "presentation": "离线 · 错误信息，连接提示条与重试。"
+      },
+      {
+        "name": "busy-form",
+        "view": "AuthScreen / editors / SettingsScreen",
+        "presentation": "正在连接／保存等真实文案与禁用主操作。"
+      },
+      {
+        "name": "errors",
+        "view": "forms / attempt",
+        "presentation": "字段校验、登录错误角色、其他命令 SnackBar。"
+      },
+      {
+        "name": "no-partner-event",
+        "view": "TodayScreen",
+        "presentation": "TA还没有新动态，先约定一件小事吧。"
+      },
+      {
+        "name": "notification-denied",
+        "view": "SettingsScreen",
+        "presentation": "系统未授予通知权限，主要功能仍可用；保留收件箱和前台同步。"
+      }
+    ],
+    "notifications": {
+      "sources": [
+        "apps/mobile/lib/features/notifications/notification_service.dart",
+        "apps/mobile/lib/features/notifications/reminder_plan.dart",
+        "apps/mobile/lib/features/notifications/quiet_hours.dart",
+        "apps/mobile/lib/main.dart",
+        "apps/mobile/lib/features/settings/settings_screen.dart"
+      ],
+      "androidChannels": [
+        {
+          "id": "partner_events",
+          "name": "TA 的动态",
+          "purpose": "打卡、鼓励与奖励进度；初始化时创建。"
+        },
+        {
+          "id": "task_reminders",
+          "name": "每日约定提醒",
+          "purpose": "已接受任务的本地时间提醒；初始化时创建。"
+        }
+      ],
+      "permission": {
+        "request": "Explain purpose before requesting OS notification permission from SettingsScreen; denial preserves check-in, foreground sync and inbox.",
+        "refresh": "Check current OS permission at initialization and each foreground resume; changed permission invalidates schedule / registration cache keys before sync and notification updates.",
+        "nativeAcceptance": "Android API36 ARM64 emulator denied / allowed permission and pending-scheduling assertions passed in notification-native-proof.json. Actual local delivery / native click are proven separately for recorded APKs in native-reminder proofs."
+      },
+      "reminderScheduling": {
+        "execution": "Serialized promise tail with schedule epoch and active-key guards; commit last schedule key only after an active plan succeeds.",
+        "keyInputs": [
+          "account ID",
+          "space ID",
+          "API session generation",
+          "OS permission",
+          "snapshot_seq",
+          "current-space-zone civil date",
+          "snapshot today",
+          "current preferences"
+        ],
+        "offlineFailure": "Fetch tasks before replacing alarms; a fetch failure leaves previously scheduled reminders intact.",
+        "replacement": "Cancel only pending requests whose payload kind is task_reminder or contains task_id; preserve unrelated and already displayed partner notifications.",
+        "logout": "Increment schedule epoch to invalidate asynchronous plans, clear cached registration / schedule state, then serialize cancelAll after pending work.",
+        "planningWindow": "Seven civil dates from the current space's date, not seven added 24-hour durations.",
+        "timezoneRules": "For each date, use the latest accepted effective timezone rule; UTC / GMT aliases resolve to tz.UTC.",
+        "taskTerms": "Current executor only; accepted versions, effective enable / pause state, weekdays, end date and personal rest dates.",
+        "todayVersion": "Prefer the version matching today's frozen task_version_id when present; fall back to the latest available accepted version only if unmatched; skip today's completed instance.",
+        "quietHours": "Shift a reminder in quiet hours to the local civil end time, including overnight and DST boundaries.",
+        "capacity": "Future reminders sorted by time; take at most 60 to leave iOS notification capacity for partner alerts.",
+        "androidMode": "inexactAllowWhileIdle; this is not an exact-delivery guarantee."
+      },
+      "lockScreenPrivacy": {
+        "detailsCondition": "lock_screen_details == true, explicitly enabled.",
+        "localDefault": "留一点时间，完成和 TA 的小约定。",
+        "partnerDefault": "TA有新的打卡动态",
+        "detailsEnabled": "Local task title or authorized foreground partner event short text."
+      },
+      "remoteForeground": {
+        "authorization": "Fetch notification by notification_id from the API, verify account / session and space before showing.",
+        "preferences": "Respect checkins / interactions / rewards categories and space-zone quiet hours.",
+        "failure": "Inbox remains the source of truth if an alert cannot be authorized; sync only for the same account / session.",
+        "registration": "Token registration and response handling verify account / session; failed registration keeps registrationError and is not evidence of delivered push."
+      },
+      "tapRouting": {
+        "initialGuard": "Verify space and any account_id, sync, then verify the same account / session.",
+        "remote": "Read the authorized notification ID and mark read, then route by event to orders / milestones / tasks / feed; failure opens inbox.",
+        "local": "Go to root and explicitly select Today after the next frame instead of retaining another selected destination.",
+        "restorationGuard": "Pending taps stay held while initializing; process only after current account / snapshot restoration completes."
+      },
+      "evidenceLimit": "Current source, 30 passed host tests, startup→logout→login real HTTP/PostgreSQL Android integration, native permission / pending scheduling assertions, and actual local reminder delivery / native click for recorded emulator APKs. Original F1–F6 visual scope remains; startup's two captures have a separate bounded ship. APNs / FCM delivery, iOS and physical phones remain unverified."
+    },
+    "exportSharing": {
+      "source": "apps/mobile/lib/features/settings/settings_screen.dart",
+      "authorization": "Fetch only the user's authorized space export.",
+      "temporaryFile": "After calling system share, delete the existing temporary JSON in finally on both success and share failure."
+    },
+    "evidence": {
+      "visualReview": "docs/verification/visual-review-android.md",
+      "visualVerdict": "docs/verification/visual-verdict-android.md",
+      "contrast": "docs/verification/contrast-proof.json",
+      "disposition": "ship",
+      "dispositionScope": "F1–F6 only, all resolved by the same reviewer against the supplied Android emulator captures.",
+      "captures": [
+        "docs/verification/screenshots/android-login.png",
+        "docs/verification/screenshots/android-today.png",
+        "docs/verification/screenshots/android-room.png",
+        "docs/verification/screenshots/android-rewards.png",
+        "docs/verification/screenshots/android-growth.png",
+        "docs/verification/screenshots/android-settings.png",
+        "docs/verification/screenshots/android-settings-bottom.png",
+        "docs/verification/screenshots/android-small-130.png",
+        "docs/verification/screenshots/android-today-event.png"
+      ],
+      "captureLimit": "Static Android emulator captures; no iOS compile, target hardware, production push, full product acceptance, independent motion, keyboard, dark appearance or launcher assessment.",
+      "notificationFollowup": {
+        "asOf": "2026-10-08T19:38:06Z",
+        "analyze": {
+          "source": "docs/verification/flutter-analyze.log",
+          "result": "No issues found."
+        },
+        "hostTests": {
+          "source": "docs/verification/flutter-tests.log",
+          "passed": 30,
+          "notificationTapTests": {
+            "count": 3,
+            "scope": "Dart widget routing: authorized remote ID lookup, old-account isolation, and local reminder returning to Today; not native tap delivery."
+          },
+          "startupCoverage": "Serialized cold initialization, late secure-storage session guards, sanitized corrupt restore and boot→first login→logout→second login."
+        },
+        "androidPermissionIntegration": {
+          "source": "docs/verification/notification-native-proof.json",
+          "environment": "Android API36 ARM64 emulator-5554",
+          "case": "integration_test/core_flow_test.dart with real development HTTP / PostgreSQL",
+          "runs": [
+            {
+              "osPermission": false,
+              "source": "docs/verification/android-e2e-denied.log",
+              "passed": true
+            },
+            {
+              "osPermission": true,
+              "source": "docs/verification/android-e2e-allowed.log",
+              "passed": true
+            }
+          ],
+          "checks": [
+            "Native partner_events and task_reminders channels exist.",
+            "Pending task reminders exist only with OS permission allowed.",
+            "Payload is scoped to current account and space.",
+            "Default lock-screen body contains no task title.",
+            "Logout clears native pending reminders."
+          ],
+          "limits": "Local permission and scheduling assertions only; excludes actual local alarm delivery / native taps, APNs / FCM delivery, iOS and physical phones."
+        },
+        "apkBuild": {
+          "source": "docs/verification/android-build.log",
+          "result": "assembleDebug succeeded; main app APK rebuilt.",
+          "artifact": "apps/mobile/build/app/outputs/flutter-apk/app-debug.apk"
+        },
+        "realPush": "APNs / FCM actual delivery remains unverified.",
+        "visualScope": "Original nine captures and F1–F6 only, plus a separately bounded two-capture startup ship; no normal page composition change.",
+        "nativeLocalReminder": {
+          "historical": {
+            "source": "docs/verification/native-reminder-tap-proof.json",
+            "apkSha256": "4e9adc1e885931801c72730940804d8235b6c4fc9db6727ac6c62f4fd7b93b45",
+            "scope": "Historical old APK; actual local alarm delivered after prior app process killed and native tap rebuilt Today."
+          },
+          "newerRecorded": {
+            "source": "docs/verification/native-reminder-final-proof.json",
+            "apkSha256": "6f2721b60a521e97f25a8d5ffbec8728e8211b1e07deb93fc3a4c170cf712d6a",
+            "scope": "Newer recorded APK; actual local alarm delivered, native tap showed restoration semantics then authenticated Today; final login correction is separately covered by current host / integration checks.",
+            "delaySecondsInThisEmulator": 76.019
+          },
+          "checks": [
+            "Native alarm actually posted after inactive app process.",
+            "Native click returned authenticated Today.",
+            "Wallet available / balance remained 5; permanent XP remained 1.",
+            "Notification payload scoped to the recorded account and space."
+          ],
+          "screenshotProvenance": "Initial blank PNG discarded. Startup/restored PNGs retaken after rendered semantics confirmed on the same recorded APK under actual six-second GET /auth/me dev API latency. Target-visible PNG follows a scroll; native tap semantics recorded separately.",
+          "experimentCleanup": "Temporary latency middleware / container removed; original API / database / worker restored; real /health ok and /ready ready.",
+          "limits": "Local main-program Android emulator reminder and startup only; no exact-time / cross-device guarantee, APNs / FCM delivery, iOS or physical phones."
+        }
+      },
+      "sourceExtractionOnly": true,
+      "reranValidation": false,
+      "latestStartupIntegration": {
+        "source": "docs/verification/android-e2e-startup-login.log",
+        "environment": "Android API36 ARM64 emulator; real development HTTP / PostgreSQL",
+        "result": "All tests passed",
+        "passed": 1,
+        "runtimeSeconds": 10,
+        "buildSeconds": 20.4,
+        "setup": "Save real session then await app.init(); do not prefill controller.user / sid.",
+        "checks": "Task acceptance / check-in / orders / allowed native notifications / settings logout / login restores same space, wallet balance 5 and completed order.",
+        "scope": "Latest login correction; emulator integration, not physical hardware or APNs / FCM."
+      },
+      "startupVisualReview": {
+        "source": "docs/verification/visual-review-startup-android.md",
+        "disposition": "ship",
+        "sections": [
+          "persistence",
+          "fidelity",
+          "ceiling",
+          "material_fixes",
+          "keep"
+        ],
+        "captures": [
+          "docs/verification/screenshots/android-startup-restoring.png",
+          "docs/verification/screenshots/android-startup-restored.png"
+        ],
+        "scope": "Only Android restoration and transition into the previously reviewed Today shell. Original nine-capture F1–F6 scope remains independent.",
+        "provenance": "Valid same-recorded-APK retakes under actual six-second dev /auth/me latency; pre-paint blank capture excluded; latency middleware removed.",
+        "lastSourceCorrection": "Explicit login _restoreAccount after cold init; visual composition unchanged.",
+        "limits": "No all-startup-failure, enlarged-font-startup, animation-performance, dark-theme, iOS, physical-phone or whole-product acceptance."
+      }
+    },
+    "motionPolicy": {
+      "source": "apps/mobile/lib/features/growth/room_scene.dart",
+      "effectiveReduction": "widget.reduceMotion OR MediaQuery.disableAnimations",
+      "osCoverage": [
+        "AuthScreen",
+        "BindingScreen",
+        "TodayScreen",
+        "RoomScreen"
+      ],
+      "accountPreferenceCoverage": [
+        "TodayScreen",
+        "RoomScreen"
+      ],
+      "behavior": "When reduced, render pose 0 and skip idle blinking.",
+      "evidence": "Source-observed; static visual captures do not verify motion timing, OS preference changes or target-device performance."
+    },
+    "sessionState": {
+      "sources": [
+        "apps/mobile/lib/main.dart",
+        "apps/mobile/lib/app/controller.dart",
+        "apps/mobile/lib/core/api.dart",
+        "apps/mobile/lib/features/settings/settings_screen.dart"
+      ],
+      "route": "GoRouter protects initializing / user / needsLogin / sid; root shows _StartupScreen while restoring; settings also guards null user; logout goes to '/'.",
+      "controller": "Cold init is serialized once. Login / logout wait initialization and active sync; login explicitly restores the new account. Generation checks prevent stale sync writes; WebSocket callbacks verify socket identity and generation.",
+      "api": "Session generation changes on token install / clear; stale request / refresh responses throw SESSION_CHANGED; restore checks generation after secure-storage read.",
+      "evidence": "Source-observed behavior with 30 host tests and latest emulator startup→logout→login HTTP / PostgreSQL integration; recorded native reminder APKs retain their own provenance."
+    },
+    "startupState": {
+      "sources": [
+        "apps/mobile/lib/app/controller.dart",
+        "apps/mobile/lib/core/api.dart",
+        "apps/mobile/lib/main.dart"
+      ],
+      "initialization": "AppController.init memoizes one serialized cold-restore Future; initializing true until finally.",
+      "restore": "Restore secure tokens, profile, active account space, cached snapshot and local queue; sync current server state.",
+      "login": "Login / logout await initialization and active sync. Login explicitly calls _restoreAccount after installing the new session; completed cold initialization is not reused as account restoration.",
+      "apiGuard": "Api.restore verifies session generation after the secure-storage read before installing restored tokens.",
+      "corruptRestore": "Clear in-memory user / sid / snapshot / pending, set needsLogin and sanitized error 本机会话恢复失败，请重新登录。; attempt clearing secure session/profile. Does not claim all SQLite cache was deleted.",
+      "layout": {
+        "backgroundRef": "colors.cream",
+        "safeArea": true,
+        "alignment": "Center",
+        "paddingRef": "spacing.section",
+        "mark": "PixelGlyph('paw')",
+        "markSize": "48 logical px",
+        "gapsRef": "spacing.section",
+        "text": "正在恢复账号与小屋…",
+        "liveRegion": true,
+        "progress": "Material CircularProgressIndicator"
+      },
+      "notificationGate": "Hold update / registration / scheduling and pending notification routing while initializing.",
+      "evidenceLimit": "Two captured Android restoration states and the existing Today transition; no all-failure, enlarged-font-startup, animation-performance, iOS or physical-phone acceptance."
+    },
+    "authInputRecovery": {
+      "source": "apps/mobile/lib/features/auth/auth_screen.dart",
+      "version": "0.1.1(3)",
+      "rules": {
+        "username": "3–80 ASCII letters/digits/_.@-; trim outer whitespace",
+        "password": "10–128 Unicode code points after trimming, matching existing server behavior",
+        "token": "20–128 Unicode code points after trimming",
+        "nickname": "1–40 Unicode code points; Chinese allowed"
+      },
+      "fieldErrors": "server field_errors applied beside known fields; editing clears matching error without erasing input",
+      "activationSuccessLoginFailure": "switch to login and preserve credentials; never automatically reuse the consumed activation code",
+      "globalErrorSemantics": "liveRegion",
+      "evidenceScope": "Android emulator normal and error captures; host tests; not physical user login acceptance"
+    }
+  },
+  "components": [
+    {
+      "name": "FilledButton",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "珊瑚主操作与深墨标签；显式最小触区。",
+      "source": "apps/mobile/lib/app/theme.dart",
+      "html": "<button class=\"ds-primary\">保存设置</button><button class=\"ds-primary\" disabled>正在保存…</button>",
+      "css": ".ds-primary{background:#D56B57;color:#241711;border:0;border-radius:12px;min-width:48px;min-height:48px;padding:0 16px;font:600 16px system-ui,sans-serif}.ds-primary:hover{cursor:pointer}.ds-primary:focus-visible{outline:auto}.ds-primary:disabled{cursor:default;opacity:.5}",
+      "fidelity": "仅将当前 Flutter 控件的主要色面、形状和文字层级翻译为独立 HTML/CSS 文档预览。原生布局约束、Material 状态覆盖层、输入和导航行为仍以 Dart 与设备输出为准；这些片段未作为产品实现或验收证据。"
+    },
+    {
+      "name": "OutlinedButton",
+      "kind": "button",
+      "refersTo": "button-outlined",
+      "description": "次要入口；圆润形态由 Material 默认处理。",
+      "source": "apps/mobile/lib/app/theme.dart",
+      "html": "<button class=\"ds-outlined\">兑换与兑现记录</button>",
+      "css": ".ds-outlined{background:transparent;color:#392A25;border:1px solid currentColor;border-radius:999px;min-width:48px;min-height:48px;padding:0 16px;font:600 16px system-ui,sans-serif}.ds-outlined:hover{cursor:pointer}.ds-outlined:focus-visible{outline:auto}",
+      "fidelity": "仅将当前 Flutter 控件的主要色面、形状和文字层级翻译为独立 HTML/CSS 文档预览。原生布局约束、Material 状态覆盖层、输入和导航行为仍以 Dart 与设备输出为准；这些片段未作为产品实现或验收证据。"
+    },
+    {
+      "name": "TextButton",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "余额、日期、笔记与轻操作使用深珊瑚文案。",
+      "source": "apps/mobile/lib/app/theme.dart",
+      "html": "<button class=\"ds-text\">添加笔记</button>",
+      "css": ".ds-text{background:transparent;color:#963E30;border:0;min-width:48px;min-height:48px;padding:0 16px;font:600 16px system-ui,sans-serif}.ds-text:hover{cursor:pointer}.ds-text:focus-visible{outline:auto}",
+      "fidelity": "仅将当前 Flutter 控件的主要色面、形状和文字层级翻译为独立 HTML/CSS 文档预览。原生布局约束、Material 状态覆盖层、输入和导航行为仍以 Dart 与设备输出为准；这些片段未作为产品实现或验收证据。"
+    },
+    {
+      "name": "TextFormField",
+      "kind": "input",
+      "refersTo": "text-field",
+      "description": "纸面填充、浅木基础轮廓与独立中文标签。",
+      "source": "apps/mobile/lib/app/theme.dart; apps/mobile/lib/features/auth/auth_screen.dart",
+      "html": "<label class=\"ds-field-label\">账号<input class=\"ds-field\" aria-label=\"账号\" autocomplete=\"username\"/></label>",
+      "css": ".ds-field-label{display:grid;gap:8px;color:#392A25;font:16px/1.5 system-ui,sans-serif}.ds-field{background:#FFF9ED;color:#392A25;border:1px solid #DFCCB3;border-radius:12px;min-height:48px;padding:0 16px;font:16px/1.5 system-ui,sans-serif}.ds-field:focus-visible{outline:auto}",
+      "fidelity": "仅将当前 Flutter 控件的主要色面、形状和文字层级翻译为独立 HTML/CSS 文档预览。原生布局约束、Material 状态覆盖层、输入和导航行为仍以 Dart 与设备输出为准；这些片段未作为产品实现或验收证据。"
+    },
+    {
+      "name": "Paper",
+      "kind": "card",
+      "refersTo": "paper",
+      "description": "内容容器用纸面与浅木边线，默认无自定义阴影。",
+      "source": "apps/mobile/lib/core/widgets.dart",
+      "html": "<article class=\"ds-paper\"><strong>TA的最新动态</strong><p>动态内容来自服务器。</p></article>",
+      "css": ".ds-paper{background:#FFF9ED;color:#392A25;border:1px solid #DFCCB3;border-radius:16px;padding:16px;font:16px/1.5 system-ui,sans-serif}.ds-paper strong{font-size:18px;font-weight:600}.ds-paper p{margin:8px 0 0}",
+      "fidelity": "仅将当前 Flutter 控件的主要色面、形状和文字层级翻译为独立 HTML/CSS 文档预览。原生布局约束、Material 状态覆盖层、输入和导航行为仍以 Dart 与设备输出为准；这些片段未作为产品实现或验收证据。"
+    },
+    {
+      "name": "Four Destinations",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "四个固定入口，当前项使用桃色指示与深棕像素图标。",
+      "source": "apps/mobile/lib/main.dart; apps/mobile/lib/core/pixel_glyph.dart",
+      "html": "<nav class=\"ds-nav\" aria-label=\"主要导航\"><button class=\"ds-destination\" aria-current=\"page\"><span class=\"ds-nav-icon\"><svg aria-hidden=\"true\" viewBox=\"0 0 8 8\" width=\"24\" height=\"24\" shape-rendering=\"crispEdges\" fill=\"currentColor\"><rect x=\"2\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"7\" width=\"1\" height=\"1\"/></svg></span><span>今日</span></button><button class=\"ds-destination\"><span class=\"ds-nav-icon\"><svg aria-hidden=\"true\" viewBox=\"0 0 8 8\" width=\"24\" height=\"24\" shape-rendering=\"crispEdges\" fill=\"currentColor\"><rect x=\"3\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"0\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"7\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"7\" width=\"1\" height=\"1\"/></svg></span><span>小屋</span></button><button class=\"ds-destination\"><span class=\"ds-nav-icon\"><svg aria-hidden=\"true\" viewBox=\"0 0 8 8\" width=\"24\" height=\"24\" shape-rendering=\"crispEdges\" fill=\"currentColor\"><rect x=\"1\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"0\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"7\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"0\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"7\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"0\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"7\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"0\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"7\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"0\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"7\" y=\"7\" width=\"1\" height=\"1\"/></svg></span><span>奖励</span></button><button class=\"ds-destination\"><span class=\"ds-nav-icon\"><svg aria-hidden=\"true\" viewBox=\"0 0 8 8\" width=\"24\" height=\"24\" shape-rendering=\"crispEdges\" fill=\"currentColor\"><rect x=\"4\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"7\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"7\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"7\" width=\"1\" height=\"1\"/></svg></span><span>成长</span></button></nav>",
+      "css": ".ds-nav{display:flex;justify-content:space-around;gap:8px;background:#FFF9ED;padding:8px;color:#392A25}.ds-destination{display:grid;justify-items:center;gap:8px;min-width:48px;min-height:48px;border:0;background:transparent;color:#392A25;font-family:system-ui,sans-serif}.ds-nav-icon{padding:8px 16px;border-radius:999px}.ds-destination[aria-current=\"page\"] .ds-nav-icon{background:#F2C4AE}.ds-destination:hover{cursor:pointer}.ds-destination:focus-visible{outline:auto}",
+      "fidelity": "仅将当前 Flutter 控件的主要色面、形状和文字层级翻译为独立 HTML/CSS 文档预览。原生布局约束、Material 状态覆盖层、输入和导航行为仍以 Dart 与设备输出为准；这些片段未作为产品实现或验收证据。"
+    },
+    {
+      "name": "My / Partner Segment",
+      "kind": "custom",
+      "refersTo": "selection-active",
+      "description": "今日与成长在我的／TA的记录间切换；实际使用 SegmentedButton。",
+      "source": "apps/mobile/lib/features/tasks/today_screen.dart; apps/mobile/lib/features/growth/growth_screen.dart",
+      "html": "<div class=\"ds-segment\" role=\"group\" aria-label=\"记录成员\"><button aria-pressed=\"true\">✓ 我的</button><button aria-pressed=\"false\">TA的</button></div>",
+      "css": ".ds-segment{display:inline-flex;border:1px solid #392A25;border-radius:999px;overflow:hidden;color:#392A25}.ds-segment button{min-width:48px;min-height:48px;padding:0 16px;border:0;background:#F6EBD8;color:#392A25;font:600 16px system-ui,sans-serif}.ds-segment button+button{border-left:1px solid #392A25}.ds-segment button[aria-pressed=\"true\"]{background:#DAE3CB}.ds-segment button:hover{cursor:pointer}.ds-segment button:focus-visible{outline:auto}",
+      "fidelity": "仅将当前 Flutter 控件的主要色面、形状和文字层级翻译为独立 HTML/CSS 文档预览。原生布局约束、Material 状态覆盖层、输入和导航行为仍以 Dart 与设备输出为准；这些片段未作为产品实现或验收证据。"
+    },
+    {
+      "name": "Weekday FilterChip",
+      "kind": "chip",
+      "description": "任务编辑中的重复星期；实际使用 Material FilterChip 与 Wrap。",
+      "source": "apps/mobile/lib/features/tasks/task_editor.dart",
+      "html": "<button class=\"ds-weekday\" aria-pressed=\"true\">✓ 一</button><button class=\"ds-weekday\" aria-pressed=\"false\">二</button>",
+      "css": ".ds-weekday{min-height:48px;min-width:48px;margin-right:8px;padding:0 8px;background:#FFF9ED;color:#392A25;border:1px solid #DFCCB3;border-radius:8px;font-family:system-ui,sans-serif}.ds-weekday[aria-pressed=\"true\"]{background:#DAE3CB}.ds-weekday:hover{cursor:pointer}.ds-weekday:focus-visible{outline:auto}",
+      "fidelity": "仅将当前 Flutter 控件的主要色面、形状和文字层级翻译为独立 HTML/CSS 文档预览。原生布局约束、Material 状态覆盖层、输入和导航行为仍以 Dart 与设备输出为准；这些片段未作为产品实现或验收证据。"
+    },
+    {
+      "name": "Task Row",
+      "kind": "custom",
+      "refersTo": "paper",
+      "description": "像素类别、可换行标题、真实标准与状态、独立笔记及勾选触区。",
+      "source": "apps/mobile/lib/features/tasks/today_screen.dart",
+      "html": "<article class=\"ds-task\"><span class=\"ds-task-glyph\"><svg aria-hidden=\"true\" viewBox=\"0 0 8 8\" width=\"24\" height=\"24\" shape-rendering=\"crispEdges\" fill=\"currentColor\"><rect x=\"3\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"0\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"1\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"7\" y=\"2\" width=\"1\" height=\"1\"/><rect x=\"0\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"7\" y=\"3\" width=\"1\" height=\"1\"/><rect x=\"1\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"7\" y=\"4\" width=\"1\" height=\"1\"/><rect x=\"2\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"5\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"6\" y=\"5\" width=\"1\" height=\"1\"/><rect x=\"3\" y=\"6\" width=\"1\" height=\"1\"/><rect x=\"4\" y=\"6\" width=\"1\" height=\"1\"/></svg></span><div class=\"ds-task-copy\"><strong>约定名称</strong><p>完成标准与积分来自实际约定。</p><button class=\"ds-task-note\">添加笔记</button></div><button class=\"ds-task-check\" aria-label=\"完成这个约定\">□</button></article>",
+      "css": ".ds-task{display:flex;align-items:flex-start;gap:12px;background:#FFF9ED;color:#392A25;border:1px solid #DFCCB3;border-radius:16px;padding:16px;font:16px/1.5 system-ui,sans-serif}.ds-task-glyph{color:#56744B;padding-top:10px}.ds-task-copy{flex:1;min-width:0}.ds-task-copy strong{font-size:18px;font-weight:600}.ds-task-copy p{margin:4px 0}.ds-task-note{background:transparent;border:0;color:#963E30;min-height:48px;font:600 16px system-ui,sans-serif}.ds-task-check{background:#DAE3CB;color:#392A25;border:0;border-radius:999px;min-width:48px;min-height:48px;font-size:24px}.ds-task button:hover{cursor:pointer}.ds-task button:focus-visible{outline:auto}",
+      "fidelity": "仅将当前 Flutter 控件的主要色面、形状和文字层级翻译为独立 HTML/CSS 文档预览。原生布局约束、Material 状态覆盖层、输入和导航行为仍以 Dart 与设备输出为准；这些片段未作为产品实现或验收证据。"
+    }
+  ],
+  "narrative": {
+    "northStar": "两只小猫，一起在温暖书桌前学习",
+    "overview": "这是已实现的 Flutter 手机界面记录。温暖木桌、书本、台灯、植物与月夜窗景形成共同小屋，两只奶油橘猫与灰白猫保持不同毛色。像素插画承担陪伴与纪念，中文标题、说明、表单、任务勾选和导航由原生控件独立绘制。\n\n界面延续用户已定的奶油、深棕、珊瑚与鼠尾草绿世界。Material 3 的表单和导航承载真实操作；视觉密度随手机高度调整，以待完成约定的标题与操作优先。此处记录实际结果，不重新选择风格，也不把概念图中的日期、余额或等级作为产品数据。",
+    "keyCharacteristics": [
+      "分层像素房间、独立两猫与解锁纪念，文字和触区保持原生。",
+      "奶油页面、浅纸内容、深棕正文、珊瑚操作、鼠尾草绿完成。",
+      "四入口：今日、小屋、奖励、成长；通知与设置在顶部。",
+      "普通约定直接勾选，离线状态和服务端余额有独立表达。",
+      "永久纪念经验与当前有效学习事实分别显示。"
+    ],
+    "rules": [
+      {
+        "name": "The Contrast Roles Rule",
+        "body": "珊瑚填充与珊瑚文字是两个不同角色。保留 coral 主填充，操作文案使用 coral-ink；填充按钮使用 button-ink，导航图标使用 ink。",
+        "section": "colors"
+      },
+      {
+        "name": "The Independent Chinese Rule",
+        "body": "标题、余额、日期、任务标准、状态和按钮文字独立于位图，使用正常文本与可换行布局。不能把概念图里的文字或数值烘焙进应用素材。",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper Surface Rule",
+        "body": "任务与记录使用 paper 的色面与 line 边界表达结构，沿用当前平面容器；不可把素材内的阴影当作通用组件阴影。",
+        "section": "elevation"
+      },
+      {
+        "name": "The Memorial and Facts Rule",
+        "body": "今日／小屋的经验、等级和装饰属于永久纪念；成长页的有效完成数、有效学习天数、C 次数和日历属于更正后的学习事实。撤销不使纪念装饰倒退，却可以改变有效统计，两者不能互相替代。",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do 保留用户已定的奶油、珊瑚、鼠尾草绿、温暖木桌与两只不同毛色像素猫。",
+      "Do 使用独立中文文本、原生控件和当前像素网格图标，让真实任务可直接勾选。",
+      "Do 延续当前最小 48×48 logical px 按钮设置，并为图标操作提供明确标签；新增页面仍需对应设备与辅助功能验证。",
+      "Do 按实际屏幕高度与文字缩放安排内容，保留短屏待完成标题和操作优先。",
+      "Do 明确区分可用余额、待同步操作、永久纪念经验和当前有效统计。",
+      "Do 把截图、源码和日志的证据范围写清楚，保持 Android 六项视觉修正与整体产品验收的边界。"
+    ],
+    "donts": [
+      "Don't 覆写根 DESIGN.md、DEVELOPMENT.md 或 GOAL.md，也不要用本视觉记录替代功能合同。",
+      "Don't 重开风格选择，或把整页概念图当作实际界面后覆盖透明触区。",
+      "Don't 把概念图、开发验收截图或 sidecar 预览中的数值、奖品和状态注入生产默认数据。",
+      "Don't 用永久经验或纪念徽章冒充实时有效学习次数和日历。",
+      "Don't 在余额不足时展示可执行的兑换，或在待同步时显示积分已经入账。",
+      "Don't 从本轮静态 Android 捕获宣称 iOS、硬件、推送、全部状态、动效或完整产品已经验收。"
+    ]
+  }
+}

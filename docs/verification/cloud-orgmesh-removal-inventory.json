@@ -1,0 +1,32 @@
+{
+  "service_properties": "MainPID=297708\nEnvironmentFiles=/etc/orgmesh.env (ignore_errors=no)\nWorkingDirectory=/opt/orgmesh/current\nUser=www-data\nFragmentPath=/etc/systemd/system/orgmesh-api.service\n",
+  "exec_orgmesh_paths": [
+    "/opt/orgmesh/current/node_modules/tsx/dist/cli.mjs"
+  ],
+  "related_directories": [
+    {
+      "path": "/opt/orgmesh",
+      "is_symlink": false,
+      "entries": [
+        "current"
+      ],
+      "size": "225M\t/opt/orgmesh"
+    },
+    {
+      "path": "/var/lib/orgmesh",
+      "is_symlink": false,
+      "entries": [
+        "session.json"
+      ],
+      "size": "8.0K\t/var/lib/orgmesh"
+    }
+  ],
+  "nginx_site_link": "/etc/nginx/sites-available/orgmesh",
+  "related_unit_files": [
+    "/etc/systemd/system/orgmesh-api.service"
+  ],
+  "home_top_level_orgmesh": [
+    "/root/orgmesh-legacy-archive-20260805-1815-CST"
+  ],
+  "unrelated_docker_volumes": "64bdb9316b20895691e33bbaf87134d43f39b48393b0da87a99d12a9e3a5de52\nmiaoban-production_database\nrootjourney_mongo-data\n"
+}

@@ -1,0 +1,8 @@
+{
+  "time_utc": "2026-10-09T03:59:09.562847+00:00",
+  "status": 200,
+  "bytes": 62097836,
+  "content_type": "application/vnd.android.package-archive",
+  "range_status": 206,
+  "zip_magic_valid": true
+}

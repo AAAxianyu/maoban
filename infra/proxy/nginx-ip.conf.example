@@ -1,0 +1,39 @@
+# Install as a NEW site after verifying 443 is free and obtaining the IP certificate.
+# Use nginx-http-ip.conf.example when this app also owns port 80.
+map $http_upgrade $miaoban_connection_upgrade {
+    default upgrade;
+    '' close;
+}
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    server_name 8.136.0.78;
+    ssl_certificate /srv/miaoban/tls/live/8.136.0.78/fullchain.pem;
+    ssl_certificate_key /srv/miaoban/tls/live/8.136.0.78/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    client_max_body_size 1m;
+    # Optional preview APK: provision this single public file separately.
+    location = /downloads/miaoban-android-preview.apk {
+        alias /var/lib/miaoban-downloads/miaoban-android-preview.apk;
+        default_type application/vnd.android.package-archive;
+        add_header Content-Disposition 'attachment; filename="miaoban-android-preview.apk"';
+        add_header Cache-Control 'no-store';
+    }
+    location = /downloads/miaoban-android-release.apk {
+        alias /var/lib/miaoban-downloads/miaoban-android-release.apk;
+        default_type application/vnd.android.package-archive;
+        add_header Content-Disposition 'attachment; filename="miaoban-android-release.apk"';
+        add_header Cache-Control 'no-store';
+    }
+    location / {
+        proxy_pass http://127.0.0.1:18000;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $miaoban_connection_upgrade;
+        proxy_read_timeout 75s;
+    }
+}

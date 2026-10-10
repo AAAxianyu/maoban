@@ -1,0 +1,49 @@
+{
+  "time_utc": "2026-10-09T04:29:04.277708+00:00",
+  "tls_bypass": false,
+  "checks": [
+    {
+      "variant": "preview",
+      "url": "https://8.136.0.78/downloads/miaoban-android-preview.apk?v=3",
+      "head_status": 200,
+      "headers": {
+        "Server": "nginx/1.24.0 (Ubuntu)",
+        "Date": "Fri, 09 Oct 2026 04:29:04 GMT",
+        "Content-Type": "application/vnd.android.package-archive",
+        "Content-Length": "186647218",
+        "Last-Modified": "Fri, 09 Oct 2026 04:28:36 GMT",
+        "Connection": "close",
+        "ETag": "\"6ac86d74-b2002b2\"",
+        "Content-Disposition": "attachment; filename=\"miaoban-android-preview.apk\"",
+        "Cache-Control": "no-store",
+        "Accept-Ranges": "bytes"
+      },
+      "range_status": 206,
+      "content_range": "bytes 0-63/186647218",
+      "first_64_bytes_match": true,
+      "full_public_file_downloaded": false
+    },
+    {
+      "variant": "release",
+      "url": "https://8.136.0.78/downloads/miaoban-android-release.apk?v=3",
+      "head_status": 200,
+      "headers": {
+        "Server": "nginx/1.24.0 (Ubuntu)",
+        "Date": "Fri, 09 Oct 2026 04:29:04 GMT",
+        "Content-Type": "application/vnd.android.package-archive",
+        "Content-Length": "62097836",
+        "Last-Modified": "Fri, 09 Oct 2026 04:28:40 GMT",
+        "Connection": "close",
+        "ETag": "\"6ac86d78-3b389ac\"",
+        "Content-Disposition": "attachment; filename=\"miaoban-android-release.apk\"",
+        "Cache-Control": "no-store",
+        "Accept-Ranges": "bytes"
+      },
+      "range_status": 206,
+      "content_range": "bytes 0-63/62097836",
+      "first_64_bytes_match": true,
+      "full_public_file_downloaded": false
+    }
+  ],
+  "full_file_hash_verified_at_server_publish": true
+}

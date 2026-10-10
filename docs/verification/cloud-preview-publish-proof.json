@@ -1,0 +1,9 @@
+{
+  "time_utc": "2026-10-09T03:02:58.063430+00:00",
+  "apk_sha256": "910d030b3a4cd316577c7335f8717073c2f3e4b1eb68c13eda1e54b78ee446da",
+  "bytes": 258658356,
+  "public_path": "/var/lib/miaoban-downloads/miaoban-android-preview.apk",
+  "url": "https://8.136.0.78/downloads/miaoban-android-preview.apk",
+  "nginx_config_sha256": "8a3303816c4f9a7f40c102b9633d24f1cb59a5ce32f10b2e8532c42f05a3114f",
+  "activation_backup_result": "success"
+}

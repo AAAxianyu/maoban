@@ -1,0 +1,21 @@
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints. Run `flutter analyze` to check.
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  # Server JSON is untyped; strict modes force every dynamic value to be read
+  # deliberately (see lib/core/models.dart) instead of implicitly cast.
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+
+linter:
+  rules:
+    - prefer_final_locals
+    - unawaited_futures

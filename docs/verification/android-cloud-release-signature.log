@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Miaoban Release
+Signer #1 certificate SHA-256 digest: 5143b6d398e354f904bf971910fbb591703bf2410308a36a99e654c9611e4a1f
+Signer #1 certificate SHA-1 digest: a7fda1b17dc1c12d654f4ecdd472a3dc6a3ba5f4
+Signer #1 certificate MD5 digest: 62d663307065618d09ead520deecf600
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: cfa6fab05e00753ed08ee9731ab548fbe657fe6869cc1f7e747e7cf6c7029d54
+Signer #1 public key SHA-1 digest: e1c77ec99c790876fbb2d93e79557707a817de7a
+Signer #1 public key MD5 digest: 807bbe50c3386a41c9a0fd76e03920a1

@@ -1,0 +1,46 @@
+{
+  "time_utc": "2026-10-09T09:00:36.323587+00:00",
+  "source": "direct user request plus authorized physical USB ADB inspection",
+  "android_apk_downloaded_on_phone": true,
+  "android_install_and_login_confirmed": false,
+  "android_model_and_os": {
+    "manufacturer": "HUAWEI",
+    "model": "HBN-AL10",
+    "android_compatibility_release": "12",
+    "sdk": 31,
+    "physical_resolution": [
+      1260,
+      2844
+    ],
+    "density_dpi": 540,
+    "font_scale": 1.15
+  },
+  "apple_developer_account": "user reports none",
+  "ios_scope": "personal Apple ID trial possible with Xcode; paid membership still required for TestFlight/APNs acceptance",
+  "package_signing_material": "generated locally and private",
+  "goal_complete": false,
+  "android_installation_confirmed_by_user": true,
+  "android_app_opens_confirmed_by_user": true,
+  "android_actual_login_and_activation": "Existing installed preview session reaches all four main pages; no activation/login submitted during this audit",
+  "installed_apk_variant_and_sha256": {
+    "package_id": "com.miaoban.miaoban",
+    "version_name": "0.1.0",
+    "version_code": 1,
+    "debuggable": true,
+    "bytes": 258658356,
+    "sha256": "910d030b3a4cd316577c7335f8717073c2f3e4b1eb68c13eda1e54b78ee446da",
+    "signing_certificate_sha256": "59857a3e3f2c1848ea132edad2ed86b1c26a52025e33ba654fb4d038bd394934"
+  },
+  "evidence_method": "authorized USB ADB on physical device; screenshots inspected after capture",
+  "next_step": "same-signer preview 0.1.1(3) update; then verify auth and remaining physical business/push flows",
+  "activation_file_exists": true,
+  "activation_expiry_utc": "2026-10-10T02:59:34.850287+00:00",
+  "production_readiness_https_status": 200,
+  "auth_patch_version": "0.1.1(3)",
+  "auth_patch_server_tag": "20261008-auth01",
+  "android_installation_independently_verified": true,
+  "android_existing_session_reaches_today": true,
+  "evidence_file": "phone-audit-20261009/device-proof.json",
+  "google_play_services_package_present": true,
+  "google_play_services_functional_or_push_verified": false
+}

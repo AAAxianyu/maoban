@@ -1,0 +1,427 @@
+--- before/apps/mobile/lib/core/widgets.dart
++++ after/apps/mobile/lib/core/widgets.dart
+@@ -435,6 +435,8 @@
+   Object? error;
+   bool loadingMore = false, exhausted = false;
+   int _generation = 0;
++  int _nextOffset = 0;
++  bool _reloading = false;
+ 
+   @override
+   void initState() {
+@@ -447,12 +449,19 @@
+ 
+   Future<void> reload() async {
+     final generation = ++_generation;
+-    if (mounted) setState(() => error = null);
++    if (mounted) {
++      setState(() {
++        error = null;
++        _reloading = true;
++        loadingMore = false;
++      });
++    }
+     try {
+       final first = await _fetch(0);
+       if (!mounted || generation != _generation) return;
+       setState(() {
+         items = first;
++        _nextOffset = first.length;
+         exhausted = widget.loadPage == null || first.length < widget.pageSize;
+       });
+     } catch (e) {
+@@ -460,19 +469,25 @@
+       setState(() => error = e);
+       // With data already on screen the error page is hidden, so say it here.
+       if (items != null) showMessage(context, errorMessage(e));
++    } finally {
++      if (mounted && generation == _generation) {
++        setState(() => _reloading = false);
++      }
+     }
+   }
+ 
+   Future<void> _more() async {
+-    if (loadingMore || exhausted || items == null) return;
++    if (_reloading || loadingMore || exhausted || items == null) return;
+     final generation = _generation;
+     setState(() => loadingMore = true);
+     try {
+-      final page = await _fetch(items!.length);
++      final page = await _fetch(_nextOffset);
+       if (!mounted || generation != _generation) return;
+       // Offset paging can repeat a row when new items arrive meanwhile.
+       final seen = {for (final item in items!) _identity(item)};
+       setState(() {
++        // Advance over every fetched row, including duplicates removed below.
++        _nextOffset += page.length;
+         items = [
+           ...items!,
+           ...page.where((item) => !seen.contains(_identity(item))),
+@@ -480,9 +495,13 @@
+         exhausted = page.length < widget.pageSize;
+       });
+     } catch (e) {
+-      if (mounted) showMessage(context, errorMessage(e));
++      if (mounted && generation == _generation) {
++        showMessage(context, errorMessage(e));
++      }
+     } finally {
+-      if (mounted) setState(() => loadingMore = false);
++      if (mounted && generation == _generation) {
++        setState(() => loadingMore = false);
++      }
+     }
+   }
+ 
+--- before/apps/mobile/lib/features/tasks/today_screen.dart
++++ after/apps/mobile/lib/features/tasks/today_screen.dart
+@@ -23,16 +23,22 @@
+   String? selectedDate;
+   Map<String, dynamic>? history;
+   final submitting = <String>{};
++  int _historyGeneration = 0;
+ 
+   Future<void> _loadHistory(String day) async {
+-    final response = await widget.app.api.getMap(
+-      '${widget.app.root}/daily?day=$day',
+-    );
+-    if (mounted) {
++    final generation = ++_historyGeneration;
++    try {
++      final response = await widget.app.api.getMap(
++        '${widget.app.root}/daily?day=$day',
++      );
++      if (!mounted || generation != _historyGeneration) return;
+       setState(() {
+         selectedDate = day;
+         history = response;
+       });
++    } catch (_) {
++      if (!mounted || generation != _historyGeneration) return;
++      rethrow;
+     }
+   }
+ 
+@@ -51,10 +57,14 @@
+     await attempt(context, () => _loadHistory(day));
+   }
+ 
+-  void backToToday() => setState(() {
+-    selectedDate = null;
+-    history = null;
+-  });
++  void backToToday() {
++    // Invalidate requests for dates the user has left, even if still in flight.
++    _historyGeneration++;
++    setState(() {
++      selectedDate = null;
++      history = null;
++    });
++  }
+ 
+   Future<void> toggle(TaskInstance i) async {
+     final app = widget.app;
+--- /dev/null
++++ after/apps/mobile/test/remote_list_test.dart
+@@ -0,0 +1,143 @@
++import 'dart:async';
++
++import 'package:flutter/material.dart';
++import 'package:flutter_test/flutter_test.dart';
++import 'package:miaoban/app/theme.dart';
++import 'package:miaoban/core/widgets.dart';
++
++List<Map<String, dynamic>> rows(String prefix, int count) => [
++  for (var i = 0; i < count; i++) {'id': '$prefix-$i'},
++];
++
++Future<void> nearListEnd(WidgetTester tester) async {
++  final context = tester.element(find.byType(ListView));
++  ScrollUpdateNotification(
++    metrics: FixedScrollMetrics(
++      minScrollExtent: 0,
++      maxScrollExtent: 1000,
++      pixels: 1000,
++      viewportDimension: 600,
++      axisDirection: AxisDirection.down,
++      devicePixelRatio: 1,
++    ),
++    context: context,
++  ).dispatch(context);
++  await tester.pump();
++}
++
++Future<void> showList(
++  WidgetTester tester,
++  GlobalKey<RemoteListState> key,
++  Future<List<dynamic>> Function(int) load,
++) => tester.pumpWidget(
++  MaterialApp(
++    theme: appTheme(),
++    home: RemoteList(
++      key: key,
++      title: '通知收件箱',
++      pageSize: 2,
++      loadPage: load,
++      item: (_, dynamic row, _) =>
++          SizedBox(height: 350, child: Text((row as Map)['id'] as String)),
++    ),
++  ),
++);
++
++List<String> loadedIds(GlobalKey<RemoteListState> key) => key
++    .currentState!
++    .items!
++    .map((dynamic row) => (row as Map)['id'] as String)
++    .toList();
++
++void main() {
++  testWidgets('duplicate pages do not hide older notifications', (
++    tester,
++  ) async {
++    final key = GlobalKey<RemoteListState>();
++    var server = rows('old', 4);
++    final offsets = <int>[];
++    await showList(tester, key, (offset) async {
++      offsets.add(offset);
++      return server.skip(offset).take(2).toList();
++    });
++    await tester.pump();
++    server = [...rows('new', 2), ...server];
++
++    await nearListEnd(tester);
++    expect(loadedIds(key), ['old-0', 'old-1']);
++    await nearListEnd(tester);
++    expect(loadedIds(key), ['old-0', 'old-1', 'old-2', 'old-3']);
++    await nearListEnd(tester);
++    expect(offsets, [0, 2, 4, 6]);
++    expect(key.currentState!.exhausted, isTrue);
++    await nearListEnd(tester);
++    expect(offsets, [0, 2, 4, 6]);
++  });
++
++  testWidgets('refresh resets paging and discards an older page', (
++    tester,
++  ) async {
++    final key = GlobalKey<RemoteListState>();
++    final stalePage = Completer<List<dynamic>>();
++    final refreshedPage = Completer<List<dynamic>>();
++    final nextPage = Completer<List<dynamic>>();
++    final offsets = <int>[];
++    await showList(tester, key, (offset) {
++      offsets.add(offset);
++      return switch (offsets.length) {
++        1 => Future.value(rows('old', 2)),
++        2 => stalePage.future,
++        3 => refreshedPage.future,
++        4 => nextPage.future,
++        _ => throw StateError('Unexpected page request'),
++      };
++    });
++    await tester.pump();
++    await nearListEnd(tester);
++    unawaited(key.currentState!.reload());
++    await tester.pump();
++    await nearListEnd(tester);
++    expect(offsets, [0, 2, 0]);
++
++    refreshedPage.complete(rows('fresh', 2));
++    await tester.pump();
++    await nearListEnd(tester);
++    expect(offsets, [0, 2, 0, 2]);
++
++    stalePage.complete([
++      {'id': 'old-2'},
++    ]);
++    await tester.pump();
++    await nearListEnd(tester);
++    expect(offsets, [0, 2, 0, 2]);
++    expect(loadedIds(key), ['fresh-0', 'fresh-1']);
++
++    nextPage.complete([
++      {'id': 'fresh-2'},
++    ]);
++    await tester.pump();
++    expect(loadedIds(key), ['fresh-0', 'fresh-1', 'fresh-2']);
++    expect(key.currentState!.exhausted, isTrue);
++  });
++
++  testWidgets('failed next page retries without skipping notifications', (
++    tester,
++  ) async {
++    final key = GlobalKey<RemoteListState>();
++    final offsets = <int>[];
++    await showList(tester, key, (offset) async {
++      offsets.add(offset);
++      if (offsets.length == 1) return rows('old', 2);
++      if (offsets.length == 2) throw StateError('Test network failure');
++      return [
++        {'id': 'old-2'},
++      ];
++    });
++    await tester.pump();
++    await nearListEnd(tester);
++    expect(loadedIds(key), ['old-0', 'old-1']);
++    await nearListEnd(tester);
++    expect(offsets, [0, 2, 2]);
++    expect(loadedIds(key), ['old-0', 'old-1', 'old-2']);
++  });
++}
+--- /dev/null
++++ after/apps/mobile/test/today_history_test.dart
+@@ -0,0 +1,154 @@
++import 'dart:async';
++
++import 'package:flutter/material.dart';
++import 'package:flutter_localizations/flutter_localizations.dart';
++import 'package:flutter_test/flutter_test.dart';
++import 'package:miaoban/app/controller.dart';
++import 'package:miaoban/app/theme.dart';
++import 'package:miaoban/core/api.dart';
++import 'package:miaoban/core/store.dart';
++import 'package:miaoban/features/tasks/today_screen.dart';
++import 'package:sqflite/sqflite.dart';
++
++Map<String, dynamic> emptyDay() => {
++  'plans': <dynamic>[],
++  'instances': <dynamic>[],
++};
++
++class _UnusedDatabase implements Database {
++  @override
++  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
++}
++
++class _HistoryApi extends Api {
++  final Future<Map<String, dynamic>> Function(String) load;
++  _HistoryApi(this.load);
++
++  @override
++  Future<Map<String, dynamic>> getMap(String path) =>
++      load(Uri.parse(path).queryParameters['day']!);
++}
++
++class _App extends AppController {
++  _App(Api api) : super(api, LocalStore(_UnusedDatabase())) {
++    user = {
++      'id': 'alice',
++      'preferences': {'reduce_motion': true},
++    };
++    sid = 'test-room';
++    snapshot = {
++      'space': {'today': '2026-10-09'},
++      'wallet': {'available': 0},
++      'daily': emptyDay(),
++      'growth': {'level': 1, 'permanent_xp': 0},
++    };
++  }
++
++  @override
++  Future<void> sync() async {}
++}
++
++Future<void> _showToday(WidgetTester tester, _App app) async {
++  addTearDown(app.dispose);
++  await tester.pumpWidget(
++    MaterialApp(
++      theme: appTheme(),
++      locale: const Locale('zh', 'CN'),
++      supportedLocales: const [Locale('zh', 'CN')],
++      localizationsDelegates: GlobalMaterialLocalizations.delegates,
++      home: Scaffold(body: TodayScreen(app)),
++    ),
++  );
++  await tester.pumpAndSettle();
++}
++
++Future<void> _chooseDay(WidgetTester tester, int day) async {
++  await tester.ensureVisible(find.byTooltip('查看其他日期'));
++  await tester.tap(find.byTooltip('查看其他日期'));
++  await tester.pumpAndSettle();
++  await tester.tap(find.text('$day').last);
++  await tester.tap(find.text('确定'));
++  await tester.pumpAndSettle();
++}
++
++void main() {
++  for (final fails in [false, true]) {
++    testWidgets(
++      'returning to today ignores a delayed history ${fails ? 'error' : 'response'}',
++      (tester) async {
++        final waiting = Completer<Map<String, dynamic>>();
++        var loads = 0;
++        final requestedDays = <String>[];
++        final app = _App(
++          _HistoryApi((day) {
++            requestedDays.add(day);
++            return ++loads == 1 ? Future.value(emptyDay()) : waiting.future;
++          }),
++        );
++        await _showToday(tester, app);
++        await _chooseDay(tester, 8);
++        expect(find.text('10月8日的约定'), findsOneWidget);
++
++        unawaited(
++          tester
++              .widget<RefreshIndicator>(find.byType(RefreshIndicator))
++              .onRefresh(),
++        );
++        await tester.pump();
++        expect(loads, 2);
++        expect(requestedDays, ['2026-10-08', '2026-10-08']);
++        await tester.tap(find.byTooltip('回到今日'));
++        await tester.pump();
++        expect(find.text('今日约定'), findsOneWidget);
++
++        if (fails) {
++          waiting.completeError(StateError('Abandoned history request'));
++        } else {
++          waiting.complete(emptyDay());
++        }
++        await tester.pumpAndSettle();
++        expect(find.text('今日约定'), findsOneWidget);
++        expect(find.text('10月8日的约定'), findsNothing);
++        expect(find.byType(SnackBar), findsNothing);
++        expect(tester.takeException(), isNull);
++        await tester.pumpWidget(const SizedBox());
++      },
++    );
++  }
++
++  testWidgets('an older response cannot replace the latest chosen date', (
++    tester,
++  ) async {
++    final waiting = Completer<Map<String, dynamic>>();
++    final app = _App(
++      _HistoryApi(
++        (day) =>
++            day == '2026-10-08' ? waiting.future : Future.value(emptyDay()),
++      ),
++    );
++    await _showToday(tester, app);
++    await _chooseDay(tester, 8);
++    await _chooseDay(tester, 7);
++    expect(find.text('10月7日的约定'), findsOneWidget);
++    waiting.complete(emptyDay());
++    await tester.pumpAndSettle();
++    expect(find.text('10月7日的约定'), findsOneWidget);
++    expect(find.text('10月8日的约定'), findsNothing);
++    await tester.pumpWidget(const SizedBox());
++  });
++
++  testWidgets('a current history request still reports its error', (
++    tester,
++  ) async {
++    final app = _App(
++      _HistoryApi(
++        (_) => Future.error(StateError('Current history request failed')),
++      ),
++    );
++    await _showToday(tester, app);
++    await _chooseDay(tester, 8);
++    expect(find.text('今日约定'), findsOneWidget);
++    expect(find.text('Current history request failed'), findsOneWidget);
++    await tester.pumpWidget(const SizedBox());
++  });
++}

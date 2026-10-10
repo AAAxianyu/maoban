@@ -1,0 +1,136 @@
+{
+  "scope": "isolated development backup, latest schema; not production",
+  "restore_container": "miaoban-restore-20261008180358",
+  "checks": {
+    "spaces": {
+      "rows": 3,
+      "sha256": "b94d7acbbf630045ef5bc4eae7f9986d29d46ac4b44a1b79be08729e6323e556",
+      "exact_match": true
+    },
+    "memberships": {
+      "rows": 6,
+      "sha256": "f7df3d52b39c912bbec82d1dfac7bfa98a84b1801730984a9c6c36bb70ccb1d0",
+      "exact_match": true
+    },
+    "space_rule_versions": {
+      "rows": 3,
+      "sha256": "ab2b6dd123ceb5d270743b0c0164e63a398eb80497ecb39853d1b4d94e7dba3d",
+      "exact_match": true
+    },
+    "task_templates": {
+      "rows": 7,
+      "sha256": "002c1d87bdb9c454c157229739850aad19d836c51dea9deb74e0c50e65a7a740",
+      "exact_match": true
+    },
+    "task_versions": {
+      "rows": 7,
+      "sha256": "d134e0a12303be9d6359d9148d15dd346df914ae51e692ac77672eb3bfb34801",
+      "exact_match": true
+    },
+    "task_schedule_changes": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "member_rest_dates": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "daily_plans": {
+      "rows": 6,
+      "sha256": "dd5677f77d7fa403a5e2800f7cb7aca24e8330f851a92cc977949c0f2b698995",
+      "exact_match": true
+    },
+    "task_instances": {
+      "rows": 7,
+      "sha256": "1770a5fbd58fa06450474f1f34a86a1cdd0dc164fff74c4b592e8ea4c28d2a81",
+      "exact_match": true
+    },
+    "corrections": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "wallets": {
+      "rows": 6,
+      "sha256": "f04db1d3c91c7da9ff36107d16d9e46783424865d12f5a17d3a974e0edc41de1",
+      "exact_match": true
+    },
+    "reward_entitlements": {
+      "rows": 15,
+      "sha256": "81995ced76dec732e993d4dd7e5254331cf0d4cd3b3a169e6c2762cf003f2f73",
+      "exact_match": true
+    },
+    "ledger_entries": {
+      "rows": 15,
+      "sha256": "68c44e76773d3d5d9549c8f1faebc56c4aa01bf24c73610470536c88cfccf6cf",
+      "exact_match": true
+    },
+    "rewards": {
+      "rows": 3,
+      "sha256": "51f18a9b60f6b9896dcc6fac62d497451029a4b37f5e9e6df5442dd5bd964f98",
+      "exact_match": true
+    },
+    "wishes": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "redemptions": {
+      "rows": 4,
+      "sha256": "122e5b7660feb04c51d00420aef853e807c39cfd2ab42f46898834000f1bb42c",
+      "exact_match": true
+    },
+    "milestones": {
+      "rows": 1,
+      "sha256": "80f538a69dff84e87ae37af3b74af8d07d6cbbd20afccff72e87cfd604199b9f",
+      "exact_match": true
+    },
+    "milestone_versions": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "room_contributions": {
+      "rows": 6,
+      "sha256": "79ca094919d9fe92c8a26983a493813fa233e020f56110bf7ce1fe6ee5d447e4",
+      "exact_match": true
+    },
+    "room_unlocks": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    },
+    "user_achievements": {
+      "rows": 4,
+      "sha256": "5118c7c40e33c4382a18d0b736dd04dc9555525d08908ac1ae27aba599a7b8d5",
+      "exact_match": true
+    },
+    "events": {
+      "rows": 82,
+      "sha256": "71dd0b9ea3a1e0f157f0761ce269ee55b7f15b7bcc521aa0771f3a3b5b505920",
+      "exact_match": true
+    },
+    "reactions": {
+      "rows": 1,
+      "sha256": "5adcfa652cd8bdc866ededffb4b7c41d078d1c68f1eda4d4cb66b94126789ec8",
+      "exact_match": true
+    },
+    "notifications": {
+      "rows": 79,
+      "sha256": "a268ce84a5f2b8b8dab2089041264e85c6eac24410326ae0ec9d833f3ef2c40c",
+      "exact_match": true
+    },
+    "outbox": {
+      "rows": 79,
+      "sha256": "e54b6589aa54fc851d1b3dd18083567ce334a701ff92abd0bdb7125ebb7a6cde",
+      "exact_match": true
+    },
+    "push_receipts": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_match": true
+    }
+  }
+}

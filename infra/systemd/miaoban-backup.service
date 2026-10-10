@@ -1,0 +1,9 @@
+[Unit]
+Description=Miaoban private database backup
+[Service]
+Type=oneshot
+WorkingDirectory=/srv/miaoban
+Environment=CONFIG_FILE=.env.production
+Environment=COMPOSE_FILE=infra/compose.production.yaml
+ExecStart=/usr/bin/flock -n /run/lock/miaoban-backup.lock /bin/bash infra/scripts/backup.sh
+UMask=0077

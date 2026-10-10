@@ -1,0 +1,10 @@
+{
+  "time_utc": "2026-10-09T03:57:34.625031+00:00",
+  "scope": "isolated cloud acceptance only; after actual API restart",
+  "new_login_succeeded": true,
+  "wallet_balance": 30,
+  "order_statuses": [
+    "cancelled",
+    "completed"
+  ]
+}
